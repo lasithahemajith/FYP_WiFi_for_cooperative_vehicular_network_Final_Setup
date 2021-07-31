@@ -1,0 +1,22 @@
+<routes>
+<vType sigma="0" id="pedestrian" length="0.4" minGap="0" guiShape="pedestrian" width="0.6" maxSpeed="1.5"/>
+<vType id="vtype0"  sigma="0.5" length="4.0" minGap="2.5" maxSpeed="20" />
+
+<flow id="flowAtoB" type="pedestrian" begin="0" end="1000" period="2">
+<route edges="c"/>
+</flow>
+
+<flow id="flowDtoC" type="pedestrian" begin="0" end="1000" period="2">
+<route edges="d"/>
+</flow>
+
+
+<flow id="flowXtoY" type="vtype0" begin="0" end="1" number="65" departPos="0" departSpeed="7.885" >
+<route edges="a"/>
+</flow>
+
+
+<flow id="flowYtoX" type="vtype0" begin="0"  period="1" number="60" >
+<route edges="b"/>
+</flow>
+</routes>

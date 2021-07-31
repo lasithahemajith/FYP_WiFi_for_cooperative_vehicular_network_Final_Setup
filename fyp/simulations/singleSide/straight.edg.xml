@@ -1,0 +1,15 @@
+<edges>
+
+<edge numLanes="2" to="Y" from="X" id="a" speed="30">
+<neigh lane="b_0"/>
+</edge>
+
+<edge numLanes="1" to="B" from="A" id="c" width="1.5"/>
+
+<edge numLanes="2" to="X" from="Y" id="b" speed="30">
+<neigh lane="a_1"/>
+</edge>
+
+<edge numLanes="1" to="C" from="D" id="d" width="1.5"/>
+
+</edges>

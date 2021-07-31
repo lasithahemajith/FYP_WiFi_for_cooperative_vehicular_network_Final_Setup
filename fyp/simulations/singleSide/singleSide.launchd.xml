@@ -1,0 +1,5 @@
+<launch>
+	<copy file="singleSide.net.xml" />
+	<copy file="singleSide.rou.xml" />
+	<copy file="singleSide.sumocfg" type="config" />
+</launch>

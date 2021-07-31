@@ -1,0 +1,578 @@
+version 2
+run General-0-20200713-17:54:43-7792
+attr configname General
+attr datetime 20200713-17:54:43
+attr experiment General
+attr inifile singleSidewithPedestrians.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Scenario
+attr processid 7792
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param Scenario.*.mobilityType "\"VeinsInetMobility\""
+param Scenario.*.mobility.constraintAreaMinX 0m
+param Scenario.*.mobility.constraintAreaMinY 0m
+param Scenario.*.mobility.constraintAreaMinZ 0m
+param Scenario.*.mobility.constraintAreaMaxX 1000m
+param Scenario.*.mobility.constraintAreaMaxY 1000m
+param Scenario.*.mobility.constraintAreaMaxZ 0m
+param Scenario.node[*].ac_wlan.interfaces "\"wlan0\""
+param Scenario.ped[*].ac_wlan.interfaces "\"wlan0\""
+param Scenario.*.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Scenario.*.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Scenario.*.wlan[*].opMode "\"g(mixed)\""
+param Scenario.*.wlan[*].bitrate 6Mbps
+param Scenario.*.wlan[*].mac.typename "\"CsmaCaMac\""
+param Scenario.*.wlan[*].radio.channelNumber 2
+param Scenario.*.wlan[*].mgmt.ssid "\"SSID\""
+param Scenario.*.wlan[*].mgmt.beaconInterval 100ms
+param Scenario.*.wlan[*].radio.carrierFrequency 2.412GHz
+param Scenario.*.wlan[*].radio.bandwidth 20MHz
+param Scenario.*.wlan[*].radio.transmitter.power 25mW
+param Scenario.*.wlan[*].radio.transmitter.modulation "\"BPSK\""
+param Scenario.*.wlan[*].radio.receiver.sensitivity -85dBm
+param Scenario.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param Scenario.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param Scenario.radioMedium.pathLossType "\"NakagamiFading\""
+param Scenario.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param Scenario.manager.updateInterval 0.001s
+param Scenario.manager.host "\"localhost\""
+param Scenario.manager.port 9999
+param Scenario.manager.autoShutdown true
+param Scenario.manager.launchConfig "xmldoc(\"straight.launchd.xml\")"
+param *.manager.moduleType "\"vtype0=fyp.simulations.singleSideWithPedestrians.Car pedestrian=fyp.simulations.singleSideWithPedestrians.pedestrian\""
+param *.manager.moduleName "\"vtype0=node pedestrian=ped\""
+param *.manager.moduleDisplayString "\"vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs'\""
+
+vector 0 Scenario.ped[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 Scenario.ped[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 Scenario.ped[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 3 Scenario.ped[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 4 Scenario.ped[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 5 Scenario.ped[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 6 Scenario.ped[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 7 Scenario.ped[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 8 Scenario.ped[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 Scenario.ped[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 10 Scenario.ped[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 11 Scenario.ped[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 12 Scenario.ped[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 13 Scenario.ped[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 14 Scenario.ped[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 15 Scenario.ped[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 16 Scenario.node[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 Scenario.node[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 18 Scenario.node[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 19 Scenario.node[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 20 Scenario.node[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 21 Scenario.node[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 22 Scenario.node[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 23 Scenario.node[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 24 Scenario.node[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 Scenario.node[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 26 Scenario.node[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 27 Scenario.node[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 28 Scenario.node[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 29 Scenario.node[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 30 Scenario.node[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 31 Scenario.node[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 32 Scenario.ped[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 33 Scenario.ped[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 34 Scenario.ped[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 35 Scenario.node[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 36 Scenario.node[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 37 Scenario.ped[1].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 38 Scenario.ped[1].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 39 Scenario.ped[1].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 40 Scenario.node[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 41 Scenario.node[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 42 Scenario.node[2].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 43 Scenario.node[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 44 Scenario.node[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 45 Scenario.ped[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 46 Scenario.ped[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 47 Scenario.node[3].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 48 Scenario.node[3].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 49 Scenario.node[3].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 50 Scenario.ped[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 51 Scenario.ped[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+0	2	0.001	0
+0	2	0.001	2
+0	70	0.05588135023	3
+0	76	0.05592735023	2
+0	242	0.15588135023	3
+1	2	0.001	2
+2	2	0.001	1
+2	70	0.05588135023	0
+2	76	0.05592735023	1
+2	125	0.072518978059	3
+2	130	0.072564978059	1
+2	242	0.15588135023	0
+3	2	0.001	0
+3	2	0.001	0
+3	66	0.05588135023	0
+3	66	0.05588135023	2
+3	67	0.05588135023	2
+3	67	0.05588135023	0
+3	70	0.05588135023	0
+3	70	0.05588135023	0
+3	76	0.05592735023	0
+3	76	0.05592735023	0
+3	125	0.072518978059	0
+3	125	0.072518978059	0
+3	130	0.072564978059	0
+3	130	0.072564978059	0
+3	238	0.15588135023	0
+3	238	0.15588135023	2
+3	239	0.15588135023	2
+3	239	0.15588135023	0
+3	242	0.15588135023	0
+3	242	0.15588135023	0
+4	2	0.001	0
+4	2	0.001	0
+4	70	0.05588135023	0
+4	70	0.05588135023	0
+4	76	0.05592735023	0
+4	76	0.05592735023	0
+4	125	0.072518978059	0
+4	125	0.072518978059	0
+4	130	0.072564978059	0
+4	130	0.072564978059	0
+4	242	0.15588135023	0
+4	242	0.15588135023	0
+5	2	0.001	0
+5	2	0.001	0
+5	70	0.05588135023	0
+5	70	0.05588135023	0
+5	76	0.05592735023	0
+5	76	0.05592735023	0
+5	125	0.072518978059	0
+5	125	0.072518978059	0
+5	130	0.072564978059	0
+5	130	0.072564978059	0
+5	242	0.15588135023	0
+5	242	0.15588135023	0
+6	2	0.001	0
+6	2	0.001	0
+6	70	0.05588135023	0
+6	70	0.05588135023	0
+6	76	0.05592735023	0
+6	76	0.05592735023	0
+6	125	0.072518978059	0
+6	125	0.072518978059	0
+6	130	0.072564978059	0
+6	130	0.072564978059	0
+6	242	0.15588135023	0
+6	242	0.15588135023	0
+7	2	0.001	0
+7	2	0.001	0
+7	70	0.05588135023	0
+7	70	0.05588135023	0
+7	76	0.05592735023	0
+7	76	0.05592735023	0
+7	125	0.072518978059	0
+7	125	0.072518978059	0
+7	130	0.072564978059	0
+7	130	0.072564978059	0
+7	242	0.15588135023	0
+7	242	0.15588135023	0
+8	2	0.001	0
+8	2	0.001	2
+8	92	0.060284461639	3
+8	98	0.060330461639	2
+9	2	0.001	2
+10	2	0.001	1
+10	92	0.060284461639	0
+10	98	0.060330461639	1
+10	156	0.085426617639	3
+10	161	0.085472617639	1
+11	2	0.001	0
+11	2	0.001	0
+11	88	0.060284461639	0
+11	88	0.060284461639	2
+11	89	0.060284461639	2
+11	89	0.060284461639	0
+11	92	0.060284461639	0
+11	92	0.060284461639	0
+11	98	0.060330461639	0
+11	98	0.060330461639	0
+11	156	0.085426617639	0
+11	156	0.085426617639	0
+11	161	0.085472617639	0
+11	161	0.085472617639	0
+12	2	0.001	0
+12	2	0.001	0
+12	92	0.060284461639	0
+12	92	0.060284461639	0
+12	98	0.060330461639	0
+12	98	0.060330461639	0
+12	156	0.085426617639	0
+12	156	0.085426617639	0
+12	161	0.085472617639	0
+12	161	0.085472617639	0
+13	2	0.001	0
+13	2	0.001	0
+13	92	0.060284461639	0
+13	92	0.060284461639	0
+13	98	0.060330461639	0
+13	98	0.060330461639	0
+13	156	0.085426617639	0
+13	156	0.085426617639	0
+13	161	0.085472617639	0
+13	161	0.085472617639	0
+14	2	0.001	0
+14	2	0.001	0
+14	92	0.060284461639	0
+14	92	0.060284461639	0
+14	98	0.060330461639	0
+14	98	0.060330461639	0
+14	156	0.085426617639	0
+14	156	0.085426617639	0
+14	161	0.085472617639	0
+14	161	0.085472617639	0
+15	2	0.001	0
+15	2	0.001	0
+15	92	0.060284461639	0
+15	92	0.060284461639	0
+15	98	0.060330461639	0
+15	98	0.060330461639	0
+15	156	0.085426617639	0
+15	156	0.085426617639	0
+15	161	0.085472617639	0
+15	161	0.085472617639	0
+16	2	0.001	0
+16	2	0.001	2
+16	123	0.072518936497	3
+16	129	0.072564936497	2
+17	2	0.001	2
+18	2	0.001	1
+18	72	0.055881391792	3
+18	77	0.055927391792	1
+18	123	0.072518936497	0
+18	129	0.072564936497	1
+18	244	0.155881391792	3
+19	2	0.001	0
+19	2	0.001	0
+19	72	0.055881391792	0
+19	72	0.055881391792	0
+19	77	0.055927391792	0
+19	77	0.055927391792	0
+19	119	0.072518936497	0
+19	119	0.072518936497	2
+19	120	0.072518936497	2
+19	120	0.072518936497	0
+19	123	0.072518936497	0
+19	123	0.072518936497	0
+19	129	0.072564936497	0
+19	129	0.072564936497	0
+19	244	0.155881391792	0
+19	244	0.155881391792	0
+20	2	0.001	0
+20	2	0.001	0
+20	72	0.055881391792	0
+20	72	0.055881391792	0
+20	77	0.055927391792	0
+20	77	0.055927391792	0
+20	123	0.072518936497	0
+20	123	0.072518936497	0
+20	129	0.072564936497	0
+20	129	0.072564936497	0
+20	244	0.155881391792	0
+20	244	0.155881391792	0
+21	2	0.001	0
+21	2	0.001	0
+21	72	0.055881391792	0
+21	72	0.055881391792	0
+21	77	0.055927391792	0
+21	77	0.055927391792	0
+21	123	0.072518936497	0
+21	123	0.072518936497	0
+21	129	0.072564936497	0
+21	129	0.072564936497	0
+21	244	0.155881391792	0
+21	244	0.155881391792	0
+22	2	0.001	0
+22	2	0.001	0
+22	72	0.055881391792	0
+22	72	0.055881391792	0
+22	77	0.055927391792	0
+22	77	0.055927391792	0
+22	123	0.072518936497	0
+22	123	0.072518936497	0
+22	129	0.072564936497	0
+22	129	0.072564936497	0
+22	244	0.155881391792	0
+22	244	0.155881391792	0
+23	2	0.001	0
+23	2	0.001	0
+23	72	0.055881391792	0
+23	72	0.055881391792	0
+23	77	0.055927391792	0
+23	77	0.055927391792	0
+23	123	0.072518936497	0
+23	123	0.072518936497	0
+23	129	0.072564936497	0
+23	129	0.072564936497	0
+23	244	0.155881391792	0
+23	244	0.155881391792	0
+24	2	0.001	0
+24	2	0.001	2
+24	154	0.085426574409	3
+24	160	0.085472574409	2
+25	2	0.001	2
+26	2	0.001	1
+26	94	0.060284504869	3
+26	99	0.060330504869	1
+26	154	0.085426574409	0
+26	160	0.085472574409	1
+27	2	0.001	0
+27	2	0.001	0
+27	94	0.060284504869	0
+27	94	0.060284504869	0
+27	99	0.060330504869	0
+27	99	0.060330504869	0
+27	150	0.085426574409	0
+27	150	0.085426574409	2
+27	151	0.085426574409	2
+27	151	0.085426574409	0
+27	154	0.085426574409	0
+27	154	0.085426574409	0
+27	160	0.085472574409	0
+27	160	0.085472574409	0
+28	2	0.001	0
+28	2	0.001	0
+28	94	0.060284504869	0
+28	94	0.060284504869	0
+28	99	0.060330504869	0
+28	99	0.060330504869	0
+28	154	0.085426574409	0
+28	154	0.085426574409	0
+28	160	0.085472574409	0
+28	160	0.085472574409	0
+29	2	0.001	0
+29	2	0.001	0
+29	94	0.060284504869	0
+29	94	0.060284504869	0
+29	99	0.060330504869	0
+29	99	0.060330504869	0
+29	154	0.085426574409	0
+29	154	0.085426574409	0
+29	160	0.085472574409	0
+29	160	0.085472574409	0
+30	2	0.001	0
+30	2	0.001	0
+30	94	0.060284504869	0
+30	94	0.060284504869	0
+30	99	0.060330504869	0
+30	99	0.060330504869	0
+30	154	0.085426574409	0
+30	154	0.085426574409	0
+30	160	0.085472574409	0
+30	160	0.085472574409	0
+31	2	0.001	0
+31	2	0.001	0
+31	94	0.060284504869	0
+31	94	0.060284504869	0
+31	99	0.060330504869	0
+31	99	0.060330504869	0
+31	154	0.085426574409	0
+31	154	0.085426574409	0
+31	160	0.085472574409	0
+31	160	0.085472574409	0
+32	66	0.05588135023	48
+32	238	0.15588135023	48
+33	69	0.05588135023	48
+33	241	0.15588135023	48
+34	70	0.05588135023	1
+34	71	0.05588135023	2
+34	75	0.05592735023	1
+34	76	0.05592735023	0
+34	242	0.15588135023	1
+34	243	0.15588135023	2
+35	78	0.055927391792	48
+36	78	0.055927391792	48
+37	88	0.060284461639	48
+38	91	0.060284461639	48
+39	92	0.060284461639	1
+39	93	0.060284461639	2
+39	97	0.060330461639	1
+39	98	0.060330461639	0
+40	100	0.060330504869	48
+41	100	0.060330504869	48
+42	119	0.072518936497	48
+43	122	0.072518936497	48
+44	123	0.072518936497	1
+44	124	0.072518936497	2
+44	128	0.072564936497	1
+44	129	0.072564936497	0
+45	131	0.072564978059	48
+46	131	0.072564978059	48
+47	150	0.085426574409	48
+48	153	0.085426574409	48
+49	154	0.085426574409	1
+49	155	0.085426574409	2
+49	159	0.085472574409	1
+49	160	0.085472574409	0
+50	162	0.085472617639	48
+51	162	0.085472617639	48

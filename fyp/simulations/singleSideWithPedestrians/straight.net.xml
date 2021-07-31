@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/04/20 19:04:35 by SUMO netconvert Version 0.30.0
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="straight.nod.xml"/>
+        <edge-files value="straight.edg.xml"/>
+    </input>
+
+    <output>
+        <output-file value="straight.net.xml"/>
+    </output>
+
+</configuration>
+-->
+
+<net version="0.27" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="5000.00,8.30" convBoundary="0.00,0.00,5000.00,16.60" origBoundary="-5000.00,-8.30,0.00,8.30" projParameter="!"/>
+
+    <edge id=":X_0" function="internal">
+        <lane id=":X_0_0" index="0" speed="13.90" length="4.82" shape="0.00,9.95 -1.24,9.13 -1.65,8.30 -1.24,7.48 0.00,6.65"/>
+    </edge>
+    <edge id=":Y_0" function="internal">
+        <lane id=":Y_0_0" index="0" speed="13.90" length="4.82" shape="5000.00,6.65 5001.24,7.48 5001.65,8.30 5001.24,9.13 5000.00,9.95"/>
+    </edge>
+
+    <edge id="a" from="X" to="Y" priority="-1">
+        <lane id="a_0" index="0" speed="13.90" length="5000.00" shape="0.00,3.35 5000.00,3.35"/>
+        <lane id="a_1" index="1" speed="13.90" length="5000.00" shape="0.00,6.65 5000.00,6.65"/>
+    </edge>
+    <edge id="b" from="Y" to="X" priority="-1">
+        <lane id="b_0" index="0" speed="13.90" length="5000.00" shape="5000.00,13.25 0.00,13.25"/>
+        <lane id="b_1" index="1" speed="13.90" length="5000.00" shape="5000.00,9.95 0.00,9.95">
+            <neigh lane="a_1"/>
+        </lane>
+    </edge>
+    <edge id="c" from="A" to="B" priority="-1">
+        <lane id="c_0" index="0" speed="13.90" length="5000.00" width="1.50" shape="0.00,15.80 5000.00,15.80"/>
+    </edge>
+    <edge id="d" from="D" to="C" priority="-1">
+        <lane id="d_0" index="0" speed="13.90" length="5000.00" width="1.50" shape="5000.00,0.80 0.00,0.80"/>
+    </edge>
+
+    <junction id="A" type="dead_end" x="0.00" y="16.60" incLanes="" intLanes="" shape="0.00,16.55 0.00,15.05"/>
+    <junction id="B" type="dead_end" x="5000.00" y="16.60" incLanes="c_0" intLanes="" shape="5000.00,15.05 5000.00,16.55"/>
+    <junction id="C" type="dead_end" x="0.00" y="0.00" incLanes="d_0" intLanes="" shape="0.00,1.55 0.00,0.05"/>
+    <junction id="D" type="dead_end" x="5000.00" y="0.00" incLanes="" intLanes="" shape="5000.00,0.05 5000.00,1.55"/>
+    <junction id="X" type="priority" x="0.00" y="8.30" incLanes="b_0 b_1" intLanes=":X_0_0" shape="0.00,8.25 0.00,14.85 0.00,8.35">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+    <junction id="Y" type="priority" x="5000.00" y="8.30" incLanes="a_0 a_1" intLanes=":Y_0_0" shape="5000.00,8.35 5000.00,1.75 5000.00,8.25">
+        <request index="0" response="0" foes="0" cont="0"/>
+    </junction>
+
+    <connection from="a" to="b" fromLane="1" toLane="1" via=":Y_0_0" dir="t" state="M"/>
+    <connection from="b" to="a" fromLane="1" toLane="1" via=":X_0_0" dir="t" state="M"/>
+
+    <connection from=":X_0" to="a" fromLane="0" toLane="1" dir="s" state="M"/>
+    <connection from=":Y_0" to="b" fromLane="0" toLane="1" dir="s" state="M"/>
+
+</net>

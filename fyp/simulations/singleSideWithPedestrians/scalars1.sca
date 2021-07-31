@@ -1,0 +1,256 @@
+version 2
+run General-0-20200713-17:54:43-7792
+attr configname General
+attr datetime 20200713-17:54:43
+attr experiment General
+attr inifile singleSidewithPedestrians.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Scenario
+attr processid 7792
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param Scenario.*.mobilityType "\"VeinsInetMobility\""
+param Scenario.*.mobility.constraintAreaMinX 0m
+param Scenario.*.mobility.constraintAreaMinY 0m
+param Scenario.*.mobility.constraintAreaMinZ 0m
+param Scenario.*.mobility.constraintAreaMaxX 1000m
+param Scenario.*.mobility.constraintAreaMaxY 1000m
+param Scenario.*.mobility.constraintAreaMaxZ 0m
+param Scenario.node[*].ac_wlan.interfaces "\"wlan0\""
+param Scenario.ped[*].ac_wlan.interfaces "\"wlan0\""
+param Scenario.*.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Scenario.*.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Scenario.*.wlan[*].opMode "\"g(mixed)\""
+param Scenario.*.wlan[*].bitrate 6Mbps
+param Scenario.*.wlan[*].mac.typename "\"CsmaCaMac\""
+param Scenario.*.wlan[*].radio.channelNumber 2
+param Scenario.*.wlan[*].mgmt.ssid "\"SSID\""
+param Scenario.*.wlan[*].mgmt.beaconInterval 100ms
+param Scenario.*.wlan[*].radio.carrierFrequency 2.412GHz
+param Scenario.*.wlan[*].radio.bandwidth 20MHz
+param Scenario.*.wlan[*].radio.transmitter.power 25mW
+param Scenario.*.wlan[*].radio.transmitter.modulation "\"BPSK\""
+param Scenario.*.wlan[*].radio.receiver.sensitivity -85dBm
+param Scenario.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param Scenario.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param Scenario.radioMedium.pathLossType "\"NakagamiFading\""
+param Scenario.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param Scenario.manager.updateInterval 0.001s
+param Scenario.manager.host "\"localhost\""
+param Scenario.manager.port 9999
+param Scenario.manager.autoShutdown true
+param Scenario.manager.launchConfig "xmldoc(\"straight.launchd.xml\")"
+param *.manager.moduleType "\"vtype0=fyp.simulations.singleSideWithPedestrians.Car pedestrian=fyp.simulations.singleSideWithPedestrians.pedestrian\""
+param *.manager.moduleName "\"vtype0=node pedestrian=ped\""
+param *.manager.moduleDisplayString "\"vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs'\""
+
+scalar Scenario.radioMedium.propagation "Arrival computation count" 15
+scalar Scenario.radioMedium "transmission count" 5
+scalar Scenario.radioMedium "radio frame send count" 15
+scalar Scenario.radioMedium "reception computation count" 15
+scalar Scenario.radioMedium "interference computation count" 49
+scalar Scenario.radioMedium "reception decision computation count" 4
+scalar Scenario.radioMedium "listening decision computation count" 30
+scalar Scenario.radioMedium "reception cache hit" 78.87323943662
+attr unit %
+scalar Scenario.radioMedium "interference cache hit" 66.666666666667
+attr unit %
+scalar Scenario.radioMedium "noise cache hit" 0
+attr unit %
+scalar Scenario.radioMedium "snir cache hit" 50
+attr unit %
+scalar Scenario.radioMedium "reception decision cache hit" 50
+attr unit %
+scalar Scenario.radioMedium "reception result cache hit" 0
+attr unit %
+scalar Scenario.ped[0].networkLayer.arp sentReply:count 0
+attr title "ARP replies sent, count"
+scalar Scenario.ped[0].networkLayer.arp sentReq:count 0
+attr title "ARP request sent, count"
+scalar Scenario.ped[0].networkLayer.arp failedARPResolution:count 0
+attr title "ARP failed resolutions, count"
+scalar Scenario.ped[0].networkLayer.arp completedARPResolution:count 0
+attr title "ARP completed resolutions, count"
+scalar Scenario.ped[0].networkLayer.arp initiatedARPResolution:count 0
+attr title "ARP initiated resolutions, count"
+scalar Scenario.ped[0].lo0.lo droppedPkBitError:count 0
+attr interpolationmode none
+attr source dropPkBitError
+attr title "packets dropped/bit error, count"
+scalar Scenario.ped[0].lo0.lo droppedPkBitError:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkBitError
+attr title "packets dropped/bit error, sum(packetBytes)"
+scalar Scenario.ped[0].lo0.lo rcvdPkFromHL:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar Scenario.ped[0].lo0.lo rcvdPkFromHL:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar Scenario.ped[0].lo0.lo passedUpPk:count 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar Scenario.ped[0].lo0.lo passedUpPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar Scenario.ped[0].wlan[0].mgmt Krishan 1
+scalar Scenario.ped[0].wlan[0].mac rcvdPkFromHL:count 2
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar Scenario.ped[0].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 96
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar Scenario.ped[0].wlan[0].mac passedUpPk:count 1
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar Scenario.ped[0].wlan[0].mac passedUpPk:sum(packetBytes) 48
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar Scenario.ped[0].wlan[0].mac rcvdPkFromLL:count 1
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar Scenario.ped[0].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 48
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar Scenario.ped[0].wlan[0].mac sentDownPk:count 2
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar Scenario.ped[0].wlan[0].mac sentDownPk:sum(packetBytes) 96
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+statistic Scenario.ped[0].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic Scenario.ped[0].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic Scenario.ped[0].wlan[0].radio packetErrorRate:histogram
+field count 1
+field mean 0
+field stddev nan
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	1
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic Scenario.ped[0].wlan[0].radio minSNIR:histogram
+field count 1
+field mean 551753.70246819
+field stddev nan
+field min 551753.70246819
+field max 551753.70246819
+field sum 551753.70246819
+field sqrsum 304432148187.36
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	551753.2	0
+bin	551753.22	0
+bin	551753.24	0
+bin	551753.26	0
+bin	551753.28	0
+bin	551753.3	0
+bin	551753.32	0
+bin	551753.34	0
+bin	551753.36	0
+bin	551753.38	0
+bin	551753.4	0
+bin	551753.42	0
+bin	551753.44	0
+bin	551753.46	0
+bin	551753.48	0
+bin	551753.5	0
+bin	551753.52	0
+bin	551753.54	0
+bin	551753.56	0
+bin

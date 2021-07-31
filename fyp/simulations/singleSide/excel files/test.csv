@@ -1,0 +1,904 @@
+run,type,module,name,attrname,attrvalue,value
+General-0-20200719-16:46:03-5012,runattr,,,configname,General,
+General-0-20200719-16:46:03-5012,runattr,,,datetime,20200719-16:46:03,
+General-0-20200719-16:46:03-5012,runattr,,,experiment,General,
+General-0-20200719-16:46:03-5012,runattr,,,inifile,omnetpp.ini,
+General-0-20200719-16:46:03-5012,runattr,,,iterationvars,,
+General-0-20200719-16:46:03-5012,runattr,,,iterationvarsf,,
+General-0-20200719-16:46:03-5012,runattr,,,measurement,,
+General-0-20200719-16:46:03-5012,runattr,,,network,Scenario,
+General-0-20200719-16:46:03-5012,runattr,,,processid,5012,
+General-0-20200719-16:46:03-5012,runattr,,,repetition,0,
+General-0-20200719-16:46:03-5012,runattr,,,replication,#0,
+General-0-20200719-16:46:03-5012,runattr,,,resultdir,results,
+General-0-20200719-16:46:03-5012,runattr,,,runnumber,0,
+General-0-20200719-16:46:03-5012,runattr,,,seedset,0,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobilityType,"""VeinsInetMobility""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMinX,0m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMinY,0m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMinZ,0m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMaxX,5000m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMaxY,5000m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.mobility.constraintAreaMaxZ,0m,
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[*].ac_wlan.interfaces,"""wlan0""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].mgmtType,"""Ieee80211MgmtAP""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radioType,"""Ieee80211ScalarRadio""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].opMode,"""g(mixed)""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].bitrate,6Mbps,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].mac.typename,"""CsmaCaMac""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.channelNumber,2,
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[23].wlan[*].mgmt.ssid,"""receiver_1""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[24].wlan[*].mgmt.ssid,"""receiver_2""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[25].wlan[*].mgmt.ssid,"""sender""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[26].wlan[*].mgmt.ssid,"""receiver_3""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.node[27].wlan[*].mgmt.ssid,"""receiver_4""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].mgmt.beaconInterval,100ms,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.carrierFrequency,2.412GHz,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.bandwidth,20MHz,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.transmitter.power,25mW,
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.transmitter.modulation,"""BPSK""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.*.wlan[*].radio.receiver.sensitivity,-85dBm,
+General-0-20200719-16:46:03-5012,param,,,Scenario.radioMedium.physicalEnvironmentModule,"""physicalEnvironment""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.radioMedium.propagationType,"""ConstantSpeedPropagation""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.radioMedium.pathLossType,"""NakagamiFading""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.radioMedium.analogModelType,"""ScalarAnalogModel""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.manager.updateInterval,0.001s,
+General-0-20200719-16:46:03-5012,param,,,Scenario.manager.host,"""localhost""",
+General-0-20200719-16:46:03-5012,param,,,Scenario.manager.port,9999,
+General-0-20200719-16:46:03-5012,param,,,Scenario.manager.autoShutdown,true,
+General-0-20200719-16:46:03-5012,param,,,Scenario.manager.launchConfig,"xmldoc(""straight.launchd.xml"")",
+General-0-20200719-16:46:03-5012,param,,,*.manager.moduleType,"""vtype0=fyp.simulations.singleSide.Car pedestrian=fyp.simulations.singleSideWithPedestrians.pedestrian""",
+General-0-20200719-16:46:03-5012,param,,,*.manager.moduleName,"""vtype0=node pedestrian=ped""",
+General-0-20200719-16:46:03-5012,param,,,*.manager.moduleDisplayString,"""vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs'""",
+General-0-20200719-16:46:03-5012,param,,,*.node[0].numPcapRecorders,1,
+General-0-20200719-16:46:03-5012,param,,,*.node[0].pcapRecorder[*].pcapFile,"""results/host1.pcap""",
+General-0-20200719-16:46:03-5012,param,,,*.node[0].pcapRecorder[*].dumpBadFrames,false,
+General-0-20200719-16:46:03-5012,param,,,*.node[0].pcapRecorder[*].packetDataFilter,"""*Beacon""",
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium.propagation,Arrival computation count,,,6610
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,transmission count,,,1100
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,radio frame send count,,,6600
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,reception computation count,,,6600
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,interference computation count,,,20903
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,reception decision computation count,,,6520
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,listening decision computation count,,,7784
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,reception cache hit,,,85.64218586843
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,reception cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,interference cache hit,,,66.666666666667
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,interference cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,noise cache hit,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,noise cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,snir cache hit,,,50
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,snir cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,reception decision cache hit,,,50
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,reception decision cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.radioMedium,reception result cache hit,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.radioMedium,reception result cache hit,unit,%,
+General-0-20200719-16:46:03-5012,scalar,Scenario.manager,roiArea,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,end to end delay,,,0.000150187973
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,packet count,,,885
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:count,,,200
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,51200
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,passedUpPk:count,,,885
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,passedUpPk:sum(packetBytes),,,226560
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:count,,,886
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,226816
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,sentDownPk:count,,,200
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].mac,sentDownPk:sum(packetBytes),,,51200
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].radio,transmissionState:count,,,800
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].radio,receptionState:count,,,2174
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[0].wlan[0].radio,radioMode:count,,,402
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[0].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,end to end delay,,,0.000150387083
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,packet count,,,890
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:count,,,180
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,46080
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,passedUpPk:count,,,890
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,passedUpPk:sum(packetBytes),,,227840
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:count,,,890
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,227840
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,sentDownPk:count,,,180
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].mac,sentDownPk:sum(packetBytes),,,46080
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].radio,transmissionState:count,,,720
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].radio,receptionState:count,,,2141
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[1].wlan[0].radio,radioMode:count,,,362
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[1].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,end to end delay,,,0.000151012298
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,packet count,,,874
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:count,,,160
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,40960
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,passedUpPk:count,,,874
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,passedUpPk:sum(packetBytes),,,223744
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:count,,,875
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,224000
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,sentDownPk:count,,,160
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].mac,sentDownPk:sum(packetBytes),,,40960
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].radio,transmissionState:count,,,640
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].radio,receptionState:count,,,2072
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[2].wlan[0].radio,radioMode:count,,,322
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[2].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,end to end delay,,,0.000114220525
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,packet count,,,834
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:count,,,140
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,35840
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,passedUpPk:count,,,834
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,passedUpPk:sum(packetBytes),,,213504
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:count,,,834
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,213504
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,sentDownPk:count,,,140
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].mac,sentDownPk:sum(packetBytes),,,35840
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].radio,transmissionState:count,,,560
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].radio,receptionState:count,,,1949
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[3].wlan[0].radio,radioMode:count,,,282
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[3].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,end to end delay,,,0.000155818917
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,packet count,,,773
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:count,,,120
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,30720
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,passedUpPk:count,,,773
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,passedUpPk:sum(packetBytes),,,197888
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:count,,,774
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,198144
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,sentDownPk:count,,,120
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].mac,sentDownPk:sum(packetBytes),,,30720
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].radio,transmissionState:count,,,480
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].radio,receptionState:count,,,1790
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[4].wlan[0].radio,radioMode:count,,,242
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[4].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,end to end delay,,,0.000160847876
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,packet count,,,690
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:count,,,100
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,25600
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,passedUpPk:count,,,690
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,passedUpPk:sum(packetBytes),,,176640
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:count,,,690
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,176640
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,sentDownPk:count,,,100
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].mac,sentDownPk:sum(packetBytes),,,25600
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].radio,transmissionState:count,,,400
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].radio,receptionState:count,,,1582
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[5].wlan[0].radio,radioMode:count,,,202
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[5].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,end to end delay,,,0.000168872547
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,packet count,,,589
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:count,,,80
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,20480
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,passedUpPk:count,,,589
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,passedUpPk:sum(packetBytes),,,150784
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:count,,,589
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,150784
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,sentDownPk:count,,,80
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].mac,sentDownPk:sum(packetBytes),,,20480
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].radio,transmissionState:count,,,320
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].radio,receptionState:count,,,1340
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[6].wlan[0].radio,radioMode:count,,,162
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[6].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,end to end delay,,,0.000165682355
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,packet count,,,474
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:count,,,60
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,15360
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,passedUpPk:count,,,474
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,passedUpPk:sum(packetBytes),,,121344
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:count,,,474
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,121344
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,sentDownPk:count,,,60
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].mac,sentDownPk:sum(packetBytes),,,15360
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].radio,transmissionState:count,,,240
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].radio,receptionState:count,,,1069
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[7].wlan[0].radio,radioMode:count,,,122
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[7].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,end to end delay,,,0.000164537928
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,packet count,,,331
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:count,,,40
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,10240
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,passedUpPk:count,,,331
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,passedUpPk:sum(packetBytes),,,84736
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:count,,,331
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,84736
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,sentDownPk:count,,,40
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].mac,sentDownPk:sum(packetBytes),,,10240
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].radio,transmissionState:count,,,160
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,transmissionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,transmissionState:count,source,transmissionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,transmissionState:count,title,"Radio transmission state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].radio,receptionState:count,,,743
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,receptionState:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,receptionState:count,source,receptionStateChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,receptionState:count,title,"Radio reception state, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[8].wlan[0].radio,radioMode:count,,,82
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,radioMode:count,interpolationmode,sample-hold,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,radioMode:count,source,radioModeChanged,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[8].wlan[0].radio,radioMode:count,title,"Radio mode, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].networkLayer.arp,sentReply:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].networkLayer.arp,sentReply:count,title,"ARP replies sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].networkLayer.arp,sentReq:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].networkLayer.arp,sentReq:count,title,"ARP request sent, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].networkLayer.arp,failedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].networkLayer.arp,failedARPResolution:count,title,"ARP failed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].networkLayer.arp,completedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].networkLayer.arp,completedARPResolution:count,title,"ARP completed resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].networkLayer.arp,initiatedARPResolution:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].networkLayer.arp,initiatedARPResolution:count,title,"ARP initiated resolutions, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,droppedPkBitError:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:count,source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:count,title,"packets dropped/bit error, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,droppedPkBitError:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:sum(packetBytes),source,dropPkBitError,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,droppedPkBitError:sum(packetBytes),title,"packets dropped/bit error, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,rcvdPkFromHL:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,rcvdPkFromHL:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,passedUpPk:count,,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].lo0.lo,passedUpPk:sum(packetBytes),,,0
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].lo0.lo,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,end to end delay,,,0.000161405094
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,packet count,,,177
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,packet delivery ratio,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,PIR,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,received,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mgmt,sent,,,0
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:count,,,20
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:count,source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:count,title,"packets received from higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),,,5120
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),source,packetReceivedFromUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromHL:sum(packetBytes),title,"packets received from higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,passedUpPk:count,,,177
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:count,source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:count,title,"packets passed to higher layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,passedUpPk:sum(packetBytes),,,45312
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:sum(packetBytes),source,packetSentToUpper,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,passedUpPk:sum(packetBytes),title,"packets passed to higher layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:count,,,177
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:count,source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:count,title,"packets received from lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),,,45312
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),source,packetReceivedFromLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,rcvdPkFromLL:sum(packetBytes),title,"packets received from lower layer, sum(packetBytes)",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,sentDownPk:count,,,20
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:count,interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:count,source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:count,title,"packets sent to lower layer, count",
+General-0-20200719-16:46:03-5012,scalar,Scenario.node[9].wlan[0].mac,sentDownPk:sum(packetBytes),,,5120
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:sum(packetBytes),interpolationmode,none,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:sum(packetBytes),source,packetSentToLower,
+General-0-20200719-16:46:03-5012,attr,Scenario.node[9].wlan[0].mac,sentDownPk:sum(packetBytes),title,"packets sent to lower layer, sum(packetBytes)",

@@ -1,0 +1,98 @@
+run,type,module,name,attrname,attrvalue,value
+General-0-20200715-15:59:49-140,runattr,,,configname,General,
+General-0-20200715-15:59:49-140,runattr,,,datetime,20200715-15:59:49,
+General-0-20200715-15:59:49-140,runattr,,,experiment,General,
+General-0-20200715-15:59:49-140,runattr,,,inifile,omnetpp.ini,
+General-0-20200715-15:59:49-140,runattr,,,iterationvars,,
+General-0-20200715-15:59:49-140,runattr,,,iterationvarsf,,
+General-0-20200715-15:59:49-140,runattr,,,measurement,,
+General-0-20200715-15:59:49-140,runattr,,,network,Scenario,
+General-0-20200715-15:59:49-140,runattr,,,processid,140,
+General-0-20200715-15:59:49-140,runattr,,,repetition,0,
+General-0-20200715-15:59:49-140,runattr,,,replication,#0,
+General-0-20200715-15:59:49-140,runattr,,,resultdir,results,
+General-0-20200715-15:59:49-140,runattr,,,runnumber,0,
+General-0-20200715-15:59:49-140,runattr,,,seedset,0,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobilityType,"""VeinsInetMobility""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMinX,0m,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMinY,0m,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMinZ,0m,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMaxX,5000m,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMaxY,5000m,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.mobility.constraintAreaMaxZ,0m,
+General-0-20200715-15:59:49-140,param,,,Scenario.node[*].ac_wlan.interfaces,"""wlan0""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].mgmtType,"""Ieee80211MgmtAP""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radioType,"""Ieee80211ScalarRadio""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].opMode,"""g(mixed)""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].bitrate,6Mbps,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].mac.typename,"""CsmaCaMac""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.channelNumber,2,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].mgmt.ssid,"""SSID""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].mgmt.beaconInterval,400ms,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.carrierFrequency,2.412GHz,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.bandwidth,20MHz,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.transmitter.power,25mW,
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.transmitter.modulation,"""BPSK""",
+General-0-20200715-15:59:49-140,param,,,Scenario.*.wlan[*].radio.receiver.sensitivity,-85dBm,
+General-0-20200715-15:59:49-140,param,,,Scenario.radioMedium.physicalEnvironmentModule,"""physicalEnvironment""",
+General-0-20200715-15:59:49-140,param,,,Scenario.radioMedium.propagationType,"""ConstantSpeedPropagation""",
+General-0-20200715-15:59:49-140,param,,,Scenario.radioMedium.pathLossType,"""NakagamiFading""",
+General-0-20200715-15:59:49-140,param,,,Scenario.radioMedium.analogModelType,"""ScalarAnalogModel""",
+General-0-20200715-15:59:49-140,param,,,Scenario.manager.updateInterval,0.001s,
+General-0-20200715-15:59:49-140,param,,,Scenario.manager.host,"""localhost""",
+General-0-20200715-15:59:49-140,param,,,Scenario.manager.port,9999,
+General-0-20200715-15:59:49-140,param,,,Scenario.manager.autoShutdown,true,
+General-0-20200715-15:59:49-140,param,,,Scenario.manager.launchConfig,"xmldoc(""straight.launchd.xml"")",
+General-0-20200715-15:59:49-140,param,,,*.manager.moduleType,"""vtype0=fyp.simulations.singleSide.Car pedestrian=fyp.simulations.singleSideWithPedestrians.pedestrian""",
+General-0-20200715-15:59:49-140,param,,,*.manager.moduleName,"""vtype0=node pedestrian=ped""",
+General-0-20200715-15:59:49-140,param,,,*.manager.moduleDisplayString,"""vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs'""",
+General-0-20200715-15:59:49-140,scalar,Scenario.node[0].wlan[0].mgmt,end to end delay,,,0.000122329661
+General-0-20200715-15:59:49-140,scalar,Scenario.node[1].wlan[0].mgmt,end to end delay,,,0.000121945827
+General-0-20200715-15:59:49-140,scalar,Scenario.node[2].wlan[0].mgmt,end to end delay,,,0.000122146397
+General-0-20200715-15:59:49-140,scalar,Scenario.node[3].wlan[0].mgmt,end to end delay,,,0.000122102223
+General-0-20200715-15:59:49-140,scalar,Scenario.node[4].wlan[0].mgmt,end to end delay,,,0.000121949692
+General-0-20200715-15:59:49-140,scalar,Scenario.node[5].wlan[0].mgmt,end to end delay,,,0.000122428308
+General-0-20200715-15:59:49-140,scalar,Scenario.node[6].wlan[0].mgmt,end to end delay,,,0.000122231578
+General-0-20200715-15:59:49-140,scalar,Scenario.node[7].wlan[0].mgmt,end to end delay,,,0.000122171491
+General-0-20200715-15:59:49-140,scalar,Scenario.node[8].wlan[0].mgmt,end to end delay,,,0.000122217995
+General-0-20200715-15:59:49-140,scalar,Scenario.node[9].wlan[0].mgmt,end to end delay,,,0.000122286125
+General-0-20200715-15:59:49-140,scalar,Scenario.node[10].wlan[0].mgmt,end to end delay,,,0.000122195245
+General-0-20200715-15:59:49-140,scalar,Scenario.node[11].wlan[0].mgmt,end to end delay,,,0.000122731283
+General-0-20200715-15:59:49-140,scalar,Scenario.node[12].wlan[0].mgmt,end to end delay,,,0.0001228098
+General-0-20200715-15:59:49-140,scalar,Scenario.node[13].wlan[0].mgmt,end to end delay,,,0.000122786217
+General-0-20200715-15:59:49-140,scalar,Scenario.node[14].wlan[0].mgmt,end to end delay,,,0.000122182636
+General-0-20200715-15:59:49-140,scalar,Scenario.node[15].wlan[0].mgmt,end to end delay,,,0.000122901988
+General-0-20200715-15:59:49-140,scalar,Scenario.node[16].wlan[0].mgmt,end to end delay,,,0.000122764828
+General-0-20200715-15:59:49-140,scalar,Scenario.node[17].wlan[0].mgmt,end to end delay,,,0.000122783126
+General-0-20200715-15:59:49-140,scalar,Scenario.node[18].wlan[0].mgmt,end to end delay,,,0.000122935359
+General-0-20200715-15:59:49-140,scalar,Scenario.node[19].wlan[0].mgmt,end to end delay,,,0.00012297858
+General-0-20200715-15:59:49-140,scalar,Scenario.node[20].wlan[0].mgmt,end to end delay,,,0.00012304987
+General-0-20200715-15:59:49-140,scalar,Scenario.node[21].wlan[0].mgmt,end to end delay,,,0.000116781637
+General-0-20200715-15:59:49-140,scalar,Scenario.node[22].wlan[0].mgmt,end to end delay,,,0.000123064229
+General-0-20200715-15:59:49-140,scalar,Scenario.node[23].wlan[0].mgmt,end to end delay,,,0.000123096619
+General-0-20200715-15:59:49-140,scalar,Scenario.node[24].wlan[0].mgmt,end to end delay,,,0.0001230967
+General-0-20200715-15:59:49-140,scalar,Scenario.node[25].wlan[0].mgmt,end to end delay,,,0.000123130822
+General-0-20200715-15:59:49-140,scalar,Scenario.node[26].wlan[0].mgmt,end to end delay,,,0.000123122801
+General-0-20200715-15:59:49-140,scalar,Scenario.node[27].wlan[0].mgmt,end to end delay,,,0.000123078341
+General-0-20200715-15:59:49-140,scalar,Scenario.node[28].wlan[0].mgmt,end to end delay,,,0.00012313888
+General-0-20200715-15:59:49-140,scalar,Scenario.node[29].wlan[0].mgmt,end to end delay,,,0.000122938512
+General-0-20200715-15:59:49-140,scalar,Scenario.node[30].wlan[0].mgmt,end to end delay,,,0.000123053256
+General-0-20200715-15:59:49-140,scalar,Scenario.node[31].wlan[0].mgmt,end to end delay,,,0.00012324089
+General-0-20200715-15:59:49-140,scalar,Scenario.node[32].wlan[0].mgmt,end to end delay,,,0.000121767673
+General-0-20200715-15:59:49-140,scalar,Scenario.node[33].wlan[0].mgmt,end to end delay,,,0.000123108173
+General-0-20200715-15:59:49-140,scalar,Scenario.node[34].wlan[0].mgmt,end to end delay,,,0.000123077673
+General-0-20200715-15:59:49-140,scalar,Scenario.node[35].wlan[0].mgmt,end to end delay,,,0.000123008081
+General-0-20200715-15:59:49-140,scalar,Scenario.node[36].wlan[0].mgmt,end to end delay,,,0.000122662384
+General-0-20200715-15:59:49-140,scalar,Scenario.node[37].wlan[0].mgmt,end to end delay,,,0.000123015396
+General-0-20200715-15:59:49-140,scalar,Scenario.node[38].wlan[0].mgmt,end to end delay,,,0.000122822472
+General-0-20200715-15:59:49-140,scalar,Scenario.node[39].wlan[0].mgmt,end to end delay,,,0.000122975216
+General-0-20200715-15:59:49-140,scalar,Scenario.node[40].wlan[0].mgmt,end to end delay,,,0.000122870861
+General-0-20200715-15:59:49-140,scalar,Scenario.node[41].wlan[0].mgmt,end to end delay,,,0.000122381713
+General-0-20200715-15:59:49-140,scalar,Scenario.node[42].wlan[0].mgmt,end to end delay,,,0.000122713753
+General-0-20200715-15:59:49-140,scalar,Scenario.node[43].wlan[0].mgmt,end to end delay,,,0.000122205384
+General-0-20200715-15:59:49-140,scalar,Scenario.node[44].wlan[0].mgmt,end to end delay,,,0.000122699576
+General-0-20200715-15:59:49-140,scalar,Scenario.node[45].wlan[0].mgmt,end to end delay,,,0.000122491641
+General-0-20200715-15:59:49-140,scalar,Scenario.node[46].wlan[0].mgmt,end to end delay,,,0.000122476823
+General-0-20200715-15:59:49-140,scalar,Scenario.node[47].wlan[0].mgmt,end to end delay,,,0.000122311223
+General-0-20200715-15:59:49-140,scalar,Scenario.node[48].wlan[0].mgmt,end to end delay,,,0.00012257541
+General-0-20200715-15:59:49-140,scalar,Scenario.node[49].wlan[0].mgmt,end to end delay,,,0.000122442495
