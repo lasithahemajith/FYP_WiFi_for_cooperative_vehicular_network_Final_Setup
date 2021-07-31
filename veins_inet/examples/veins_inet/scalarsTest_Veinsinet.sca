@@ -1,0 +1,302 @@
+version 2
+run General-0-20200706-16:09:59-5412
+attr configname General
+attr datetime 20200706-16:09:59
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Scenario
+attr processid 5412
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param Scenario.node[*].wlan[0].mgmtType "\"Ieee80211MgmtAP\""
+param Scenario.node[*].wlan[0].bitrate 6Mbps
+param Scenario.node[*].wlan[0].radio.transmitter.power 2mW
+param Scenario.node[*].ac_wlan.interfaces "\"wlan0\""
+param Scenario.node[*].ac_wlan.mcastGroups "\"224.0.0.1\""
+param Scenario.node[*].mobilityType "\"VeinsInetMobility\""
+param Scenario.node[*].mobility.constraintAreaMinX 0m
+param Scenario.node[*].mobility.constraintAreaMinY 0m
+param Scenario.node[*].mobility.constraintAreaMinZ 0m
+param Scenario.node[*].mobility.constraintAreaMaxX 1000m
+param Scenario.node[*].mobility.constraintAreaMaxY 1000m
+param Scenario.node[*].mobility.constraintAreaMaxZ 0m
+param Scenario.manager.updateInterval 0.1s
+param Scenario.manager.host "\"localhost\""
+param Scenario.manager.port 9999
+param Scenario.manager.autoShutdown true
+param Scenario.manager.launchConfig "xmldoc(\"square.launchd.xml\")"
+param *.manager.moduleType "\"vtype0=org.car2x.veins.subprojects.veins_inet.example.Car pedestrian=org.car2x.veins.nodes.Pedestrian\""
+param *.manager.moduleName "\"vtype0=node pedestrian=pedestrianNode\""
+param *.manager.moduleDisplayString "\"vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs'\""
+
+scalar Scenario.radioMedium.propagation "Arrival computation count" 74
+scalar Scenario.radioMedium "transmission count" 81
+scalar Scenario.radioMedium "radio frame send count" 74
+scalar Scenario.radioMedium "reception computation count" 74
+scalar Scenario.radioMedium "interference computation count" 306
+scalar Scenario.radioMedium "reception decision computation count" 74
+scalar Scenario.radioMedium "listening decision computation count" 158
+scalar Scenario.radioMedium "reception cache hit" 85.714285714286
+attr unit %
+scalar Scenario.radioMedium "interference cache hit" 66.666666666667
+attr unit %
+scalar Scenario.radioMedium "noise cache hit" 0
+attr unit %
+scalar Scenario.radioMedium "snir cache hit" 50
+attr unit %
+scalar Scenario.radioMedium "reception decision cache hit" 50
+attr unit %
+scalar Scenario.radioMedium "reception result cache hit" 0
+attr unit %
+scalar Scenario.node[0].networkLayer.arp sentReply:count 0
+attr title "ARP replies sent, count"
+scalar Scenario.node[0].networkLayer.arp sentReq:count 0
+attr title "ARP request sent, count"
+scalar Scenario.node[0].networkLayer.arp failedARPResolution:count 0
+attr title "ARP failed resolutions, count"
+scalar Scenario.node[0].networkLayer.arp completedARPResolution:count 0
+attr title "ARP completed resolutions, count"
+scalar Scenario.node[0].networkLayer.arp initiatedARPResolution:count 0
+attr title "ARP initiated resolutions, count"
+scalar Scenario.node[0].lo0.lo droppedPkBitError:count 0
+attr interpolationmode none
+attr source dropPkBitError
+attr title "packets dropped/bit error, count"
+scalar Scenario.node[0].lo0.lo droppedPkBitError:sum(packetBytes) 0
+attr interpolationmode none
+attr source dropPkBitError
+attr title "packets dropped/bit error, sum(packetBytes)"
+scalar Scenario.node[0].lo0.lo rcvdPkFromHL:count 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar Scenario.node[0].lo0.lo rcvdPkFromHL:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar Scenario.node[0].lo0.lo passedUpPk:count 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar Scenario.node[0].lo0.lo passedUpPk:sum(packetBytes) 0
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar Scenario.node[0].wlan[0].mgmt Krishan 32
+scalar Scenario.node[0].wlan[0].mac rcvdPkFromHL:count 49
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, count"
+scalar Scenario.node[0].wlan[0].mac rcvdPkFromHL:sum(packetBytes) 2352
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, sum(packetBytes)"
+scalar Scenario.node[0].wlan[0].mac passedUpPk:count 32
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, count"
+scalar Scenario.node[0].wlan[0].mac passedUpPk:sum(packetBytes) 1536
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, sum(packetBytes)"
+scalar Scenario.node[0].wlan[0].mac rcvdPkFromLL:count 32
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, count"
+scalar Scenario.node[0].wlan[0].mac rcvdPkFromLL:sum(packetBytes) 1536
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, sum(packetBytes)"
+scalar Scenario.node[0].wlan[0].mac sentDownPk:count 49
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, count"
+scalar Scenario.node[0].wlan[0].mac sentDownPk:sum(packetBytes) 2352
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, sum(packetBytes)"
+statistic Scenario.node[0].wlan[0].radio symbolErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr source symbolErrorRate
+attr title "Symbol error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic Scenario.node[0].wlan[0].radio bitErrorRate:histogram
+field count 0
+field mean nan
+field stddev nan
+field min nan
+field max nan
+field sum 0
+field sqrsum 0
+attr source bitErrorRate
+attr title "Bit error rate, histogram"
+bin	-inf	0
+bin	0	0
+bin	1	0
+statistic Scenario.node[0].wlan[0].radio packetErrorRate:histogram
+field count 32
+field mean 0
+field stddev 0
+field min 0
+field max 0
+field sum 0
+field sqrsum 0
+attr source packetErrorRate
+attr title "Packet error rate, histogram"
+bin	-inf	0
+bin	-0.5	0
+bin	-0.48	0
+bin	-0.46	0
+bin	-0.44	0
+bin	-0.42	0
+bin	-0.4	0
+bin	-0.38	0
+bin	-0.36	0
+bin	-0.34	0
+bin	-0.32	0
+bin	-0.3	0
+bin	-0.28	0
+bin	-0.26	0
+bin	-0.24	0
+bin	-0.22	0
+bin	-0.2	0
+bin	-0.18	0
+bin	-0.16	0
+bin	-0.14	0
+bin	-0.12	0
+bin	-0.1	0
+bin	-0.08	0
+bin	-0.06	0
+bin	-0.04	0
+bin	-0.02	0
+bin	0	32
+bin	0.02	0
+bin	0.04	0
+bin	0.06	0
+bin	0.08	0
+bin	0.1	0
+bin	0.12	0
+bin	0.14	0
+bin	0.16	0
+bin	0.18	0
+bin	0.2	0
+bin	0.22	0
+bin	0.24	0
+bin	0.26	0
+bin	0.28	0
+bin	0.3	0
+bin	0.32	0
+bin	0.34	0
+bin	0.36	0
+bin	0.38	0
+bin	0.4	0
+bin	0.42	0
+bin	0.44	0
+bin	0.46	0
+bin	0.48	0
+bin	0.5	0
+statistic Scenario.node[0].wlan[0].radio minSNIR:histogram
+field count 32
+field mean 197939.03656255
+field stddev 164290.92606929
+field min 35732.123370836
+field max 674573.57805739
+field sum 6334049.1700017
+field sqrsum 2090492350299.8
+attr source minSNIR
+attr title "Min SNIR, histogram"
+bin	-inf	0
+bin	0	0
+bin	10000	0
+bin	20000	0
+bin	30000	2
+bin	40000	3
+bin	50000	0
+bin	60000	0
+bin	70000	2
+bin	80000	2
+bin	90000	2
+bin	100000	2
+bin	110000	1
+bin	120000	1
+bin	130000	1
+bin	140000	1
+bin	150000	1
+bin	160000	1
+bin	170000	1
+bin	180000	0
+bin	190000	1
+bin	200000	0
+bin	210000	1
+bin	220000	1
+bin	230000	0
+bin	240000	0
+bin	250000	1
+bin	260000	0
+bin	270000	1
+bin	280000	0
+bin	290000	0
+bin	300000	1
+bin	310000	0
+bin	320000	0
+bin	330000	0
+bin	340000	1
+bin	350000	0
+bin	360000	0
+bin	370000	0
+bin	380000	1
+bin	390000	0
+bin	400000	0
+bin	410000	0
+bin	420000	0
+bin	430000	1
+bin	440000	0
+bin	450000	0
+bin	460000	0
+bin	470000	0
+bin	480000	0
+bin	490000	1
+bin	500000	0
+bin	510000	0
+bin	520000	0
+bin	530000	0
+bin	540000	0
+bin	550000	0
+bin	560000	0
+bin	570000	1
+bin	580000	0
+bin	590000	0
+bin	600000	0
+bin	610000	0
+bin	620000	0
+bin	630000	0
+bin	640000	0
+bin	650000	0
+bin	660000	0
+bin	670000	1
+bin	680000	0
+bin	690000	0
+bin	700000	0
+bin	710000	0
+bin	720000	0
+bin	730000	0
+bin	740000	0
+bin	750000	0
+bin	760000	0
+bin	770000	0
+bin	780000	0
+bin	790000	0

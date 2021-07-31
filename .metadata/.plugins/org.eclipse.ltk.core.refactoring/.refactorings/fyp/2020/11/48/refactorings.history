@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fyp/simulations/singleSide/singleSide1.sumocfg&apos; to &apos;singleSide.sumocfg&apos;" description="Rename resource &apos;singleSide1.sumocfg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simulations/singleSide/singleSide1.sumocfg" name="singleSide.sumocfg" stamp="1606210918070" updateReferences="true"/>
+</session>

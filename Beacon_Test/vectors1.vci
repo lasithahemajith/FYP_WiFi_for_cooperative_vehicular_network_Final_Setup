@@ -1,0 +1,1526 @@
+file 177446 1595845931                                          
+version 2
+run General-0-20200727-16:00:25-9156
+attr configname General
+attr datetime 20200727-16:00:25
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Beacon
+attr processid 9156
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.constraintAreaMinX 0m
+param **.constraintAreaMinY 0m
+param **.constraintAreaMinZ 0m
+param **.constraintAreaMaxX 200m
+param **.constraintAreaMaxY 200m
+param **.constraintAreaMaxZ 0m
+param **.mobility.initFromDisplayString true
+param **.accessPoint[*].mobilityType "\"LinearMobility\""
+param **.accessPoint[*].mobility.speed 20mps
+param **.accessPoint[*].mobility.angle 0deg
+param **.accessPoint[*].mobility.acceleration 0
+param **.accessPoint[*].mobility.updateInterval 10ms
+param Beacon.A.wlan[*].mgmt.ssid "\"A\""
+param Beacon.A.mobilityType "\"StationaryMobility\""
+param Beacon.A.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.A.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.A.wlan[*].opMode "\"g(mixed)\""
+param Beacon.A.wlan[*].bitrate 11Mbps
+param Beacon.A.wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.A.wlan[*].mgmt.beaconInterval 100ms
+param Beacon.A.wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.A.wlan[*].radio.bandwidth 20MHz
+param Beacon.A.wlan[*].radio.transmitter.power 2.0mW
+param Beacon.A.wlan[*].radio.transmitter.modulation "\"QPSK\""
+param Beacon.A.wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.B.wlan[*].mgmt.ssid "\"B\""
+param Beacon.B.mobilityType "\"StationaryMobility\""
+param Beacon.B.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.B.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.B.wlan[*].opMode "\"g(mixed)\""
+param Beacon.B.wlan[*].bitrate 11Mbps
+param Beacon.B.wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.B.wlan[*].mgmt.beaconInterval 100ms
+param Beacon.B.wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.B.wlan[*].radio.bandwidth 20MHz
+param Beacon.B.wlan[*].radio.transmitter.power 2.0mW
+param Beacon.B.wlan[*].radio.transmitter.modulation "\"BPSK\""
+param Beacon.B.wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.accessPoint[*].mobilityType "\"StationaryMobility\""
+param Beacon.accessPoint[*].wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.accessPoint[*].wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.accessPoint[*].wlan[*].opMode "\"g(mixed)\""
+param Beacon.accessPoint[*].wlan[*].bitrate 11Mbps
+param Beacon.accessPoint[*].wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.accessPoint[*].wlan[*].mgmt.ssid "\"SSID\""
+param Beacon.accessPoint[*].wlan[*].mgmt.beaconInterval 100ms
+param Beacon.accessPoint[*].wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.accessPoint[*].wlan[*].radio.bandwidth 20MHz
+param Beacon.accessPoint[*].wlan[*].radio.transmitter.power 2.0mW
+param Beacon.accessPoint[*].wlan[*].radio.transmitter.modulation "\"QAM-64\""
+param Beacon.accessPoint[*].wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param Beacon.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param Beacon.radioMedium.pathLossType "\"NakagamiFading\""
+param Beacon.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param Beacon.iPv4NetworkConfigurator.config "xml(\"<config><interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/></config>\")"
+param **.mac.address "\"auto\""
+param **.mac.maxQueueSize 14
+param **.mac.rtsThresholdBytes 4000B
+param **.wlan[*].mac.retryLimit 7
+param **.wlan[*].mac.cwMinData 7
+
+vector 0 Beacon.accessPoint[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 Beacon.accessPoint[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 Beacon.accessPoint[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 Beacon.accessPoint[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 Beacon.accessPoint[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 Beacon.accessPoint[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 Beacon.accessPoint[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 Beacon.accessPoint[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 Beacon.accessPoint[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 Beacon.accessPoint[4].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 10 Beacon.accessPoint[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 Beacon.accessPoint[5].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 12 Beacon.accessPoint[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 Beacon.accessPoint[6].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 14 Beacon.accessPoint[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 Beacon.accessPoint[7].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 16 Beacon.accessPoint[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 Beacon.accessPoint[8].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 18 Beacon.accessPoint[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 Beacon.accessPoint[9].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 20 Beacon.accessPoint[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 Beacon.accessPoint[10].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 22 Beacon.accessPoint[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 Beacon.accessPoint[11].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 24 Beacon.accessPoint[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 Beacon.accessPoint[12].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 26 Beacon.accessPoint[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 Beacon.accessPoint[13].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 28 Beacon.accessPoint[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 29 Beacon.accessPoint[14].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 30 Beacon.accessPoint[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 31 Beacon.accessPoint[15].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 32 Beacon.accessPoint[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 33 Beacon.accessPoint[16].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 34 Beacon.accessPoint[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 35 Beacon.accessPoint[17].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 36 Beacon.accessPoint[18].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 37 Beacon.accessPoint[18].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 38 Beacon.accessPoint[19].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 39 Beacon.accessPoint[19].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 40 Beacon.A.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 41 Beacon.A.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 42 Beacon.B.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 43 Beacon.B.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 44 Beacon.accessPoint[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 45 Beacon.accessPoint[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 46 Beacon.accessPoint[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 47 Beacon.accessPoint[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 48 Beacon.accessPoint[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 49 Beacon.accessPoint[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 50 Beacon.accessPoint[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 51 Beacon.accessPoint[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 52 Beacon.accessPoint[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 53 Beacon.accessPoint[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 54 Beacon.accessPoint[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 55 Beacon.accessPoint[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 56 Beacon.accessPoint[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 57 Beacon.accessPoint[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 58 Beacon.accessPoint[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 59 Beacon.accessPoint[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 60 Beacon.accessPoint[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 61 Beacon.accessPoint[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 62 Beacon.accessPoint[18].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 63 Beacon.accessPoint[19].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 64 Beacon.A.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 65 Beacon.B.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 66 Beacon.accessPoint[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 67 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 68 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 69 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 70 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 71 Beacon.accessPoint[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 72 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 73 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 74 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 75 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 76 Beacon.accessPoint[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 77 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 78 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 79 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 80 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 81 Beacon.accessPoint[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 82 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 83 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 84 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 85 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 86 Beacon.accessPoint[4].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 87 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 88 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 89 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 90 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 91 Beacon.accessPoint[5].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 92 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 93 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 94 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 95 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 96 Beacon.accessPoint[6].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 97 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 98 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 99 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 100 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 101 Beacon.accessPoint[7].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 102 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 103 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 104 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 105 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 106 Beacon.accessPoint[8].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 107 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 108 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 109 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 110 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 111 Beacon.accessPoint[9].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 112 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 113 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 114 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 115 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 116 Beacon.accessPoint[10].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 117 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 118 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 119 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 120 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 121 Beacon.accessPoint[11].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 122 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 123 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 124 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 125 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 126 Beacon.accessPoint[12].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 127 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 128 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 129 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 130 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 131 Beacon.accessPoint[13].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 132 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 133 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 134 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 135 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 136 Beacon.accessPoint[14].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 137 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 138 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 139 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 140 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 141 Beacon.accessPoint[15].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 142 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 143 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 144 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 145 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 146 Beacon.accessPoint[16].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 147 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 148 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 149 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 150 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 151 Beacon.accessPoint[17].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 152 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 153 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 154 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 155 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 156 Beacon.accessPoint[18].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 157 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 158 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 159 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 160 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 161 Beacon.accessPoint[19].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 162 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 163 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 164 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 165 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 166 Beacon.A.wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 167 Beacon.A.wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 168 Beacon.A.wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 169 Beacon.A.wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 170 Beacon.A.wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 171 Beacon.B.wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 172 Beacon.B.wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 173 Beacon.B.wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 174 Beacon.B.wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 175 Beacon.B.wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 176 Beacon.accessPoint[7].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 177 Beacon.accessPoint[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 178 Beacon.accessPoint[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 179 Beacon.accessPoint[15].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 180 Beacon.accessPoint[15].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 181 Beacon.accessPoint[4].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 182 Beacon.accessPoint[4].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 183 Beacon.accessPoint[5].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 184 Beacon.accessPoint[5].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 185 Beacon.accessPoint[12].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 186 Beacon.accessPoint[12].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 187 Beacon.accessPoint[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 188 Beacon.accessPoint[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 189 Beacon.accessPoint[8].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 190 Beacon.accessPoint[8].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 191 Beacon.B.wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 192 Beacon.B.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 193 Beacon.accessPoint[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 194 Beacon.accessPoint[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 195 Beacon.accessPoint[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 196 Beacon.accessPoint[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 197 Beacon.accessPoint[17].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 198 Beacon.accessPoint[17].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 199 Beacon.accessPoint[11].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 200 Beacon.accessPoint[11].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 201 Beacon.accessPoint[10].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 202 Beacon.accessPoint[10].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 203 Beacon.accessPoint[14].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 204 Beacon.accessPoint[14].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 205 Beacon.A.wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 206 Beacon.A.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 207 Beacon.accessPoint[9].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 208 Beacon.accessPoint[9].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 209 Beacon.accessPoint[18].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 210 Beacon.accessPoint[18].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 211 Beacon.accessPoint[19].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 212 Beacon.accessPoint[19].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 213 Beacon.accessPoint[19].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 214 Beacon.accessPoint[7].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 215 Beacon.accessPoint[7].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 216 Beacon.accessPoint[16].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 217 Beacon.accessPoint[16].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 218 Beacon.accessPoint[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 219 Beacon.accessPoint[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 220 Beacon.accessPoint[6].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 221 Beacon.accessPoint[6].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 222 Beacon.accessPoint[13].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 223 Beacon.accessPoint[13].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 224 Beacon.accessPoint[12].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 225 Beacon.accessPoint[12].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 226 Beacon.accessPoint[12].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 227 Beacon.accessPoint[8].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 228 Beacon.accessPoint[19].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 229 Beacon.accessPoint[19].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 230 Beacon.accessPoint[8].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 231 Beacon.accessPoint[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 232 Beacon.accessPoint[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 233 Beacon.accessPoint[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 234 Beacon.accessPoint[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 235 Beacon.accessPoint[2].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 236 Beacon.accessPoint[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 237 Beacon.accessPoint[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	48674 66 0 401 0 0.014406294951 4 0 3 7 17
+1	48740 9 0 0 0 0 1 0 0 0 0
+2	48749 18 0 0 0 0 2 0 2 2 4
+3	48767 9 0 0 0 0 1 0 0 0 0
+4	48776 64 0 512 0 0.02014623567 4 0 3 7 17
+5	48840 9 0 0 0 0 1 0 0 0 0
+6	48849 18 0 0 0 0 2 0 2 2 4
+7	48867 9 0 0 0 0 1 0 0 0 0
+8	48876 18 0 0 0 0 2 0 2 2 4
+9	48894 9 0 0 0 0 1 0 0 0 0
+10	48903 20 0 0 0 0 2 0 2 2 4
+11	48923 10 0 0 0 0 1 0 0 0 0
+12	48933 20 0 0 0 0 2 0 2 2 4
+13	48953 10 0 0 0 0 1 0 0 0 0
+14	48963 67 0 30 0 0.001865164187 4 0 3 7 17
+15	49030 10 0 0 0 0 1 0 0 0 0
+16	49040 70 0 311 0 0.010666185828 4 0 3 7 17
+17	49110 10 0 0 0 0 1 0 0 0 0
+18	49120 20 0 0 0 0 2 0 2 2 4
+19	49140 10 0 0 0 0 1 0 0 0 0
+20	49150 20 0 0 0 0 2 0 2 2 4
+21	49170 10 0 0 0 0 1 0 0 0 0
+22	49180 20 0 0 0 0 2 0 2 2 4
+23	49200 10 0 0 0 0 1 0 0 0 0
+24	49210 70 0 222 0 0.010137840112 4 0 3 7 17
+25	49280 10 0 0 0 0 1 0 0 0 0
+26	49290 20 0 0 0 0 2 0 2 2 4
+27	49310 10 0 0 0 0 1 0 0 0 0
+28	49320 20 0 0 0 0 2 0 2 2 4
+29	49340 10 0 0 0 0 1 0 0 0 0
+30	49350 20 0 0 0 0 2 0 2 2 4
+31	49370 10 0 0 0 0 1 0 0 0 0
+32	49380 20 0 0 0 0 2 0 2 2 4
+33	49400 10 0 0 0 0 1 0 0 0 0
+34	49410 20 0 0 0 0 2 0 2 2 4
+35	49430 10 0 0 0 0 1 0 0 0 0
+36	49440 20 0 0 0 0 2 0 2 2 4
+37	49460 10 0 0 0 0 1 0 0 0 0
+38	49470 69 0 113 0 0.006079469292 4 0 3 7 17
+39	49539 10 0 0 0 0 1 0 0 0 0
+40	49549 20 0 0 0 0 2 0 2 2 4
+41	49569 10 0 0 0 0 1 0 0 0 0
+42	49579 20 0 0 0 0 2 0 2 2 4
+43	49599 10 0 0 0 0 1 0 0 0 0
+44	49609 260 0 516 0 0.020146300671 11 0 3 18 42
+45	49869 307 0 559 0 0.020146561944 13 1 3 25 61
+46	50176 256 0 512 0 0.02014623567 11 0 3 18 42
+47	50432 158 0 248 0 0.010138049477 7 1 3 13 31
+48	50590 307 0 531 0 0.020146394492 13 1 3 25 61
+49	50897 255 0 525 0 0.020146378911 11 1 3 21 51
+50	51152 258 0 522 0 0.02014633564 11 1 3 21 51
+51	51410 306 0 562 0 0.020146616278 13 0 3 22 52
+52	51716 258 0 513 0 0.020146287648 11 0 3 18 42
+53	51974 258 0 537 0 0.020146416177 11 1 3 21 51
+54	52232 255 0 556 0 0.020146560191 11 1 3 21 51
+55	52487 307 0 552 0 0.020146536555 13 1 3 25 61
+56	52794 305 0 549 0 0.020146533873 13 0 3 22 52
+57	53099 260 0 540 0 0.020146480583 11 1 3 21 51
+58	53359 306 0 568 0 0.020146620608 13 1 3 25 61
+59	53665 302 0 565 0 0.02014662031 13 1 3 25 61
+60	53967 208 0 543 0 0.020146507169 9 1 3 17 41
+61	54175 308 0 519 0 0.020146328511 13 1 3 25 61
+62	54483 256 0 435 0 0.014406599782 11 1 3 21 51
+63	54739 257 0 546 0 0.020146528211 11 0 3 18 42
+64	54996 308 0 528 0 0.020146382381 13 1 3 25 61
+65	55304 307 0 534 0 0.020146395718 13 1 3 25 61
+66	55611 620 0 516 0 0.020146300671 26 0 2 4 8
+67	56231 520 0 516 0 0.020146300671 22 0 0 0 0
+68	56751 520 0 516 0 0.020146300671 22 0 0 0 0
+69	57271 520 0 516 0 0.020146300671 22 0 0 0 0
+70	57791 520 0 516 0 0.020146300671 22 0 0 0 0
+71	58311 614 0 559 0 0.020146561944 26 0 0 0 0
+72	58925 614 0 559 0 0.020146561944 26 0 0 0 0
+73	59539 614 0 559 0 0.020146561944 26 0 0 0 0
+74	60153 614 0 559 0 0.020146561944 26 0 0 0 0
+75	60767 614 0 559 0 0.020146561944 26 0 0 0 0
+76	61381 608 0 512 0 0.02014623567 26 0 2 4 8
+77	61989 512 0 512 0 0.02014623567 22 0 0 0 0
+78	62501 512 0 512 0 0.02014623567 22 0 0 0 0
+79	63013 512 0 512 0 0.02014623567 22 0 0 0 0
+80	63525 512 0 512 0 0.02014623567 22 0 0 0 0
+81	64037 316 0 248 0 0.010138049477 14 0 0 0 0
+82	64353 316 0 248 0 0.010138049477 14 0 0 0 0
+83	64669 316 0 248 0 0.010138049477 14 0 0 0 0
+84	64985 316 0 248 0 0.010138049477 14 0 0 0 0
+85	65301 316 0 248 0 0.010138049477 14 0 0 0 0
+86	65617 614 0 531 0 0.020146394492 26 0 0 0 0
+87	66231 614 0 531 0 0.020146394492 26 0 0 0 0
+88	66845 614 0 531 0 0.020146394492 26 0 0 0 0
+89	67459 614 0 531 0 0.020146394492 26 0 0 0 0
+90	68073 614 0 531 0 0.020146394492 26 0 0 0 0
+91	68687 510 0 525 0 0.020146378911 22 0 0 0 0
+92	69197 510 0 525 0 0.020146378911 22 0 0 0 0
+93	69707 510 0 525 0 0.020146378911 22 0 0 0 0
+94	70217 510 0 525 0 0.020146378911 22 0 0 0 0
+95	70727 510 0 525 0 0.020146378911 22 0 0 0 0
+96	71237 516 0 522 0 0.02014633564 22 0 0 0 0
+97	71753 516 0 522 0 0.02014633564 22 0 0 0 0
+98	72269 516 0 522 0 0.02014633564 22 0 0 0 0
+99	72785 516 0 522 0 0.02014633564 22 0 0 0 0
+100	73301 538 0 522 0 0.02014633564 22 0 0 0 0
+101	73839 734 0 562 0 0.020146616278 30 0 2 4 8
+102	74573 638 0 562 0 0.020146616278 26 0 0 0 0
+103	75211 638 0 562 0 0.020146616278 26 0 0 0 0
+104	75849 638 0 562 0 0.020146616278 26 0 0 0 0
+105	76487 638 0 562 0 0.020146616278 26 0 0 0 0
+106	77125 642 0 513 0 0.020146287648 26 0 2 6 10
+107	77767 538 0 513 0 0.020146287648 22 0 0 0 0
+108	78305 538 0 513 0 0.020146287648 22 0 0 0 0
+109	78843 538 0 513 0 0.020146287648 22 0 0 0 0
+110	79381 538 0 513 0 0.020146287648 22 0 0 0 0
+111	79919 538 0 537 0 0.020146416177 22 0 0 0 0
+112	80457 538 0 537 0 0.020146416177 22 0 0 0 0
+113	80995 538 0 537 0 0.020146416177 22 0 0 0 0
+114	81533 538 0 537 0 0.020146416177 22 0 0 0 0
+115	82071 538 0 537 0 0.020146416177 22 0 0 0 0
+116	82609 532 0 556 0 0.020146560191 22 0 0 0 0
+117	83141 532 0 556 0 0.020146560191 22 0 0 0 0
+118	83673 532 0 556 0 0.020146560191 22 0 0 0 0
+119	84205 532 0 556 0 0.020146560191 22 0 0 0 0
+120	84737 532 0 556 0 0.020146560191 22 0 0 0 0
+121	85269 640 0 552 0 0.020146536555 26 0 0 0 0
+122	85909 640 0 552 0 0.020146536555 26 0 0 0 0
+123	86549 640 0 552 0 0.020146536555 26 0 0 0 0
+124	87189 640 0 552 0 0.020146536555 26 0 0 0 0
+125	87829 640 0 552 0 0.020146536555 26 0 0 0 0
+126	88469 740 0 549 0 0.020146533873 30 0 2 4 8
+127	89209 636 0 549 0 0.020146533873 26 0 0 0 0
+128	89845 636 0 549 0 0.020146533873 26 0 0 0 0
+129	90481 636 0 549 0 0.020146533873 26 0 0 0 0
+130	91117 636 0 549 0 0.020146533873 26 0 0 0 0
+131	91753 542 0 540 0 0.020146480583 22 0 0 0 0
+132	92295 542 0 540 0 0.020146480583 22 0 0 0 0
+133	92837 542 0 540 0 0.020146480583 22 0 0 0 0
+134	93379 542 0 540 0 0.020146480583 22 0 0 0 0
+135	93921 542 0 540 0 0.020146480583 22 0 0 0 0
+136	94463 638 0 568 0 0.020146620608 26 0 0 0 0
+137	95101 638 0 568 0 0.020146620608 26 0 0 0 0
+138	95739 638 0 568 0 0.020146620608 26 0 0 0 0
+139	96377 638 0 568 0 0.020146620608 26 0 0 0 0
+140	97015 638 0 568 0 0.020146620608 26 0 0 0 0
+141	97653 630 0 565 0 0.02014662031 26 0 0 0 0
+142	98283 630 0 565 0 0.02014662031 26 0 0 0 0
+143	98913 630 0 565 0 0.02014662031 26 0 0 0 0
+144	99543 630 0 565 0 0.02014662031 26 0 0 0 0
+145	100173 630 0 565 0 0.02014662031 26 0 0 0 0
+146	100803 434 0 543 0 0.020146507169 18 0 0 0 0
+147	101237 434 0 543 0 0.020146507169 18 0 0 0 0
+148	101671 434 0 543 0 0.020146507169 18 0 0 0 0
+149	102105 434 0 543 0 0.020146507169 18 0 0 0 0
+150	102539 434 0 543 0 0.020146507169 18 0 0 0 0
+151	102973 642 0 519 0 0.020146328511 26 0 0 0 0
+152	103615 642 0 519 0 0.020146328511 26 0 0 0 0
+153	104257 642 0 519 0 0.020146328511 26 0 0 0 0
+154	104899 642 0 519 0 0.020146328511 26 0 0 0 0
+155	105541 642 0 519 0 0.020146328511 26 0 0 0 0
+156	106183 534 0 435 0 0.014406599782 22 0 0 0 0
+157	106717 534 0 435 0 0.014406599782 22 0 0 0 0
+158	107251 534 0 435 0 0.014406599782 22 0 0 0 0
+159	107785 534 0 435 0 0.014406599782 22 0 0 0 0
+160	108319 534 0 435 0 0.014406599782 22 0 0 0 0
+161	108853 636 0 546 0 0.020146528211 26 0 2 4 8
+162	109489 536 0 546 0 0.020146528211 22 0 0 0 0
+163	110025 536 0 546 0 0.020146528211 22 0 0 0 0
+164	110561 536 0 546 0 0.020146528211 22 0 0 0 0
+165	111097 536 0 546 0 0.020146528211 22 0 0 0 0
+166	111633 642 0 528 0 0.020146382381 26 0 0 0 0
+167	112275 642 0 528 0 0.020146382381 26 0 0 0 0
+168	112917 642 0 528 0 0.020146382381 26 0 0 0 0
+169	113559 642 0 528 0 0.020146382381 26 0 0 0 0
+170	114201 642 0 528 0 0.020146382381 26 0 0 0 0
+171	114843 640 0 534 0 0.020146395718 26 0 0 0 0
+172	115483 640 0 534 0 0.020146395718 26 0 0 0 0
+173	116123 640 0 534 0 0.020146395718 26 0 0 0 0
+174	116763 640 0 534 0 0.020146395718 26 0 0 0 0
+175	117403 640 0 534 0 0.020146395718 26 0 0 0 0
+176	118043 26 2 2 0.001357164187 0.001357164187 1 304 304 304 92416
+177	118069 26 5 5 0.001427164187 0.001427164187 1 304 304 304 92416
+178	118095 98 6 30 0.001427164187 0.001865164187 4 0 2 4 6
+179	118193 165 32 566 0.00186518348 0.02014662031 6 304 304 1824 554496
+180	118358 165 32 566 0.00186518348 0.02014662031 6 304 304 1824 554496
+181	118523 167 36 532 0.001865404674 0.020146394492 6 304 304 1824 554496
+182	118690 167 36 532 0.001865404674 0.020146394492 6 304 304 1824 554496
+183	118857 138 39 526 0.001865447261 0.020146378911 5 304 304 1520 462080
+184	118995 138 39 526 0.001865447261 0.020146378911 5 304 304 1520 462080
+185	119133 138 42 550 0.001865519233 0.020146533873 5 304 304 1520 462080
+186	119271 138 42 550 0.001865519233 0.020146533873 5 304 304 1520 462080
+187	119409 111 46 403 0.001865544795 0.014406359952 4 304 304 1216 369664
+188	119520 111 46 403 0.001865544795 0.014406359952 4 304 304 1216 369664
+189	119631 111 49 514 0.001865550533 0.020146287648 4 304 304 1216 369664
+190	119742 111 49 514 0.001865550533 0.020146287648 4 304 304 1216 369664
+191	119853 167 52 535 0.001865578152 0.020146395718 6 304 304 1824 554496
+192	120020 167 52 535 0.001865578152 0.020146395718 6 304 304 1824 554496
+193	120187 83 56 249 0.001865594979 0.010138049477 3 304 304 912 277248
+194	120270 83 56 249 0.001865594979 0.010138049477 3 304 304 912 277248
+195	120353 167 59 560 0.001865596176 0.020146561944 6 304 304 1824 554496
+196	120520 167 59 560 0.001865596176 0.020146561944 6 304 304 1824 554496
+197	120687 167 62 520 0.001865598337 0.020146328511 6 304 304 1824 554496
+198	120854 167 62 520 0.001865598337 0.020146328511 6 304 304 1824 554496
+199	121021 167 65 553 0.001865599124 0.020146536555 6 304 304 1824 554496
+200	121188 167 65 553 0.001865599124 0.020146536555 6 304 304 1824 554496
+201	121355 138 68 557 0.00186560251 0.020146560191 5 304 304 1520 462080
+202	121493 138 68 557 0.00186560251 0.020146560191 5 304 304 1520 462080
+203	121631 166 73 569 0.001865672267 0.020146620608 6 304 304 1824 554496
+204	121797 166 73 569 0.001865672267 0.020146620608 6 304 304 1824 554496
+205	121963 167 76 529 0.001865683932 0.020146382381 6 304 304 1824 554496
+206	122130 167 76 529 0.001865683932 0.020146382381 6 304 304 1824 554496
+207	122297 139 79 538 0.001865707557 0.020146416177 5 304 304 1520 462080
+208	122436 139 79 538 0.001865707557 0.020146416177 5 304 304 1520 462080
+209	122575 138 82 436 0.001865747893 0.014406599782 5 304 304 1520 462080
+210	122713 138 82 436 0.001865747893 0.014406599782 5 304 304 1520 462080
+211	122851 27 85 85 0.005571469292 0.005571469292 1 304 304 304 92416
+212	122878 27 88 88 0.005641469292 0.005641469292 1 304 304 304 92416
+213	122905 102 89 113 0.005641469292 0.006079469292 4 0 2 4 6
+214	123007 140 124 563 0.006079666256 0.020146616278 5 304 304 1520 462080
+215	123147 140 124 563 0.006079666256 0.020146616278 5 304 304 1520 462080
+216	123287 111 153 544 0.006079793501 0.020146507169 4 304 304 1216 369664
+217	123398 111 153 544 0.006079793501 0.020146507169 4 304 304 1216 369664
+218	123509 112 156 517 0.006079824102 0.020146300671 4 304 304 1216 369664
+219	123621 112 156 517 0.006079824102 0.020146300671 4 304 304 1216 369664
+220	123733 139 159 523 0.006079841229 0.02014633564 5 304 304 1520 462080
+221	123872 139 159 523 0.006079841229 0.02014633564 5 304 304 1520 462080
+222	124011 140 169 541 0.006079884844 0.020146480583 5 304 304 1520 462080
+223	124151 140 169 541 0.006079884844 0.020146480583 5 304 304 1520 462080
+224	124291 28 172 172 0.009609840112 0.009609840112 1 304 304 304 92416
+225	124319 28 175 175 0.009699840112 0.009699840112 1 304 304 304 92416
+226	124347 104 176 222 0.009699840112 0.010137840112 4 0 2 4 6
+227	124451 28 200 200 0.009710127115 0.009710127115 1 304 304 304 92416
+228	124479 111 236 547 0.01013799834 0.020146528211 4 304 304 1216 369664
+229	124590 111 236 547 0.01013799834 0.020146528211 4 304 304 1216 369664
+230	124701 28 286 286 0.010228185828 0.010228185828 1 304 304 304 92416
+231	124729 104 287 311 0.010228185828 0.010666185828 4 0 2 4 6
+232	124833 28 373 373 0.013818294951 0.013818294951 1 304 304 304 92416
+233	124861 28 376 376 0.013968294951 0.013968294951 1 304 304 304 92416
+234	124889 104 377 401 0.013968294951 0.014406294951 4 0 2 4 6
+235	124993 27 463 463 0.01965823567 0.01965823567 1 304 304 304 92416
+236	125020 27 466 466 0.01970823567 0.01970823567 1 304 304 304 92416
+237	125047 100 467 512 0.01970823567 0.02014623567 4 0 2 4 6
+vector 238 Beacon.accessPoint[4].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 239 Beacon.accessPoint[4].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 240 Beacon.accessPoint[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 241 Beacon.B.wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 242 Beacon.B.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 243 Beacon.B.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 244 Beacon.accessPoint[16].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 245 Beacon.accessPoint[16].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 246 Beacon.accessPoint[16].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 247 Beacon.accessPoint[17].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 248 Beacon.accessPoint[17].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 249 Beacon.accessPoint[17].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 250 Beacon.A.wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 251 Beacon.A.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 252 Beacon.A.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+8	128180 48 600 624 0.037062516572 0.037500516572 2 2 3 5 13
+32	128228 50 800 824 0.046955119832 0.047393119832 2 2 3 5 13
+34	128278 50 904 928 0.051092437177 0.051530437177 2 2 3 5 13
+40	128328 26 1013 1013 0.060554551801 0.060554551801 1 3 3 3 9
+42	128354 48 711 735 0.04530592139 0.04573992139 2 2 3 5 13
+44	128402 196 609 935 0.037062739749 0.05153053319 8 1 3 16 40
+45	128598 150 614 969 0.037062780111 0.051530705652 6 1 3 12 30
+46	128748 200 604 932 0.037062675394 0.051530530018 8 1 3 16 40
+47	128948 150 622 983 0.037062900421 0.051530907411 6 1 3 12 30
+48	129098 198 600 956 0.037062516572 0.051530631837 8 0 3 13 31
+49	129296 198 602 947 0.037062563244 0.05153059539 8 1 3 16 40
+50	129494 198 610 950 0.037062750751 0.051530614646 8 1 3 16 40
+51	129692 200 611 979 0.037062757059 0.051530871327 8 1 3 16 40
+52	129892 200 606 944 0.037062702877 0.051530576792 8 1 3 16 40
+53	130092 226 619 1015 0.037062820696 0.060554594277 9 1 3 19 49
+54	130318 194 615 966 0.03706278273 0.051530701876 8 1 3 16 40
+55	130512 150 613 828 0.037062767741 0.047393234282 6 1 3 12 30
+56	130662 150 608 963 0.037062720162 0.051530698368 6 1 3 12 30
+57	130812 148 618 976 0.037062813304 0.05153077391 6 1 3 12 30
+58	130960 100 620 838 0.037062855392 0.047393270013 4 1 3 8 20
+59	131060 98 612 792 0.03706276578 0.045740348863 4 1 3 8 20
+60	131158 198 617 953 0.037062803439 0.051530623378 8 0 3 13 31
+61	131356 200 607 928 0.037062711232 0.051530437177 8 0 3 13 31
+62	131556 150 721 959 0.045306097145 0.051530656866 6 1 3 12 30
+63	131706 150 603 972 0.037062654334 0.051530742666 6 1 3 12 30
+64	131856 226 616 1013 0.037062802302 0.060554551801 9 0 3 16 40
+65	132082 198 605 929 0.037062698376 0.051530528583 8 0 3 13 31
+66	132280 392 609 935 0.037062739749 0.05153053319 16 0 0 0 0
+67	132672 392 609 935 0.037062739749 0.05153053319 16 0 0 0 0
+68	133064 392 609 935 0.037062739749 0.05153053319 16 0 0 0 0
+69	133456 392 609 935 0.037062739749 0.05153053319 16 0 0 0 0
+70	133848 392 609 935 0.037062739749 0.05153053319 16 0 0 0 0
+71	134240 300 614 969 0.037062780111 0.051530705652 12 0 0 0 0
+72	134540 300 614 969 0.037062780111 0.051530705652 12 0 0 0 0
+73	134840 300 614 969 0.037062780111 0.051530705652 12 0 0 0 0
+74	135140 300 614 969 0.037062780111 0.051530705652 12 0 0 0 0
+75	135440 300 614 969 0.037062780111 0.051530705652 12 0 0 0 0
+76	135740 400 604 932 0.037062675394 0.051530530018 16 0 0 0 0
+77	136140 400 604 932 0.037062675394 0.051530530018 16 0 0 0 0
+78	136540 400 604 932 0.037062675394 0.051530530018 16 0 0 0 0
+79	136940 400 604 932 0.037062675394 0.051530530018 16 0 0 0 0
+80	137340 400 604 932 0.037062675394 0.051530530018 16 0 0 0 0
+81	137740 300 622 983 0.037062900421 0.051530907411 12 0 0 0 0
+82	138040 300 622 983 0.037062900421 0.051530907411 12 0 0 0 0
+83	138340 300 622 983 0.037062900421 0.051530907411 12 0 0 0 0
+84	138640 300 622 983 0.037062900421 0.051530907411 12 0 0 0 0
+85	138940 300 622 983 0.037062900421 0.051530907411 12 0 0 0 0
+86	139240 496 596 956 0.036872516572 0.051530631837 20 0 2 4 8
+87	139736 396 600 956 0.037062516572 0.051530631837 16 0 0 0 0
+88	140132 396 600 956 0.037062516572 0.051530631837 16 0 0 0 0
+89	140528 396 600 956 0.037062516572 0.051530631837 16 0 0 0 0
+90	140924 396 600 956 0.037062516572 0.051530631837 16 0 0 0 0
+91	141320 396 602 947 0.037062563244 0.05153059539 16 0 0 0 0
+92	141716 396 602 947 0.037062563244 0.05153059539 16 0 0 0 0
+93	142112 396 602 947 0.037062563244 0.05153059539 16 0 0 0 0
+94	142508 396 602 947 0.037062563244 0.05153059539 16 0 0 0 0
+95	142904 396 602 947 0.037062563244 0.05153059539 16 0 0 0 0
+96	143300 396 610 950 0.037062750751 0.051530614646 16 0 0 0 0
+97	143696 396 610 950 0.037062750751 0.051530614646 16 0 0 0 0
+98	144092 396 610 950 0.037062750751 0.051530614646 16 0 0 0 0
+99	144488 396 610 950 0.037062750751 0.051530614646 16 0 0 0 0
+100	144884 412 610 950 0.037062750751 0.051530614646 16 0 0 0 0
+101	145296 416 611 979 0.037062757059 0.051530871327 16 0 0 0 0
+102	145712 416 611 979 0.037062757059 0.051530871327 16 0 0 0 0
+103	146128 416 611 979 0.037062757059 0.051530871327 16 0 0 0 0
+104	146544 416 611 979 0.037062757059 0.051530871327 16 0 0 0 0
+105	146960 416 611 979 0.037062757059 0.051530871327 16 0 0 0 0
+106	147376 416 606 944 0.037062702877 0.051530576792 16 0 0 0 0
+107	147792 416 606 944 0.037062702877 0.051530576792 16 0 0 0 0
+108	148208 416 606 944 0.037062702877 0.051530576792 16 0 0 0 0
+109	148624 416 606 944 0.037062702877 0.051530576792 16 0 0 0 0
+110	149040 416 606 944 0.037062702877 0.051530576792 16 0 0 0 0
+111	149456 470 619 1015 0.037062820696 0.060554594277 18 0 0 0 0
+112	149926 470 619 1015 0.037062820696 0.060554594277 18 0 0 0 0
+113	150396 470 619 1015 0.037062820696 0.060554594277 18 0 0 0 0
+114	150866 470 619 1015 0.037062820696 0.060554594277 18 0 0 0 0
+115	151336 470 619 1015 0.037062820696 0.060554594277 18 0 0 0 0
+116	151806 404 615 966 0.03706278273 0.051530701876 16 0 0 0 0
+117	152210 404 615 966 0.03706278273 0.051530701876 16 0 0 0 0
+118	152614 404 615 966 0.03706278273 0.051530701876 16 0 0 0 0
+119	153018 404 615 966 0.03706278273 0.051530701876 16 0 0 0 0
+120	153422 404 615 966 0.03706278273 0.051530701876 16 0 0 0 0
+121	153826 312 613 828 0.037062767741 0.047393234282 12 0 0 0 0
+122	154138 312 613 828 0.037062767741 0.047393234282 12 0 0 0 0
+123	154450 312 613 828 0.037062767741 0.047393234282 12 0 0 0 0
+124	154762 312 613 828 0.037062767741 0.047393234282 12 0 0 0 0
+125	155074 312 613 828 0.037062767741 0.047393234282 12 0 0 0 0
+126	155386 312 608 963 0.037062720162 0.051530698368 12 0 0 0 0
+127	155698 312 608 963 0.037062720162 0.051530698368 12 0 0 0 0
+128	156010 312 608 963 0.037062720162 0.051530698368 12 0 0 0 0
+129	156322 312 608 963 0.037062720162 0.051530698368 12 0 0 0 0
+130	156634 312 608 963 0.037062720162 0.051530698368 12 0 0 0 0
+131	156946 308 618 976 0.037062813304 0.05153077391 12 0 0 0 0
+132	157254 308 618 976 0.037062813304 0.05153077391 12 0 0 0 0
+133	157562 308 618 976 0.037062813304 0.05153077391 12 0 0 0 0
+134	157870 308 618 976 0.037062813304 0.05153077391 12 0 0 0 0
+135	158178 308 618 976 0.037062813304 0.05153077391 12 0 0 0 0
+136	158486 208 620 838 0.037062855392 0.047393270013 8 0 0 0 0
+137	158694 208 620 838 0.037062855392 0.047393270013 8 0 0 0 0
+138	158902 208 620 838 0.037062855392 0.047393270013 8 0 0 0 0
+139	159110 208 620 838 0.037062855392 0.047393270013 8 0 0 0 0
+140	159318 208 620 838 0.037062855392 0.047393270013 8 0 0 0 0
+141	159526 204 612 792 0.03706276578 0.045740348863 8 0 0 0 0
+142	159730 204 612 792 0.03706276578 0.045740348863 8 0 0 0 0
+143	159934 204 612 792 0.03706276578 0.045740348863 8 0 0 0 0
+144	160138 204 612 792 0.03706276578 0.045740348863 8 0 0 0 0
+145	160342 204 612 792 0.03706276578 0.045740348863 8 0 0 0 0
+146	160546 516 617 953 0.037062803439 0.051530623378 20 0 2 4 8
+147	161062 412 617 953 0.037062803439 0.051530623378 16 0 0 0 0
+148	161474 412 617 953 0.037062803439 0.051530623378 16 0 0 0 0
+149	161886 412 617 953 0.037062803439 0.051530623378 16 0 0 0 0
+150	162298 412 617 953 0.037062803439 0.051530623378 16 0 0 0 0
+151	162710 520 607 928 0.037062711232 0.051530437177 20 0 2 4 8
+152	163230 416 607 928 0.037062711232 0.051530437177 16 0 0 0 0
+153	163646 416 607 928 0.037062711232 0.051530437177 16 0 0 0 0
+154	164062 416 607 928 0.037062711232 0.051530437177 16 0 0 0 0
+155	164478 416 607 928 0.037062711232 0.051530437177 16 0 0 0 0
+156	164894 312 721 959 0.045306097145 0.051530656866 12 0 0 0 0
+157	165206 312 721 959 0.045306097145 0.051530656866 12 0 0 0 0
+158	165518 312 721 959 0.045306097145 0.051530656866 12 0 0 0 0
+159	165830 312 721 959 0.045306097145 0.051530656866 12 0 0 0 0
+160	166142 312 721 959 0.045306097145 0.051530656866 12 0 0 0 0
+161	166454 312 603 972 0.037062654334 0.051530742666 12 0 0 0 0
+162	166766 312 603 972 0.037062654334 0.051530742666 12 0 0 0 0
+163	167078 312 603 972 0.037062654334 0.051530742666 12 0 0 0 0
+164	167390 312 603 972 0.037062654334 0.051530742666 12 0 0 0 0
+165	167702 312 603 972 0.037062654334 0.051530742666 12 0 0 0 0
+166	168014 578 616 1013 0.037062802302 0.060554551801 22 0 2 4 8
+167	168592 470 616 1013 0.037062802302 0.060554551801 18 0 0 0 0
+168	169062 470 616 1013 0.037062802302 0.060554551801 18 0 0 0 0
+169	169532 470 616 1013 0.037062802302 0.060554551801 18 0 0 0 0
+170	170002 470 616 1013 0.037062802302 0.060554551801 18 0 0 0 0
+171	170472 512 605 929 0.037062698376 0.051530528583 20 0 2 4 8
+172	170984 412 605 929 0.037062698376 0.051530528583 16 0 0 0 0
+173	171396 412 605 929 0.037062698376 0.051530528583 16 0 0 0 0
+174	171808 412 605 929 0.037062698376 0.051530528583 16 0 0 0 0
+175	172220 412 605 929 0.037062698376 0.051530528583 16 0 0 0 0
+179	172632 55 656 793 0.03750076578 0.045740348863 2 301 304 605 183017
+180	172687 55 656 793 0.03750076578 0.045740348863 2 301 304 605 183017
+181	172742 83 770 957 0.04574010372 0.051530631837 3 301 304 909 275433
+182	172825 83 770 957 0.04574010372 0.051530631837 3 301 304 909 275433
+183	172908 111 626 948 0.037500563244 0.05153059539 4 301 304 1213 367849
+184	173019 111 626 948 0.037500563244 0.05153059539 4 301 304 1213 367849
+185	173130 84 644 964 0.037500720162 0.051530698368 3 301 304 909 275433
+186	173214 84 644 964 0.037500720162 0.051530698368 3 301 304 909 275433
+187	173298 112 632 933 0.037500675394 0.051530530018 4 301 304 1213 367849
+188	173410 112 632 933 0.037500675394 0.051530530018 4 301 304 1213 367849
+189	173522 112 638 945 0.037500702877 0.051530576792 4 301 304 1213 367849
+190	173634 112 638 945 0.037500702877 0.051530576792 4 301 304 1213 367849
+191	173746 84 635 930 0.037500698376 0.051530528583 3 304 304 912 277248
+192	173830 84 635 930 0.037500698376 0.051530528583 3 304 304 912 277248
+193	173914 84 684 984 0.037500900421 0.051530907411 3 301 304 909 275433
+194	173998 84 684 984 0.037500900421 0.051530907411 3 301 304 909 275433
+195	174082 84 662 970 0.037500780111 0.051530705652 3 301 304 909 275433
+196	174166 84 662 970 0.037500780111 0.051530705652 3 301 304 909 275433
+197	174250 84 641 842 0.037500711232 0.047393306033 3 301 304 909 275433
+198	174334 84 641 842 0.037500711232 0.047393306033 3 301 304 909 275433
+199	174418 84 659 829 0.037500767741 0.047393234282 3 301 304 909 275433
+200	174502 84 659 829 0.037500767741 0.047393234282 3 301 304 909 275433
+201	174586 109 665 967 0.03750078273 0.051530701876 4 301 304 1213 367849
+202	174695 109 665 967 0.03750078273 0.051530701876 4 301 304 1213 367849
+203	174804 56 680 839 0.037500855392 0.047393270013 2 304 304 608 184832
+204	174860 56 680 839 0.037500855392 0.047393270013 2 304 304 608 184832
+205	174916 112 668 939 0.037500802302 0.051530534023 4 301 304 1213 367849
+206	175028 112 668 939 0.037500802302 0.051530534023 4 301 304 1213 367849
+207	175140 112 677 942 0.037500820696 0.051530546641 4 301 304 1213 367849
+208	175252 112 677 942 0.037500820696 0.051530546641 4 301 304 1213 367849
+209	175364 84 761 960 0.045740097145 0.051530656866 3 301 304 909 275433
+210	175448 84 761 960 0.045740097145 0.051530656866 3 301 304 909 275433
+214	175532 112 653 980 0.037500757059 0.051530871327 4 301 304 1213 367849
+215	175644 112 653 980 0.037500757059 0.051530871327 4 301 304 1213 367849
+216	175756 83 671 954 0.037500803439 0.051530623378 3 301 304 909 275433
+217	175839 83 671 954 0.037500803439 0.051530623378 3 301 304 909 275433
+218	175922 110 647 936 0.037500739749 0.05153053319 4 301 304 1213 367849
+219	176032 110 647 936 0.037500739749 0.05153053319 4 301 304 1213 367849
+220	176142 111 650 951 0.037500750751 0.051530614646 4 301 304 1213 367849
+221	176253 111 650 951 0.037500750751 0.051530614646 4 301 304 1213 367849
+222	176364 83 674 977 0.037500813304 0.05153077391 3 301 304 909 275433
+223	176447 83 674 977 0.037500813304 0.05153077391 3 301 304 909 275433
+228	176530 84 629 973 0.037500654334 0.051530742666 3 304 304 912 277248
+229	176614 84 629 973 0.037500654334 0.051530742666 3 304 304 912 277248
+238	176698 28 596 596 0.036872516572 0.036872516572 1 304 304 304 92416
+239	176726 28 599 599 0.037062516572 0.037062516572 1 304 304 304 92416
+240	176754 104 600 624 0.037062516572 0.037500516572 4 0 2 4 6
+241	176858 27 707 707 0.04511592139 0.04511592139 1 301 301 301 90601
+242	176885 27 710 710 0.04530592139 0.04530592139 1 301 301 301 90601
+243	176912 100 711 735 0.04530592139 0.04573992139 4 0 2 4 6
+244	177012 28 796 796 0.046865119832 0.046865119832 1 304 304 304 92416
+245	177040 28 799 799 0.046955119832 0.046955119832 1 304 304 304 92416
+246	177068 104 800 824 0.046955119832 0.047393119832 4 0 2 4 6
+247	177172 28 900 900 0.050962437177 0.050962437177 1 304 304 304 92416
+248	177200 28 903 903 0.051092437177 0.051092437177 1 304 304 304 92416
+249	177228 104 904 928 0.051092437177 0.051530437177 4 0 2 4 6
+250	177332 29 1009 1009 0.060484551801 0.060484551801 1 301 301 301 90601
+251	177361 29 1012 1012 0.060554551801 0.060554551801 1 301 301 301 90601
+252	177390 54 1013 1014 0.060554551801 0.060554551801 2 1 2 3 5
+

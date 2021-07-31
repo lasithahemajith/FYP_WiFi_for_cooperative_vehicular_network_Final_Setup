@@ -1,0 +1,6 @@
+16:00:21 **** Incremental Build of configuration release for project Beacon_Test ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+
+16:00:22 Build Finished. 0 errors, 0 warnings. (took 332ms)
+

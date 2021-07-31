@@ -1,0 +1,6186 @@
+version 2
+run General-0-20200727-16:00:25-9156
+attr configname General
+attr datetime 20200727-16:00:25
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Beacon
+attr processid 9156
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.constraintAreaMinX 0m
+param **.constraintAreaMinY 0m
+param **.constraintAreaMinZ 0m
+param **.constraintAreaMaxX 200m
+param **.constraintAreaMaxY 200m
+param **.constraintAreaMaxZ 0m
+param **.mobility.initFromDisplayString true
+param **.accessPoint[*].mobilityType "\"LinearMobility\""
+param **.accessPoint[*].mobility.speed 20mps
+param **.accessPoint[*].mobility.angle 0deg
+param **.accessPoint[*].mobility.acceleration 0
+param **.accessPoint[*].mobility.updateInterval 10ms
+param Beacon.A.wlan[*].mgmt.ssid "\"A\""
+param Beacon.A.mobilityType "\"StationaryMobility\""
+param Beacon.A.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.A.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.A.wlan[*].opMode "\"g(mixed)\""
+param Beacon.A.wlan[*].bitrate 11Mbps
+param Beacon.A.wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.A.wlan[*].mgmt.beaconInterval 100ms
+param Beacon.A.wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.A.wlan[*].radio.bandwidth 20MHz
+param Beacon.A.wlan[*].radio.transmitter.power 2.0mW
+param Beacon.A.wlan[*].radio.transmitter.modulation "\"QPSK\""
+param Beacon.A.wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.B.wlan[*].mgmt.ssid "\"B\""
+param Beacon.B.mobilityType "\"StationaryMobility\""
+param Beacon.B.wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.B.wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.B.wlan[*].opMode "\"g(mixed)\""
+param Beacon.B.wlan[*].bitrate 11Mbps
+param Beacon.B.wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.B.wlan[*].mgmt.beaconInterval 100ms
+param Beacon.B.wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.B.wlan[*].radio.bandwidth 20MHz
+param Beacon.B.wlan[*].radio.transmitter.power 2.0mW
+param Beacon.B.wlan[*].radio.transmitter.modulation "\"BPSK\""
+param Beacon.B.wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.accessPoint[*].mobilityType "\"StationaryMobility\""
+param Beacon.accessPoint[*].wlan[*].mgmtType "\"Ieee80211MgmtAP\""
+param Beacon.accessPoint[*].wlan[*].radioType "\"Ieee80211ScalarRadio\""
+param Beacon.accessPoint[*].wlan[*].opMode "\"g(mixed)\""
+param Beacon.accessPoint[*].wlan[*].bitrate 11Mbps
+param Beacon.accessPoint[*].wlan[*].mac.typename "\"CsmaCaMac\""
+param Beacon.accessPoint[*].wlan[*].mgmt.ssid "\"SSID\""
+param Beacon.accessPoint[*].wlan[*].mgmt.beaconInterval 100ms
+param Beacon.accessPoint[*].wlan[*].radio.carrierFrequency 2.412GHz
+param Beacon.accessPoint[*].wlan[*].radio.bandwidth 20MHz
+param Beacon.accessPoint[*].wlan[*].radio.transmitter.power 2.0mW
+param Beacon.accessPoint[*].wlan[*].radio.transmitter.modulation "\"QAM-64\""
+param Beacon.accessPoint[*].wlan[*].radio.receiver.sensitivity -85dBm
+param Beacon.radioMedium.physicalEnvironmentModule "\"physicalEnvironment\""
+param Beacon.radioMedium.propagationType "\"ConstantSpeedPropagation\""
+param Beacon.radioMedium.pathLossType "\"NakagamiFading\""
+param Beacon.radioMedium.analogModelType "\"ScalarAnalogModel\""
+param Beacon.iPv4NetworkConfigurator.config "xml(\"<config><interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/></config>\")"
+param **.mac.address "\"auto\""
+param **.mac.maxQueueSize 14
+param **.mac.rtsThresholdBytes 4000B
+param **.wlan[*].mac.retryLimit 7
+param **.wlan[*].mac.cwMinData 7
+
+vector 0 Beacon.accessPoint[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 Beacon.accessPoint[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 Beacon.accessPoint[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 Beacon.accessPoint[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 Beacon.accessPoint[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 Beacon.accessPoint[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 Beacon.accessPoint[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 Beacon.accessPoint[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 Beacon.accessPoint[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 Beacon.accessPoint[4].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 10 Beacon.accessPoint[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 Beacon.accessPoint[5].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 12 Beacon.accessPoint[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 Beacon.accessPoint[6].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 14 Beacon.accessPoint[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 Beacon.accessPoint[7].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 16 Beacon.accessPoint[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 Beacon.accessPoint[8].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 18 Beacon.accessPoint[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 Beacon.accessPoint[9].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 20 Beacon.accessPoint[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 Beacon.accessPoint[10].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 22 Beacon.accessPoint[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 Beacon.accessPoint[11].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 24 Beacon.accessPoint[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 Beacon.accessPoint[12].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 26 Beacon.accessPoint[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 Beacon.accessPoint[13].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 28 Beacon.accessPoint[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 29 Beacon.accessPoint[14].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 30 Beacon.accessPoint[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 31 Beacon.accessPoint[15].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 32 Beacon.accessPoint[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 33 Beacon.accessPoint[16].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 34 Beacon.accessPoint[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 35 Beacon.accessPoint[17].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 36 Beacon.accessPoint[18].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 37 Beacon.accessPoint[18].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 38 Beacon.accessPoint[19].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 39 Beacon.accessPoint[19].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 40 Beacon.A.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 41 Beacon.A.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 42 Beacon.B.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 43 Beacon.B.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 44 Beacon.accessPoint[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 45 Beacon.accessPoint[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 46 Beacon.accessPoint[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 47 Beacon.accessPoint[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 48 Beacon.accessPoint[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 49 Beacon.accessPoint[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 50 Beacon.accessPoint[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 51 Beacon.accessPoint[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 52 Beacon.accessPoint[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 53 Beacon.accessPoint[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 54 Beacon.accessPoint[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 55 Beacon.accessPoint[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 56 Beacon.accessPoint[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 57 Beacon.accessPoint[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 58 Beacon.accessPoint[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 59 Beacon.accessPoint[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 60 Beacon.accessPoint[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 61 Beacon.accessPoint[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 62 Beacon.accessPoint[18].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 63 Beacon.accessPoint[19].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 64 Beacon.A.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 65 Beacon.B.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 66 Beacon.accessPoint[0].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 67 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 68 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 69 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 70 Beacon.accessPoint[0].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 71 Beacon.accessPoint[1].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 72 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 73 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 74 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 75 Beacon.accessPoint[1].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 76 Beacon.accessPoint[2].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 77 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 78 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 79 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 80 Beacon.accessPoint[2].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 81 Beacon.accessPoint[3].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 82 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 83 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 84 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 85 Beacon.accessPoint[3].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 86 Beacon.accessPoint[4].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 87 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 88 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 89 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 90 Beacon.accessPoint[4].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 91 Beacon.accessPoint[5].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 92 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 93 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 94 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 95 Beacon.accessPoint[5].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 96 Beacon.accessPoint[6].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 97 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 98 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 99 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 100 Beacon.accessPoint[6].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 101 Beacon.accessPoint[7].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 102 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 103 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 104 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 105 Beacon.accessPoint[7].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 106 Beacon.accessPoint[8].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 107 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 108 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 109 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 110 Beacon.accessPoint[8].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 111 Beacon.accessPoint[9].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 112 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 113 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 114 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 115 Beacon.accessPoint[9].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 116 Beacon.accessPoint[10].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 117 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 118 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 119 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 120 Beacon.accessPoint[10].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 121 Beacon.accessPoint[11].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 122 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 123 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 124 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 125 Beacon.accessPoint[11].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 126 Beacon.accessPoint[12].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 127 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 128 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 129 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 130 Beacon.accessPoint[12].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 131 Beacon.accessPoint[13].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 132 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 133 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 134 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 135 Beacon.accessPoint[13].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 136 Beacon.accessPoint[14].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 137 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 138 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 139 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 140 Beacon.accessPoint[14].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 141 Beacon.accessPoint[15].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 142 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 143 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 144 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 145 Beacon.accessPoint[15].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 146 Beacon.accessPoint[16].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 147 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 148 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 149 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 150 Beacon.accessPoint[16].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 151 Beacon.accessPoint[17].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 152 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 153 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 154 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 155 Beacon.accessPoint[17].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 156 Beacon.accessPoint[18].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 157 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 158 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 159 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 160 Beacon.accessPoint[18].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 161 Beacon.accessPoint[19].wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 162 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 163 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 164 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 165 Beacon.accessPoint[19].wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 166 Beacon.A.wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 167 Beacon.A.wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 168 Beacon.A.wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 169 Beacon.A.wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 170 Beacon.A.wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 171 Beacon.B.wlan[0].mac.dcf.channelAccess.contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 172 Beacon.B.wlan[0].mac.hcf.edca.edcaf[0].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 173 Beacon.B.wlan[0].mac.hcf.edca.edcaf[1].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 174 Beacon.B.wlan[0].mac.hcf.edca.edcaf[2].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 175 Beacon.B.wlan[0].mac.hcf.edca.edcaf[3].contention state:vector ETV
+attr interpolationmode none
+attr source stateChanged
+attr title "contention state, vector"
+vector 176 Beacon.accessPoint[7].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 177 Beacon.accessPoint[7].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 178 Beacon.accessPoint[7].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 179 Beacon.accessPoint[15].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 180 Beacon.accessPoint[15].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 181 Beacon.accessPoint[4].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 182 Beacon.accessPoint[4].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 183 Beacon.accessPoint[5].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 184 Beacon.accessPoint[5].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 185 Beacon.accessPoint[12].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 186 Beacon.accessPoint[12].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 187 Beacon.accessPoint[2].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 188 Beacon.accessPoint[2].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 189 Beacon.accessPoint[8].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 190 Beacon.accessPoint[8].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 191 Beacon.B.wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 192 Beacon.B.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 193 Beacon.accessPoint[3].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 194 Beacon.accessPoint[3].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 195 Beacon.accessPoint[1].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 196 Beacon.accessPoint[1].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 197 Beacon.accessPoint[17].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 198 Beacon.accessPoint[17].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 199 Beacon.accessPoint[11].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 200 Beacon.accessPoint[11].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 201 Beacon.accessPoint[10].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 202 Beacon.accessPoint[10].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 203 Beacon.accessPoint[14].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 204 Beacon.accessPoint[14].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 205 Beacon.A.wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 206 Beacon.A.wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 207 Beacon.accessPoint[9].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 208 Beacon.accessPoint[9].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 209 Beacon.accessPoint[18].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 210 Beacon.accessPoint[18].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 211 Beacon.accessPoint[19].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 212 Beacon.accessPoint[19].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 213 Beacon.accessPoint[19].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 214 Beacon.accessPoint[7].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 215 Beacon.accessPoint[7].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 216 Beacon.accessPoint[16].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 217 Beacon.accessPoint[16].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 218 Beacon.accessPoint[0].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 219 Beacon.accessPoint[0].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 220 Beacon.accessPoint[6].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 221 Beacon.accessPoint[6].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 222 Beacon.accessPoint[13].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 223 Beacon.accessPoint[13].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 224 Beacon.accessPoint[12].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 225 Beacon.accessPoint[12].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 226 Beacon.accessPoint[12].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 227 Beacon.accessPoint[8].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 228 Beacon.accessPoint[19].wlan[0].mac rcvdPkFromLL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromLower
+attr title "packets received from lower layer, vector(packetBytes)"
+vector 229 Beacon.accessPoint[19].wlan[0].mac passedUpPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToUpper
+attr title "packets passed to higher layer, vector(packetBytes)"
+vector 230 Beacon.accessPoint[8].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 231 Beacon.accessPoint[8].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 232 Beacon.accessPoint[0].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 233 Beacon.accessPoint[0].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 234 Beacon.accessPoint[0].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 235 Beacon.accessPoint[2].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 236 Beacon.accessPoint[2].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 237 Beacon.accessPoint[2].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+0	0	0	0
+0	0	0	2
+0	377	0.013968294951	3
+0	401	0.014406294951	2
+1	0	0	0
+2	0	0	0
+2	0	0	2
+3	0	0	0
+4	0	0	0
+4	0	0	2
+4	467	0.01970823567	3
+4	512	0.02014623567	2
+5	0	0	0
+6	0	0	0
+6	0	0	2
+7	0	0	0
+8	0	0	0
+8	0	0	2
+9	0	0	0
+10	0	0	0
+10	0	0	2
+11	0	0	0
+12	0	0	0
+12	0	0	2
+13	0	0	0
+14	0	0	0
+14	0	0	2
+14	6	0.001427164187	3
+14	30	0.001865164187	2
+15	0	0	0
+16	0	0	0
+16	0	0	2
+16	287	0.010228185828	3
+16	311	0.010666185828	2
+17	0	0	0
+18	0	0	0
+18	0	0	2
+19	0	0	0
+20	0	0	0
+20	0	0	2
+21	0	0	0
+22	0	0	0
+22	0	0	2
+23	0	0	0
+24	0	0	0
+24	0	0	2
+24	176	0.009699840112	3
+24	222	0.010137840112	2
+25	0	0	0
+26	0	0	0
+26	0	0	2
+27	0	0	0
+28	0	0	0
+28	0	0	2
+29	0	0	0
+30	0	0	0
+30	0	0	2
+31	0	0	0
+32	0	0	0
+32	0	0	2
+33	0	0	0
+34	0	0	0
+34	0	0	2
+35	0	0	0
+36	0	0	0
+36	0	0	2
+37	0	0	0
+38	0	0	0
+38	0	0	2
+38	89	0.005641469292	3
+38	113	0.006079469292	2
+39	0	0	0
+40	0	0	0
+40	0	0	2
+41	0	0	0
+42	0	0	0
+42	0	0	2
+43	0	0	0
+44	0	0	1
+44	106	0.005641824102	3
+44	155	0.006079824102	1
+44	192	0.009700184128	3
+44	263	0.010138184128	1
+44	291	0.010228258049	3
+44	318	0.010666258049	1
+44	377	0.013968294951	0
+44	401	0.014406294951	1
+44	470	0.019708300671	3
+44	516	0.020146300671	1
+45	0	0	1
+45	19	0.001427596176	3
+45	58	0.001865596176	1
+45	96	0.005641704615	3
+45	129	0.006079704615	1
+45	178	0.009699917274	3
+45	223	0.010137917274	1
+45	305	0.010228562991	3
+45	358	0.010666562991	1
+45	395	0.013968655697	3
+45	448	0.014406655697	1
+45	485	0.019708561944	3
+45	559	0.020146561944	1
+46	0	0	1
+46	14	0.001427544795	3
+46	45	0.001865544795	1
+46	190	0.009700138315	3
+46	257	0.010138138315	1
+46	290	0.010228237806	3
+46	315	0.010666237806	1
+46	379	0.013968359952	3
+46	402	0.014406359952	1
+46	467	0.01970823567	0
+46	512	0.02014623567	1
+47	0	0	1
+47	18	0.001427594979	3
+47	55	0.001865594979	1
+47	100	0.005641740859	3
+47	141	0.006079740859	1
+47	187	0.009700049477	3
+47	248	0.010138049477	1
+48	0	0	1
+48	10	0.001427404674	3
+48	35	0.001865404674	1
+48	91	0.005641607054	3
+48	114	0.006079607054	1
+48	186	0.009700043702	3
+48	245	0.010138043702	1
+48	295	0.010228372133	3
+48	330	0.010666372133	1
+48	387	0.013968518128	3
+48	426	0.014406518128	1
+48	475	0.019708394492	3
+48	531	0.020146394492	1
+49	0	0	1
+49	11	0.001427447261	3
+49	38	0.001865447261	1
+49	92	0.00564162127	3
+49	117	0.00607962127	1
+49	294	0.010228367473	3
+49	327	0.010666367473	1
+49	386	0.013968498489	3
+49	423	0.014406498489	1
+49	473	0.019708378911	3
+49	525	0.020146378911	1
+50	0	0	1
+50	107	0.005641841229	3
+50	158	0.006079841229	1
+50	197	0.009700236655	3
+50	278	0.010138236655	1
+50	289	0.010228236894	3
+50	312	0.010666236894	1
+50	381	0.013968384414	3
+50	408	0.014406384414	1
+50	472	0.01970833564	3
+50	522	0.02014633564	1
+51	0	0	1
+51	6	0.001427164187	0
+51	30	0.001865164187	1
+51	94	0.005641666256	3
+51	123	0.006079666256	1
+51	195	0.009700195158	3
+51	272	0.010138195158	1
+51	306	0.010228572174	3
+51	361	0.010666572174	1
+51	397	0.013968739303	3
+51	454	0.014406739303	1
+51	486	0.019708616278	3
+51	562	0.020146616278	1
+52	0	0	1
+52	15	0.001427550533	3
+52	48	0.001865550533	1
+52	193	0.009700185828	3
+52	266	0.010138185828	1
+52	287	0.010228185828	0
+52	311	0.010666185828	1
+52	380	0.013968367172	3
+52	405	0.014406367172	1
+52	469	0.019708287648	3
+52	513	0.020146287648	1
+53	0	0	1
+53	27	0.001427707557	3
+53	78	0.001865707557	1
+53	191	0.009700181489	3
+53	260	0.010138181489	1
+53	297	0.010228396169	3
+53	336	0.010666396169	1
+53	384	0.013968435299	3
+53	417	0.014406435299	1
+53	477	0.019708416177	3
+53	537	0.020146416177	1
+54	0	0	1
+54	22	0.00142760251	3
+54	67	0.00186560251	1
+54	98	0.005641711181	3
+54	135	0.006079711181	1
+54	179	0.009699924157	3
+54	226	0.010137924157	1
+54	304	0.010228561483	3
+54	355	0.010666561483	1
+54	484	0.019708560191	3
+54	556	0.020146560191	1
+55	0	0	1
+55	21	0.001427599124	3
+55	64	0.001865599124	1
+55	97	0.005641709562	3
+55	132	0.006079709562	1
+55	180	0.009699927096	3
+55	229	0.010137927096	1
+55	302	0.010228538122	3
+55	349	0.010666538122	1
+55	391	0.013968627475	3
+55	438	0.014406627475	1
+55	482	0.019708536555	3
+55	552	0.020146536555	1
+56	0	0	1
+56	12	0.001427519233	3
+56	41	0.001865519233	1
+56	93	0.00564162752	3
+56	120	0.00607962752	1
+56	176	0.009699840112	0
+56	222	0.010137840112	1
+56	301	0.010228531544	3
+56	346	0.010666531544	1
+56	392	0.013968638967	3
+56	441	0.014406638967	1
+56	481	0.019708533873	3
+56	549	0.020146533873	1
+57	0	0	1
+57	111	0.005641884844	3
+57	168	0.006079884844	1
+57	198	0.009700336677	3
+57	281	0.010138336677	1
+57	296	0.010228383579	3
+57	333	0.010666383579	1
+57	388	0.013968556413	3
+57	429	0.014406556413	1
+57	478	0.019708480583	3
+57	540	0.020146480583	1
+58	0	0	1
+58	25	0.001427672267	3
+58	72	0.001865672267	1
+58	103	0.005641780414	3
+58	148	0.006079780414	1
+58	181	0.009699993369	3
+58	232	0.010137993369	1
+58	308	0.01022862261	3
+58	367	0.01066662261	1
+58	396	0.013968705721	3
+58	451	0.014406705721	1
+58	488	0.019708620608	3
+58	568	0.020146620608	1
+59	0	0	1
+59	8	0.00142718348	3
+59	31	0.00186518348	1
+59	95	0.005641683149	3
+59	126	0.006079683149	1
+59	196	0.009700211713	3
+59	275	0.010138211713	1
+59	307	0.010228573636	3
+59	364	0.010666573636	1
+59	398	0.013968742685	3
+59	457	0.014406742685	1
+59	487	0.01970862031	3
+59	565	0.02014662031	1
+60	0	0	1
+60	105	0.005641793501	3
+60	152	0.006079793501	1
+60	185	0.00970003196	3
+60	242	0.01013803196	1
+60	389	0.013968575811	3
+60	432	0.014406575811	1
+60	479	0.019708507169	3
+60	543	0.020146507169	1
+61	0	0	1
+61	20	0.001427598337	3
+61	61	0.001865598337	1
+61	102	0.005641774781	3
+61	145	0.006079774781	1
+61	188	0.009700101303	3
+61	251	0.010138101303	1
+61	292	0.010228325443	3
+61	321	0.010666325443	1
+61	382	0.013968390964	3
+61	411	0.014406390964	1
+61	471	0.019708328511	3
+61	519	0.020146328511	1
+62	0	0	1
+62	28	0.001427747893	3
+62	81	0.001865747893	1
+62	109	0.00564187364	3
+62	164	0.00607987364	1
+62	189	0.009700111894	3
+62	254	0.010138111894	1
+62	303	0.010228544918	3
+62	352	0.010666544918	1
+62	390	0.013968599782	3
+62	435	0.014406599782	1
+63	0	0	1
+63	89	0.005641469292	0
+63	113	0.006079469292	1
+63	182	0.00969999834	3
+63	235	0.01013799834	1
+63	300	0.010228509677	3
+63	343	0.010666509677	1
+63	393	0.013968649761	3
+63	444	0.014406649761	1
+63	480	0.019708528211	3
+63	546	0.020146528211	1
+64	0	0	1
+64	26	0.001427683932	3
+64	75	0.001865683932	1
+64	108	0.005641870199	3
+64	161	0.006079870199	1
+64	194	0.009700190005	3
+64	269	0.010138190005	1
+64	293	0.010228355325	3
+64	324	0.010666355325	1
+64	383	0.013968393025	3
+64	414	0.014406393025	1
+64	474	0.019708382381	3
+64	528	0.020146382381	1
+65	0	0	1
+65	16	0.001427578152	3
+65	51	0.001865578152	1
+65	99	0.005641723014	3
+65	138	0.006079723014	1
+65	184	0.009700016684	3
+65	239	0.010138016684	1
+65	298	0.010228397297	3
+65	339	0.010666397297	1
+65	385	0.013968478985	3
+65	420	0.014406478985	1
+65	476	0.019708395718	3
+65	534	0.020146395718	1
+66	0	0	0
+66	0	0	0
+66	106	0.005641824102	0
+66	106	0.005641824102	0
+66	155	0.006079824102	0
+66	155	0.006079824102	0
+66	192	0.009700184128	0
+66	192	0.009700184128	0
+66	263	0.010138184128	0
+66	263	0.010138184128	0
+66	291	0.010228258049	0
+66	291	0.010228258049	0
+66	318	0.010666258049	0
+66	318	0.010666258049	0
+66	373	0.013818294951	0
+66	373	0.013818294951	2
+66	374	0.013968294951	2
+66	374	0.013968294951	0
+66	377	0.013968294951	0
+66	377	0.013968294951	0
+66	401	0.014406294951	0
+66	401	0.014406294951	0
+66	470	0.019708300671	0
+66	470	0.019708300671	0
+66	516	0.020146300671	0
+66	516	0.020146300671	0
+67	0	0	0
+67	0	0	0
+67	106	0.005641824102	0
+67	106	0.005641824102	0
+67	155	0.006079824102	0
+67	155	0.006079824102	0
+67	192	0.009700184128	0
+67	192	0.009700184128	0
+67	263	0.010138184128	0
+67	263	0.010138184128	0
+67	291	0.010228258049	0
+67	291	0.010228258049	0
+67	318	0.010666258049	0
+67	318	0.010666258049	0
+67	377	0.013968294951	0
+67	377	0.013968294951	0
+67	401	0.014406294951	0
+67	401	0.014406294951	0
+67	470	0.019708300671	0
+67	470	0.019708300671	0
+67	516	0.020146300671	0
+67	516	0.020146300671	0
+68	0	0	0
+68	0	0	0
+68	106	0.005641824102	0
+68	106	0.005641824102	0
+68	155	0.006079824102	0
+68	155	0.006079824102	0
+68	192	0.009700184128	0
+68	192	0.009700184128	0
+68	263	0.010138184128	0
+68	263	0.010138184128	0
+68	291	0.010228258049	0
+68	291	0.010228258049	0
+68	318	0.010666258049	0
+68	318	0.010666258049	0
+68	377	0.013968294951	0
+68	377	0.013968294951	0
+68	401	0.014406294951	0
+68	401	0.014406294951	0
+68	470	0.019708300671	0
+68	470	0.019708300671	0
+68	516	0.020146300671	0
+68	516	0.020146300671	0
+69	0	0	0
+69	0	0	0
+69	106	0.005641824102	0
+69	106	0.005641824102	0
+69	155	0.006079824102	0
+69	155	0.006079824102	0
+69	192	0.009700184128	0
+69	192	0.009700184128	0
+69	263	0.010138184128	0
+69	263	0.010138184128	0
+69	291	0.010228258049	0
+69	291	0.010228258049	0
+69	318	0.010666258049	0
+69	318	0.010666258049	0
+69	377	0.013968294951	0
+69	377	0.013968294951	0
+69	401	0.014406294951	0
+69	401	0.014406294951	0
+69	470	0.019708300671	0
+69	470	0.019708300671	0
+69	516	0.020146300671	0
+69	516	0.020146300671	0
+70	0	0	0
+70	0	0	0
+70	106	0.005641824102	0
+70	106	0.005641824102	0
+70	155	0.006079824102	0
+70	155	0.006079824102	0
+70	192	0.009700184128	0
+70	192	0.009700184128	0
+70	263	0.010138184128	0
+70	263	0.010138184128	0
+70	291	0.010228258049	0
+70	291	0.010228258049	0
+70	318	0.010666258049	0
+70	318	0.010666258049	0
+70	377	0.013968294951	0
+70	377	0.013968294951	0
+70	401	0.014406294951	0
+70	401	0.014406294951	0
+70	470	0.019708300671	0
+70	470	0.019708300671	0
+70	516	0.020146300671	0
+70	516	0.020146300671	0
+71	0	0	0
+71	0	0	0
+71	19	0.001427596176	0
+71	19	0.001427596176	0
+71	58	0.001865596176	0
+71	58	0.001865596176	0
+71	96	0.005641704615	0
+71	96	0.005641704615	0
+71	129	0.006079704615	0
+71	129	0.006079704615	0
+71	178	0.009699917274	0
+71	178	0.009699917274	0
+71	223	0.010137917274	0
+71	223	0.010137917274	0
+71	305	0.010228562991	0
+71	305	0.010228562991	0
+71	358	0.010666562991	0
+71	358	0.010666562991	0
+71	395	0.013968655697	0
+71	395	0.013968655697	0
+71	448	0.014406655697	0
+71	448	0.014406655697	0
+71	485	0.019708561944	0
+71	485	0.019708561944	0
+71	559	0.020146561944	0
+71	559	0.020146561944	0
+72	0	0	0
+72	0	0	0
+72	19	0.001427596176	0
+72	19	0.001427596176	0
+72	58	0.001865596176	0
+72	58	0.001865596176	0
+72	96	0.005641704615	0
+72	96	0.005641704615	0
+72	129	0.006079704615	0
+72	129	0.006079704615	0
+72	178	0.009699917274	0
+72	178	0.009699917274	0
+72	223	0.010137917274	0
+72	223	0.010137917274	0
+72	305	0.010228562991	0
+72	305	0.010228562991	0
+72	358	0.010666562991	0
+72	358	0.010666562991	0
+72	395	0.013968655697	0
+72	395	0.013968655697	0
+72	448	0.014406655697	0
+72	448	0.014406655697	0
+72	485	0.019708561944	0
+72	485	0.019708561944	0
+72	559	0.020146561944	0
+72	559	0.020146561944	0
+73	0	0	0
+73	0	0	0
+73	19	0.001427596176	0
+73	19	0.001427596176	0
+73	58	0.001865596176	0
+73	58	0.001865596176	0
+73	96	0.005641704615	0
+73	96	0.005641704615	0
+73	129	0.006079704615	0
+73	129	0.006079704615	0
+73	178	0.009699917274	0
+73	178	0.009699917274	0
+73	223	0.010137917274	0
+73	223	0.010137917274	0
+73	305	0.010228562991	0
+73	305	0.010228562991	0
+73	358	0.010666562991	0
+73	358	0.010666562991	0
+73	395	0.013968655697	0
+73	395	0.013968655697	0
+73	448	0.014406655697	0
+73	448	0.014406655697	0
+73	485	0.019708561944	0
+73	485	0.019708561944	0
+73	559	0.020146561944	0
+73	559	0.020146561944	0
+74	0	0	0
+74	0	0	0
+74	19	0.001427596176	0
+74	19	0.001427596176	0
+74	58	0.001865596176	0
+74	58	0.001865596176	0
+74	96	0.005641704615	0
+74	96	0.005641704615	0
+74	129	0.006079704615	0
+74	129	0.006079704615	0
+74	178	0.009699917274	0
+74	178	0.009699917274	0
+74	223	0.010137917274	0
+74	223	0.010137917274	0
+74	305	0.010228562991	0
+74	305	0.010228562991	0
+74	358	0.010666562991	0
+74	358	0.010666562991	0
+74	395	0.013968655697	0
+74	395	0.013968655697	0
+74	448	0.014406655697	0
+74	448	0.014406655697	0
+74	485	0.019708561944	0
+74	485	0.019708561944	0
+74	559	0.020146561944	0
+74	559	0.020146561944	0
+75	0	0	0
+75	0	0	0
+75	19	0.001427596176	0
+75	19	0.001427596176	0
+75	58	0.001865596176	0
+75	58	0.001865596176	0
+75	96	0.005641704615	0
+75	96	0.005641704615	0
+75	129	0.006079704615	0
+75	129	0.006079704615	0
+75	178	0.009699917274	0
+75	178	0.009699917274	0
+75	223	0.010137917274	0
+75	223	0.010137917274	0
+75	305	0.010228562991	0
+75	305	0.010228562991	0
+75	358	0.010666562991	0
+75	358	0.010666562991	0
+75	395	0.013968655697	0
+75	395	0.013968655697	0
+75	448	0.014406655697	0
+75	448	0.014406655697	0
+75	485	0.019708561944	0
+75	485	0.019708561944	0
+75	559	0.020146561944	0
+75	559	0.020146561944	0
+76	0	0	0
+76	0	0	0
+76	14	0.001427544795	0
+76	14	0.001427544795	0
+76	45	0.001865544795	0
+76	45	0.001865544795	0
+76	190	0.009700138315	0
+76	190	0.009700138315	0
+76	257	0.010138138315	0
+76	257	0.010138138315	0
+76	290	0.010228237806	0
+76	290	0.010228237806	0
+76	315	0.010666237806	0
+76	315	0.010666237806	0
+76	379	0.013968359952	0
+76	379	0.013968359952	0
+76	402	0.014406359952	0
+76	402	0.014406359952	0
+76	463	0.01965823567	0
+76	463	0.01965823567	2
+76	464	0.01970823567	2
+76	464	0.01970823567	0
+76	467	0.01970823567	0
+76	467	0.01970823567	0
+76	512	0.02014623567	0
+76	512	0.02014623567	0
+77	0	0	0
+77	0	0	0
+77	14	0.001427544795	0
+77	14	0.001427544795	0
+77	45	0.001865544795	0
+77	45	0.001865544795	0
+77	190	0.009700138315	0
+77	190	0.009700138315	0
+77	257	0.010138138315	0
+77	257	0.010138138315	0
+77	290	0.010228237806	0
+77	290	0.010228237806	0
+77	315	0.010666237806	0
+77	315	0.010666237806	0
+77	379	0.013968359952	0
+77	379	0.013968359952	0
+77	402	0.014406359952	0
+77	402	0.014406359952	0
+77	467	0.01970823567	0
+77	467	0.01970823567	0
+77	512	0.02014623567	0
+77	512	0.02014623567	0
+78	0	0	0
+78	0	0	0
+78	14	0.001427544795	0
+78	14	0.001427544795	0
+78	45	0.001865544795	0
+78	45	0.001865544795	0
+78	190	0.009700138315	0
+78	190	0.009700138315	0
+78	257	0.010138138315	0
+78	257	0.010138138315	0
+78	290	0.010228237806	0
+78	290	0.010228237806	0
+78	315	0.010666237806	0
+78	315	0.010666237806	0
+78	379	0.013968359952	0
+78	379	0.013968359952	0
+78	402	0.014406359952	0
+78	402	0.014406359952	0
+78	467	0.01970823567	0
+78	467	0.01970823567	0
+78	512	0.02014623567	0
+78	512	0.02014623567	0
+79	0	0	0
+79	0	0	0
+79	14	0.001427544795	0
+79	14	0.001427544795	0
+79	45	0.001865544795	0
+79	45	0.001865544795	0
+79	190	0.009700138315	0
+79	190	0.009700138315	0
+79	257	0.010138138315	0
+79	257	0.010138138315	0
+79	290	0.010228237806	0
+79	290	0.010228237806	0
+79	315	0.010666237806	0
+79	315	0.010666237806	0
+79	379	0.013968359952	0
+79	379	0.013968359952	0
+79	402	0.014406359952	0
+79	402	0.014406359952	0
+79	467	0.01970823567	0
+79	467	0.01970823567	0
+79	512	0.02014623567	0
+79	512	0.02014623567	0
+80	0	0	0
+80	0	0	0
+80	14	0.001427544795	0
+80	14	0.001427544795	0
+80	45	0.001865544795	0
+80	45	0.001865544795	0
+80	190	0.009700138315	0
+80	190	0.009700138315	0
+80	257	0.010138138315	0
+80	257	0.010138138315	0
+80	290	0.010228237806	0
+80	290	0.010228237806	0
+80	315	0.010666237806	0
+80	315	0.010666237806	0
+80	379	0.013968359952	0
+80	379	0.013968359952	0
+80	402	0.014406359952	0
+80	402	0.014406359952	0
+80	467	0.01970823567	0
+80	467	0.01970823567	0
+80	512	0.02014623567	0
+80	512	0.02014623567	0
+81	0	0	0
+81	0	0	0
+81	18	0.001427594979	0
+81	18	0.001427594979	0
+81	55	0.001865594979	0
+81	55	0.001865594979	0
+81	100	0.005641740859	0
+81	100	0.005641740859	0
+81	141	0.006079740859	0
+81	141	0.006079740859	0
+81	187	0.009700049477	0
+81	187	0.009700049477	0
+81	248	0.010138049477	0
+81	248	0.010138049477	0
+82	0	0	0
+82	0	0	0
+82	18	0.001427594979	0
+82	18	0.001427594979	0
+82	55	0.001865594979	0
+82	55	0.001865594979	0
+82	100	0.005641740859	0
+82	100	0.005641740859	0
+82	141	0.006079740859	0
+82	141	0.006079740859	0
+82	187	0.009700049477	0
+82	187	0.009700049477	0
+82	248	0.010138049477	0
+82	248	0.010138049477	0
+83	0	0	0
+83	0	0	0
+83	18	0.001427594979	0
+83	18	0.001427594979	0
+83	55	0.001865594979	0
+83	55	0.001865594979	0
+83	100	0.005641740859	0
+83	100	0.005641740859	0
+83	141	0.006079740859	0
+83	141	0.006079740859	0
+83	187	0.009700049477	0
+83	187	0.009700049477	0
+83	248	0.010138049477	0
+83	248	0.010138049477	0
+84	0	0	0
+84	0	0	0
+84	18	0.001427594979	0
+84	18	0.001427594979	0
+84	55	0.001865594979	0
+84	55	0.001865594979	0
+84	100	0.005641740859	0
+84	100	0.005641740859	0
+84	141	0.006079740859	0
+84	141	0.006079740859	0
+84	187	0.009700049477	0
+84	187	0.009700049477	0
+84	248	0.010138049477	0
+84	248	0.010138049477	0
+85	0	0	0
+85	0	0	0
+85	18	0.001427594979	0
+85	18	0.001427594979	0
+85	55	0.001865594979	0
+85	55	0.001865594979	0
+85	100	0.005641740859	0
+85	100	0.005641740859	0
+85	141	0.006079740859	0
+85	141	0.006079740859	0
+85	187	0.009700049477	0
+85	187	0.009700049477	0
+85	248	0.010138049477	0
+85	248	0.010138049477	0
+86	0	0	0
+86	0	0	0
+86	10	0.001427404674	0
+86	10	0.001427404674	0
+86	35	0.001865404674	0
+86	35	0.001865404674	0
+86	91	0.005641607054	0
+86	91	0.005641607054	0
+86	114	0.006079607054	0
+86	114	0.006079607054	0
+86	186	0.009700043702	0
+86	186	0.009700043702	0
+86	245	0.010138043702	0
+86	245	0.010138043702	0
+86	295	0.010228372133	0
+86	295	0.010228372133	0
+86	330	0.010666372133	0
+86	330	0.010666372133	0
+86	387	0.013968518128	0
+86	387	0.013968518128	0
+86	426	0.014406518128	0
+86	426	0.014406518128	0
+86	475	0.019708394492	0
+86	475	0.019708394492	0
+86	531	0.020146394492	0
+86	531	0.020146394492	0
+87	0	0	0
+87	0	0	0
+87	10	0.001427404674	0
+87	10	0.001427404674	0
+87	35	0.001865404674	0
+87	35	0.001865404674	0
+87	91	0.005641607054	0
+87	91	0.005641607054	0
+87	114	0.006079607054	0
+87	114	0.006079607054	0
+87	186	0.009700043702	0
+87	186	0.009700043702	0
+87	245	0.010138043702	0
+87	245	0.010138043702	0
+87	295	0.010228372133	0
+87	295	0.010228372133	0
+87	330	0.010666372133	0
+87	330	0.010666372133	0
+87	387	0.013968518128	0
+87	387	0.013968518128	0
+87	426	0.014406518128	0
+87	426	0.014406518128	0
+87	475	0.019708394492	0
+87	475	0.019708394492	0
+87	531	0.020146394492	0
+87	531	0.020146394492	0
+88	0	0	0
+88	0	0	0
+88	10	0.001427404674	0
+88	10	0.001427404674	0
+88	35	0.001865404674	0
+88	35	0.001865404674	0
+88	91	0.005641607054	0
+88	91	0.005641607054	0
+88	114	0.006079607054	0
+88	114	0.006079607054	0
+88	186	0.009700043702	0
+88	186	0.009700043702	0
+88	245	0.010138043702	0
+88	245	0.010138043702	0
+88	295	0.010228372133	0
+88	295	0.010228372133	0
+88	330	0.010666372133	0
+88	330	0.010666372133	0
+88	387	0.013968518128	0
+88	387	0.013968518128	0
+88	426	0.014406518128	0
+88	426	0.014406518128	0
+88	475	0.019708394492	0
+88	475	0.019708394492	0
+88	531	0.020146394492	0
+88	531	0.020146394492	0
+89	0	0	0
+89	0	0	0
+89	10	0.001427404674	0
+89	10	0.001427404674	0
+89	35	0.001865404674	0
+89	35	0.001865404674	0
+89	91	0.005641607054	0
+89	91	0.005641607054	0
+89	114	0.006079607054	0
+89	114	0.006079607054	0
+89	186	0.009700043702	0
+89	186	0.009700043702	0
+89	245	0.010138043702	0
+89	245	0.010138043702	0
+89	295	0.010228372133	0
+89	295	0.010228372133	0
+89	330	0.010666372133	0
+89	330	0.010666372133	0
+89	387	0.013968518128	0
+89	387	0.013968518128	0
+89	426	0.014406518128	0
+89	426	0.014406518128	0
+89	475	0.019708394492	0
+89	475	0.019708394492	0
+89	531	0.020146394492	0
+89	531	0.020146394492	0
+90	0	0	0
+90	0	0	0
+90	10	0.001427404674	0
+90	10	0.001427404674	0
+90	35	0.001865404674	0
+90	35	0.001865404674	0
+90	91	0.005641607054	0
+90	91	0.005641607054	0
+90	114	0.006079607054	0
+90	114	0.006079607054	0
+90	186	0.009700043702	0
+90	186	0.009700043702	0
+90	245	0.010138043702	0
+90	245	0.010138043702	0
+90	295	0.010228372133	0
+90	295	0.010228372133	0
+90	330	0.010666372133	0
+90	330	0.010666372133	0
+90	387	0.013968518128	0
+90	387	0.013968518128	0
+90	426	0.014406518128	0
+90	426	0.014406518128	0
+90	475	0.019708394492	0
+90	475	0.019708394492	0
+90	531	0.020146394492	0
+90	531	0.020146394492	0
+91	0	0	0
+91	0	0	0
+91	11	0.001427447261	0
+91	11	0.001427447261	0
+91	38	0.001865447261	0
+91	38	0.001865447261	0
+91	92	0.00564162127	0
+91	92	0.00564162127	0
+91	117	0.00607962127	0
+91	117	0.00607962127	0
+91	294	0.010228367473	0
+91	294	0.010228367473	0
+91	327	0.010666367473	0
+91	327	0.010666367473	0
+91	386	0.013968498489	0
+91	386	0.013968498489	0
+91	423	0.014406498489	0
+91	423	0.014406498489	0
+91	473	0.019708378911	0
+91	473	0.019708378911	0
+91	525	0.020146378911	0
+91	525	0.020146378911	0
+92	0	0	0
+92	0	0	0
+92	11	0.001427447261	0
+92	11	0.001427447261	0
+92	38	0.001865447261	0
+92	38	0.001865447261	0
+92	92	0.00564162127	0
+92	92	0.00564162127	0
+92	117	0.00607962127	0
+92	117	0.00607962127	0
+92	294	0.010228367473	0
+92	294	0.010228367473	0
+92	327	0.010666367473	0
+92	327	0.010666367473	0
+92	386	0.013968498489	0
+92	386	0.013968498489	0
+92	423	0.014406498489	0
+92	423	0.014406498489	0
+92	473	0.019708378911	0
+92	473	0.019708378911	0
+92	525	0.020146378911	0
+92	525	0.020146378911	0
+93	0	0	0
+93	0	0	0
+93	11	0.001427447261	0
+93	11	0.001427447261	0
+93	38	0.001865447261	0
+93	38	0.001865447261	0
+93	92	0.00564162127	0
+93	92	0.00564162127	0
+93	117	0.00607962127	0
+93	117	0.00607962127	0
+93	294	0.010228367473	0
+93	294	0.010228367473	0
+93	327	0.010666367473	0
+93	327	0.010666367473	0
+93	386	0.013968498489	0
+93	386	0.013968498489	0
+93	423	0.014406498489	0
+93	423	0.014406498489	0
+93	473	0.019708378911	0
+93	473	0.019708378911	0
+93	525	0.020146378911	0
+93	525	0.020146378911	0
+94	0	0	0
+94	0	0	0
+94	11	0.001427447261	0
+94	11	0.001427447261	0
+94	38	0.001865447261	0
+94	38	0.001865447261	0
+94	92	0.00564162127	0
+94	92	0.00564162127	0
+94	117	0.00607962127	0
+94	117	0.00607962127	0
+94	294	0.010228367473	0
+94	294	0.010228367473	0
+94	327	0.010666367473	0
+94	327	0.010666367473	0
+94	386	0.013968498489	0
+94	386	0.013968498489	0
+94	423	0.014406498489	0
+94	423	0.014406498489	0
+94	473	0.019708378911	0
+94	473	0.019708378911	0
+94	525	0.020146378911	0
+94	525	0.020146378911	0
+95	0	0	0
+95	0	0	0
+95	11	0.001427447261	0
+95	11	0.001427447261	0
+95	38	0.001865447261	0
+95	38	0.001865447261	0
+95	92	0.00564162127	0
+95	92	0.00564162127	0
+95	117	0.00607962127	0
+95	117	0.00607962127	0
+95	294	0.010228367473	0
+95	294	0.010228367473	0
+95	327	0.010666367473	0
+95	327	0.010666367473	0
+95	386	0.013968498489	0
+95	386	0.013968498489	0
+95	423	0.014406498489	0
+95	423	0.014406498489	0
+95	473	0.019708378911	0
+95	473	0.019708378911	0
+95	525	0.020146378911	0
+95	525	0.020146378911	0
+96	0	0	0
+96	0	0	0
+96	107	0.005641841229	0
+96	107	0.005641841229	0
+96	158	0.006079841229	0
+96	158	0.006079841229	0
+96	197	0.009700236655	0
+96	197	0.009700236655	0
+96	278	0.010138236655	0
+96	278	0.010138236655	0
+96	289	0.010228236894	0
+96	289	0.010228236894	0
+96	312	0.010666236894	0
+96	312	0.010666236894	0
+96	381	0.013968384414	0
+96	381	0.013968384414	0
+96	408	0.014406384414	0
+96	408	0.014406384414	0
+96	472	0.01970833564	0
+96	472	0.01970833564	0
+96	522	0.02014633564	0
+96	522	0.02014633564	0
+97	0	0	0
+97	0	0	0
+97	107	0.005641841229	0
+97	107	0.005641841229	0
+97	158	0.006079841229	0
+97	158	0.006079841229	0
+97	197	0.009700236655	0
+97	197	0.009700236655	0
+97	278	0.010138236655	0
+97	278	0.010138236655	0
+97	289	0.010228236894	0
+97	289	0.010228236894	0
+97	312	0.010666236894	0
+97	312	0.010666236894	0
+97	381	0.013968384414	0
+97	381	0.013968384414	0
+97	408	0.014406384414	0
+97	408	0.014406384414	0
+97	472	0.01970833564	0
+97	472	0.01970833564	0
+97	522	0.02014633564	0
+97	522	0.02014633564	0
+98	0	0	0
+98	0	0	0
+98	107	0.005641841229	0
+98	107	0.005641841229	0
+98	158	0.006079841229	0
+98	158	0.006079841229	0
+98	197	0.009700236655	0
+98	197	0.009700236655	0
+98	278	0.010138236655	0
+98	278	0.010138236655	0
+98	289	0.010228236894	0
+98	289	0.010228236894	0
+98	312	0.010666236894	0
+98	312	0.010666236894	0
+98	381	0.013968384414	0
+98	381	0.013968384414	0
+98	408	0.014406384414	0
+98	408	0.014406384414	0
+98	472	0.01970833564	0
+98	472	0.01970833564	0
+98	522	0.02014633564	0
+98	522	0.02014633564	0
+99	0	0	0
+99	0	0	0
+99	107	0.005641841229	0
+99	107	0.005641841229	0
+99	158	0.006079841229	0
+99	158	0.006079841229	0
+99	197	0.009700236655	0
+99	197	0.009700236655	0
+99	278	0.010138236655	0
+99	278	0.010138236655	0
+99	289	0.010228236894	0
+99	289	0.010228236894	0
+99	312	0.010666236894	0
+99	312	0.010666236894	0
+99	381	0.013968384414	0
+99	381	0.013968384414	0
+99	408	0.014406384414	0
+99	408	0.014406384414	0
+99	472	0.01970833564	0
+99	472	0.01970833564	0
+99	522	0.02014633564	0
+99	522	0.02014633564	0
+100	0	0	0
+100	0	0	0
+100	107	0.005641841229	0
+100	107	0.005641841229	0
+100	158	0.006079841229	0
+100	158	0.006079841229	0
+100	197	0.009700236655	0
+100	197	0.009700236655	0
+100	278	0.010138236655	0
+100	278	0.010138236655	0
+100	289	0.010228236894	0
+100	289	0.010228236894	0
+100	312	0.010666236894	0
+100	312	0.010666236894	0
+100	381	0.013968384414	0
+100	381	0.013968384414	0
+100	408	0.014406384414	0
+100	408	0.014406384414	0
+100	472	0.01970833564	0
+100	472	0.01970833564	0
+100	522	0.02014633564	0
+100	522	0.02014633564	0
+101	0	0	0
+101	0	0	0
+101	2	0.001357164187	0
+101	2	0.001357164187	2
+101	3	0.001427164187	2
+101	3	0.001427164187	0
+101	6	0.001427164187	0
+101	6	0.001427164187	0
+101	30	0.001865164187	0
+101	30	0.001865164187	0
+101	94	0.005641666256	0
+101	94	0.005641666256	0
+101	123	0.006079666256	0
+101	123	0.006079666256	0
+101	195	0.009700195158	0
+101	195	0.009700195158	0
+101	272	0.010138195158	0
+101	272	0.010138195158	0
+101	306	0.010228572174	0
+101	306	0.010228572174	0
+101	361	0.010666572174	0
+101	361	0.010666572174	0
+101	397	0.013968739303	0
+101	397	0.013968739303	0
+101	454	0.014406739303	0
+101	454	0.014406739303	0
+101	486	0.019708616278	0
+101	486	0.019708616278	0
+101	562	0.020146616278	0
+101	562	0.020146616278	0
+102	0	0	0
+102	0	0	0
+102	6	0.001427164187	0
+102	6	0.001427164187	0
+102	30	0.001865164187	0
+102	30	0.001865164187	0
+102	94	0.005641666256	0
+102	94	0.005641666256	0
+102	123	0.006079666256	0
+102	123	0.006079666256	0
+102	195	0.009700195158	0
+102	195	0.009700195158	0
+102	272	0.010138195158	0
+102	272	0.010138195158	0
+102	306	0.010228572174	0
+102	306	0.010228572174	0
+102	361	0.010666572174	0
+102	361	0.010666572174	0
+102	397	0.013968739303	0
+102	397	0.013968739303	0
+102	454	0.014406739303	0
+102	454	0.014406739303	0
+102	486	0.019708616278	0
+102	486	0.019708616278	0
+102	562	0.020146616278	0
+102	562	0.020146616278	0
+103	0	0	0
+103	0	0	0
+103	6	0.001427164187	0
+103	6	0.001427164187	0
+103	30	0.001865164187	0
+103	30	0.001865164187	0
+103	94	0.005641666256	0
+103	94	0.005641666256	0
+103	123	0.006079666256	0
+103	123	0.006079666256	0
+103	195	0.009700195158	0
+103	195	0.009700195158	0
+103	272	0.010138195158	0
+103	272	0.010138195158	0
+103	306	0.010228572174	0
+103	306	0.010228572174	0
+103	361	0.010666572174	0
+103	361	0.010666572174	0
+103	397	0.013968739303	0
+103	397	0.013968739303	0
+103	454	0.014406739303	0
+103	454	0.014406739303	0
+103	486	0.019708616278	0
+103	486	0.019708616278	0
+103	562	0.020146616278	0
+103	562	0.020146616278	0
+104	0	0	0
+104	0	0	0
+104	6	0.001427164187	0
+104	6	0.001427164187	0
+104	30	0.001865164187	0
+104	30	0.001865164187	0
+104	94	0.005641666256	0
+104	94	0.005641666256	0
+104	123	0.006079666256	0
+104	123	0.006079666256	0
+104	195	0.009700195158	0
+104	195	0.009700195158	0
+104	272	0.010138195158	0
+104	272	0.010138195158	0
+104	306	0.010228572174	0
+104	306	0.010228572174	0
+104	361	0.010666572174	0
+104	361	0.010666572174	0
+104	397	0.013968739303	0
+104	397	0.013968739303	0
+104	454	0.014406739303	0
+104	454	0.014406739303	0
+104	486	0.019708616278	0
+104	486	0.019708616278	0
+104	562	0.020146616278	0
+104	562	0.020146616278	0
+105	0	0	0
+105	0	0	0
+105	6	0.001427164187	0
+105	6	0.001427164187	0
+105	30	0.001865164187	0
+105	30	0.001865164187	0
+105	94	0.005641666256	0
+105	94	0.005641666256	0
+105	123	0.006079666256	0
+105	123	0.006079666256	0
+105	195	0.009700195158	0
+105	195	0.009700195158	0
+105	272	0.010138195158	0
+105	272	0.010138195158	0
+105	306	0.010228572174	0
+105	306	0.010228572174	0
+105	361	0.010666572174	0
+105	361	0.010666572174	0
+105	397	0.013968739303	0
+105	397	0.013968739303	0
+105	454	0.014406739303	0
+105	454	0.014406739303	0
+105	486	0.019708616278	0
+105	486	0.019708616278	0
+105	562	0.020146616278	0
+105	562	0.020146616278	0
+106	0	0	0
+106	0	0	0
+106	15	0.001427550533	0
+106	15	0.001427550533	0
+106	48	0.001865550533	0
+106	48	0.001865550533	0
+106	193	0.009700185828	0
+106	193	0.009700185828	0
+106	200	0.009710127115	0
+106	200	0.009710127115	1
+106	266	0.010138185828	1
+106	266	0.010138185828	2
+106	284	0.010228185828	2
+106	284	0.010228185828	0
+106	287	0.010228185828	0
+106	287	0.010228185828	0
+106	311	0.010666185828	0
+106	311	0.010666185828	0
+106	380	0.013968367172	0
+106	380	0.013968367172	0
+106	405	0.014406367172	0
+106	405	0.014406367172	0
+106	469	0.019708287648	0
+106	469	0.019708287648	0
+106	513	0.020146287648	0
+106	513	0.020146287648	0
+107	0	0	0
+107	0	0	0
+107	15	0.001427550533	0
+107	15	0.001427550533	0
+107	48	0.001865550533	0
+107	48	0.001865550533	0
+107	193	0.009700185828	0
+107	193	0.009700185828	0
+107	266	0.010138185828	0
+107	266	0.010138185828	0
+107	287	0.010228185828	0
+107	287	0.010228185828	0
+107	311	0.010666185828	0
+107	311	0.010666185828	0
+107	380	0.013968367172	0
+107	380	0.013968367172	0
+107	405	0.014406367172	0
+107	405	0.014406367172	0
+107	469	0.019708287648	0
+107	469	0.019708287648	0
+107	513	0.020146287648	0
+107	513	0.020146287648	0
+108	0	0	0
+108	0	0	0
+108	15	0.001427550533	0
+108	15	0.001427550533	0
+108	48	0.001865550533	0
+108	48	0.001865550533	0
+108	193	0.009700185828	0
+108	193	0.009700185828	0
+108	266	0.010138185828	0
+108	266	0.010138185828	0
+108	287	0.010228185828	0
+108	287	0.010228185828	0
+108	311	0.010666185828	0
+108	311	0.010666185828	0
+108	380	0.013968367172	0
+108	380	0.013968367172	0
+108	405	0.014406367172	0
+108	405	0.014406367172	0
+108	469	0.019708287648	0
+108	469	0.019708287648	0
+108	513	0.020146287648	0
+108	513	0.020146287648	0
+109	0	0	0
+109	0	0	0
+109	15	0.001427550533	0
+109	15	0.001427550533	0
+109	48	0.001865550533	0
+109	48	0.001865550533	0
+109	193	0.009700185828	0
+109	193	0.009700185828	0
+109	266	0.010138185828	0
+109	266	0.010138185828	0
+109	287	0.010228185828	0
+109	287	0.010228185828	0
+109	311	0.010666185828	0
+109	311	0.010666185828	0
+109	380	0.013968367172	0
+109	380	0.013968367172	0
+109	405	0.014406367172	0
+109	405	0.014406367172	0
+109	469	0.019708287648	0
+109	469	0.019708287648	0
+109	513	0.020146287648	0
+109	513	0.020146287648	0
+110	0	0	0
+110	0	0	0
+110	15	0.001427550533	0
+110	15	0.001427550533	0
+110	48	0.001865550533	0
+110	48	0.001865550533	0
+110	193	0.009700185828	0
+110	193	0.009700185828	0
+110	266	0.010138185828	0
+110	266	0.010138185828	0
+110	287	0.010228185828	0
+110	287	0.010228185828	0
+110	311	0.010666185828	0
+110	311	0.010666185828	0
+110	380	0.013968367172	0
+110	380	0.013968367172	0
+110	405	0.014406367172	0
+110	405	0.014406367172	0
+110	469	0.019708287648	0
+110	469	0.019708287648	0
+110	513	0.020146287648	0
+110	513	0.020146287648	0
+111	0	0	0
+111	0	0	0
+111	27	0.001427707557	0
+111	27	0.001427707557	0
+111	78	0.001865707557	0
+111	78	0.001865707557	0
+111	191	0.009700181489	0
+111	191	0.009700181489	0
+111	260	0.010138181489	0
+111	260	0.010138181489	0
+111	297	0.010228396169	0
+111	297	0.010228396169	0
+111	336	0.010666396169	0
+111	336	0.010666396169	0
+111	384	0.013968435299	0
+111	384	0.013968435299	0
+111	417	0.014406435299	0
+111	417	0.014406435299	0
+111	477	0.019708416177	0
+111	477	0.019708416177	0
+111	537	0.020146416177	0
+111	537	0.020146416177	0
+112	0	0	0
+112	0	0	0
+112	27	0.001427707557	0
+112	27	0.001427707557	0
+112	78	0.001865707557	0
+112	78	0.001865707557	0
+112	191	0.009700181489	0
+112	191	0.009700181489	0
+112	260	0.010138181489	0
+112	260	0.010138181489	0
+112	297	0.010228396169	0
+112	297	0.010228396169	0
+112	336	0.010666396169	0
+112	336	0.010666396169	0
+112	384	0.013968435299	0
+112	384	0.013968435299	0
+112	417	0.014406435299	0
+112	417	0.014406435299	0
+112	477	0.019708416177	0
+112	477	0.019708416177	0
+112	537	0.020146416177	0
+112	537	0.020146416177	0
+113	0	0	0
+113	0	0	0
+113	27	0.001427707557	0
+113	27	0.001427707557	0
+113	78	0.001865707557	0
+113	78	0.001865707557	0
+113	191	0.009700181489	0
+113	191	0.009700181489	0
+113	260	0.010138181489	0
+113	260	0.010138181489	0
+113	297	0.010228396169	0
+113	297	0.010228396169	0
+113	336	0.010666396169	0
+113	336	0.010666396169	0
+113	384	0.013968435299	0
+113	384	0.013968435299	0
+113	417	0.014406435299	0
+113	417	0.014406435299	0
+113	477	0.019708416177	0
+113	477	0.019708416177	0
+113	537	0.020146416177	0
+113	537	0.020146416177	0
+114	0	0	0
+114	0	0	0
+114	27	0.001427707557	0
+114	27	0.001427707557	0
+114	78	0.001865707557	0
+114	78	0.001865707557	0
+114	191	0.009700181489	0
+114	191	0.009700181489	0
+114	260	0.010138181489	0
+114	260	0.010138181489	0
+114	297	0.010228396169	0
+114	297	0.010228396169	0
+114	336	0.010666396169	0
+114	336	0.010666396169	0
+114	384	0.013968435299	0
+114	384	0.013968435299	0
+114	417	0.014406435299	0
+114	417	0.014406435299	0
+114	477	0.019708416177	0
+114	477	0.019708416177	0
+114	537	0.020146416177	0
+114	537	0.020146416177	0
+115	0	0	0
+115	0	0	0
+115	27	0.001427707557	0
+115	27	0.001427707557	0
+115	78	0.001865707557	0
+115	78	0.001865707557	0
+115	191	0.009700181489	0
+115	191	0.009700181489	0
+115	260	0.010138181489	0
+115	260	0.010138181489	0
+115	297	0.010228396169	0
+115	297	0.010228396169	0
+115	336	0.010666396169	0
+115	336	0.010666396169	0
+115	384	0.013968435299	0
+115	384	0.013968435299	0
+115	417	0.014406435299	0
+115	417	0.014406435299	0
+115	477	0.019708416177	0
+115	477	0.019708416177	0
+115	537	0.020146416177	0
+115	537	0.020146416177	0
+116	0	0	0
+116	0	0	0
+116	22	0.00142760251	0
+116	22	0.00142760251	0
+116	67	0.00186560251	0
+116	67	0.00186560251	0
+116	98	0.005641711181	0
+116	98	0.005641711181	0
+116	135	0.006079711181	0
+116	135	0.006079711181	0
+116	179	0.009699924157	0
+116	179	0.009699924157	0
+116	226	0.010137924157	0
+116	226	0.010137924157	0
+116	304	0.010228561483	0
+116	304	0.010228561483	0
+116	355	0.010666561483	0
+116	355	0.010666561483	0
+116	484	0.019708560191	0
+116	484	0.019708560191	0
+116	556	0.020146560191	0
+116	556	0.020146560191	0
+117	0	0	0
+117	0	0	0
+117	22	0.00142760251	0
+117	22	0.00142760251	0
+117	67	0.00186560251	0
+117	67	0.00186560251	0
+117	98	0.005641711181	0
+117	98	0.005641711181	0
+117	135	0.006079711181	0
+117	135	0.006079711181	0
+117	179	0.009699924157	0
+117	179	0.009699924157	0
+117	226	0.010137924157	0
+117	226	0.010137924157	0
+117	304	0.010228561483	0
+117	304	0.010228561483	0
+117	355	0.010666561483	0
+117	355	0.010666561483	0
+117	484	0.019708560191	0
+117	484	0.019708560191	0
+117	556	0.020146560191	0
+117	556	0.020146560191	0
+118	0	0	0
+118	0	0	0
+118	22	0.00142760251	0
+118	22	0.00142760251	0
+118	67	0.00186560251	0
+118	67	0.00186560251	0
+118	98	0.005641711181	0
+118	98	0.005641711181	0
+118	135	0.006079711181	0
+118	135	0.006079711181	0
+118	179	0.009699924157	0
+118	179	0.009699924157	0
+118	226	0.010137924157	0
+118	226	0.010137924157	0
+118	304	0.010228561483	0
+118	304	0.010228561483	0
+118	355	0.010666561483	0
+118	355	0.010666561483	0
+118	484	0.019708560191	0
+118	484	0.019708560191	0
+118	556	0.020146560191	0
+118	556	0.020146560191	0
+119	0	0	0
+119	0	0	0
+119	22	0.00142760251	0
+119	22	0.00142760251	0
+119	67	0.00186560251	0
+119	67	0.00186560251	0
+119	98	0.005641711181	0
+119	98	0.005641711181	0
+119	135	0.006079711181	0
+119	135	0.006079711181	0
+119	179	0.009699924157	0
+119	179	0.009699924157	0
+119	226	0.010137924157	0
+119	226	0.010137924157	0
+119	304	0.010228561483	0
+119	304	0.010228561483	0
+119	355	0.010666561483	0
+119	355	0.010666561483	0
+119	484	0.019708560191	0
+119	484	0.019708560191	0
+119	556	0.020146560191	0
+119	556	0.020146560191	0
+120	0	0	0
+120	0	0	0
+120	22	0.00142760251	0
+120	22	0.00142760251	0
+120	67	0.00186560251	0
+120	67	0.00186560251	0
+120	98	0.005641711181	0
+120	98	0.005641711181	0
+120	135	0.006079711181	0
+120	135	0.006079711181	0
+120	179	0.009699924157	0
+120	179	0.009699924157	0
+120	226	0.010137924157	0
+120	226	0.010137924157	0
+120	304	0.010228561483	0
+120	304	0.010228561483	0
+120	355	0.010666561483	0
+120	355	0.010666561483	0
+120	484	0.019708560191	0
+120	484	0.019708560191	0
+120	556	0.020146560191	0
+120	556	0.020146560191	0
+121	0	0	0
+121	0	0	0
+121	21	0.001427599124	0
+121	21	0.001427599124	0
+121	64	0.001865599124	0
+121	64	0.001865599124	0
+121	97	0.005641709562	0
+121	97	0.005641709562	0
+121	132	0.006079709562	0
+121	132	0.006079709562	0
+121	180	0.009699927096	0
+121	180	0.009699927096	0
+121	229	0.010137927096	0
+121	229	0.010137927096	0
+121	302	0.010228538122	0
+121	302	0.010228538122	0
+121	349	0.010666538122	0
+121	349	0.010666538122	0
+121	391	0.013968627475	0
+121	391	0.013968627475	0
+121	438	0.014406627475	0
+121	438	0.014406627475	0
+121	482	0.019708536555	0
+121	482	0.019708536555	0
+121	552	0.020146536555	0
+121	552	0.020146536555	0
+122	0	0	0
+122	0	0	0
+122	21	0.001427599124	0
+122	21	0.001427599124	0
+122	64	0.001865599124	0
+122	64	0.001865599124	0
+122	97	0.005641709562	0
+122	97	0.005641709562	0
+122	132	0.006079709562	0
+122	132	0.006079709562	0
+122	180	0.009699927096	0
+122	180	0.009699927096	0
+122	229	0.010137927096	0
+122	229	0.010137927096	0
+122	302	0.010228538122	0
+122	302	0.010228538122	0
+122	349	0.010666538122	0
+122	349	0.010666538122	0
+122	391	0.013968627475	0
+122	391	0.013968627475	0
+122	438	0.014406627475	0
+122	438	0.014406627475	0
+122	482	0.019708536555	0
+122	482	0.019708536555	0
+122	552	0.020146536555	0
+122	552	0.020146536555	0
+123	0	0	0
+123	0	0	0
+123	21	0.001427599124	0
+123	21	0.001427599124	0
+123	64	0.001865599124	0
+123	64	0.001865599124	0
+123	97	0.005641709562	0
+123	97	0.005641709562	0
+123	132	0.006079709562	0
+123	132	0.006079709562	0
+123	180	0.009699927096	0
+123	180	0.009699927096	0
+123	229	0.010137927096	0
+123	229	0.010137927096	0
+123	302	0.010228538122	0
+123	302	0.010228538122	0
+123	349	0.010666538122	0
+123	349	0.010666538122	0
+123	391	0.013968627475	0
+123	391	0.013968627475	0
+123	438	0.014406627475	0
+123	438	0.014406627475	0
+123	482	0.019708536555	0
+123	482	0.019708536555	0
+123	552	0.020146536555	0
+123	552	0.020146536555	0
+124	0	0	0
+124	0	0	0
+124	21	0.001427599124	0
+124	21	0.001427599124	0
+124	64	0.001865599124	0
+124	64	0.001865599124	0
+124	97	0.005641709562	0
+124	97	0.005641709562	0
+124	132	0.006079709562	0
+124	132	0.006079709562	0
+124	180	0.009699927096	0
+124	180	0.009699927096	0
+124	229	0.010137927096	0
+124	229	0.010137927096	0
+124	302	0.010228538122	0
+124	302	0.010228538122	0
+124	349	0.010666538122	0
+124	349	0.010666538122	0
+124	391	0.013968627475	0
+124	391	0.013968627475	0
+124	438	0.014406627475	0
+124	438	0.014406627475	0
+124	482	0.019708536555	0
+124	482	0.019708536555	0
+124	552	0.020146536555	0
+124	552	0.020146536555	0
+125	0	0	0
+125	0	0	0
+125	21	0.001427599124	0
+125	21	0.001427599124	0
+125	64	0.001865599124	0
+125	64	0.001865599124	0
+125	97	0.005641709562	0
+125	97	0.005641709562	0
+125	132	0.006079709562	0
+125	132	0.006079709562	0
+125	180	0.009699927096	0
+125	180	0.009699927096	0
+125	229	0.010137927096	0
+125	229	0.010137927096	0
+125	302	0.010228538122	0
+125	302	0.010228538122	0
+125	349	0.010666538122	0
+125	349	0.010666538122	0
+125	391	0.013968627475	0
+125	391	0.013968627475	0
+125	438	0.014406627475	0
+125	438	0.014406627475	0
+125	482	0.019708536555	0
+125	482	0.019708536555	0
+125	552	0.020146536555	0
+125	552	0.020146536555	0
+126	0	0	0
+126	0	0	0
+126	12	0.001427519233	0
+126	12	0.001427519233	0
+126	41	0.001865519233	0
+126	41	0.001865519233	0
+126	93	0.00564162752	0
+126	93	0.00564162752	0
+126	120	0.00607962752	0
+126	120	0.00607962752	0
+126	172	0.009609840112	0
+126	172	0.009609840112	2
+126	173	0.009699840112	2
+126	173	0.009699840112	0
+126	176	0.009699840112	0
+126	176	0.009699840112	0
+126	222	0.010137840112	0
+126	222	0.010137840112	0
+126	301	0.010228531544	0
+126	301	0.010228531544	0
+126	346	0.010666531544	0
+126	346	0.010666531544	0
+126	392	0.013968638967	0
+126	392	0.013968638967	0
+126	441	0.014406638967	0
+126	441	0.014406638967	0
+126	481	0.019708533873	0
+126	481	0.019708533873	0
+126	549	0.020146533873	0
+126	549	0.020146533873	0
+127	0	0	0
+127	0	0	0
+127	12	0.001427519233	0
+127	12	0.001427519233	0
+127	41	0.001865519233	0
+127	41	0.001865519233	0
+127	93	0.00564162752	0
+127	93	0.00564162752	0
+127	120	0.00607962752	0
+127	120	0.00607962752	0
+127	176	0.009699840112	0
+127	176	0.009699840112	0
+127	222	0.010137840112	0
+127	222	0.010137840112	0
+127	301	0.010228531544	0
+127	301	0.010228531544	0
+127	346	0.010666531544	0
+127	346	0.010666531544	0
+127	392	0.013968638967	0
+127	392	0.013968638967	0
+127	441	0.014406638967	0
+127	441	0.014406638967	0
+127	481	0.019708533873	0
+127	481	0.019708533873	0
+127	549	0.020146533873	0
+127	549	0.020146533873	0
+128	0	0	0
+128	0	0	0
+128	12	0.001427519233	0
+128	12	0.001427519233	0
+128	41	0.001865519233	0
+128	41	0.001865519233	0
+128	93	0.00564162752	0
+128	93	0.00564162752	0
+128	120	0.00607962752	0
+128	120	0.00607962752	0
+128	176	0.009699840112	0
+128	176	0.009699840112	0
+128	222	0.010137840112	0
+128	222	0.010137840112	0
+128	301	0.010228531544	0
+128	301	0.010228531544	0
+128	346	0.010666531544	0
+128	346	0.010666531544	0
+128	392	0.013968638967	0
+128	392	0.013968638967	0
+128	441	0.014406638967	0
+128	441	0.014406638967	0
+128	481	0.019708533873	0
+128	481	0.019708533873	0
+128	549	0.020146533873	0
+128	549	0.020146533873	0
+129	0	0	0
+129	0	0	0
+129	12	0.001427519233	0
+129	12	0.001427519233	0
+129	41	0.001865519233	0
+129	41	0.001865519233	0
+129	93	0.00564162752	0
+129	93	0.00564162752	0
+129	120	0.00607962752	0
+129	120	0.00607962752	0
+129	176	0.009699840112	0
+129	176	0.009699840112	0
+129	222	0.010137840112	0
+129	222	0.010137840112	0
+129	301	0.010228531544	0
+129	301	0.010228531544	0
+129	346	0.010666531544	0
+129	346	0.010666531544	0
+129	392	0.013968638967	0
+129	392	0.013968638967	0
+129	441	0.014406638967	0
+129	441	0.014406638967	0
+129	481	0.019708533873	0
+129	481	0.019708533873	0
+129	549	0.020146533873	0
+129	549	0.020146533873	0
+130	0	0	0
+130	0	0	0
+130	12	0.001427519233	0
+130	12	0.001427519233	0
+130	41	0.001865519233	0
+130	41	0.001865519233	0
+130	93	0.00564162752	0
+130	93	0.00564162752	0
+130	120	0.00607962752	0
+130	120	0.00607962752	0
+130	176	0.009699840112	0
+130	176	0.009699840112	0
+130	222	0.010137840112	0
+130	222	0.010137840112	0
+130	301	0.010228531544	0
+130	301	0.010228531544	0
+130	346	0.010666531544	0
+130	346	0.010666531544	0
+130	392	0.013968638967	0
+130	392	0.013968638967	0
+130	441	0.014406638967	0
+130	441	0.014406638967	0
+130	481	0.019708533873	0
+130	481	0.019708533873	0
+130	549	0.020146533873	0
+130	549	0.020146533873	0
+131	0	0	0
+131	0	0	0
+131	111	0.005641884844	0
+131	111	0.005641884844	0
+131	168	0.006079884844	0
+131	168	0.006079884844	0
+131	198	0.009700336677	0
+131	198	0.009700336677	0
+131	281	0.010138336677	0
+131	281	0.010138336677	0
+131	296	0.010228383579	0
+131	296	0.010228383579	0
+131	333	0.010666383579	0
+131	333	0.010666383579	0
+131	388	0.013968556413	0
+131	388	0.013968556413	0
+131	429	0.014406556413	0
+131	429	0.014406556413	0
+131	478	0.019708480583	0
+131	478	0.019708480583	0
+131	540	0.020146480583	0
+131	540	0.020146480583	0
+132	0	0	0
+132	0	0	0
+132	111	0.005641884844	0
+132	111	0.005641884844	0
+132	168	0.006079884844	0
+132	168	0.006079884844	0
+132	198	0.009700336677	0
+132	198	0.009700336677	0
+132	281	0.010138336677	0
+132	281	0.010138336677	0
+132	296	0.010228383579	0
+132	296	0.010228383579	0
+132	333	0.010666383579	0
+132	333	0.010666383579	0
+132	388	0.013968556413	0
+132	388	0.013968556413	0
+132	429	0.014406556413	0
+132	429	0.014406556413	0
+132	478	0.019708480583	0
+132	478	0.019708480583	0
+132	540	0.020146480583	0
+132	540	0.020146480583	0
+133	0	0	0
+133	0	0	0
+133	111	0.005641884844	0
+133	111	0.005641884844	0
+133	168	0.006079884844	0
+133	168	0.006079884844	0
+133	198	0.009700336677	0
+133	198	0.009700336677	0
+133	281	0.010138336677	0
+133	281	0.010138336677	0
+133	296	0.010228383579	0
+133	296	0.010228383579	0
+133	333	0.010666383579	0
+133	333	0.010666383579	0
+133	388	0.013968556413	0
+133	388	0.013968556413	0
+133	429	0.014406556413	0
+133	429	0.014406556413	0
+133	478	0.019708480583	0
+133	478	0.019708480583	0
+133	540	0.020146480583	0
+133	540	0.020146480583	0
+134	0	0	0
+134	0	0	0
+134	111	0.005641884844	0
+134	111	0.005641884844	0
+134	168	0.006079884844	0
+134	168	0.006079884844	0
+134	198	0.009700336677	0
+134	198	0.009700336677	0
+134	281	0.010138336677	0
+134	281	0.010138336677	0
+134	296	0.010228383579	0
+134	296	0.010228383579	0
+134	333	0.010666383579	0
+134	333	0.010666383579	0
+134	388	0.013968556413	0
+134	388	0.013968556413	0
+134	429	0.014406556413	0
+134	429	0.014406556413	0
+134	478	0.019708480583	0
+134	478	0.019708480583	0
+134	540	0.020146480583	0
+134	540	0.020146480583	0
+135	0	0	0
+135	0	0	0
+135	111	0.005641884844	0
+135	111	0.005641884844	0
+135	168	0.006079884844	0
+135	168	0.006079884844	0
+135	198	0.009700336677	0
+135	198	0.009700336677	0
+135	281	0.010138336677	0
+135	281	0.010138336677	0
+135	296	0.010228383579	0
+135	296	0.010228383579	0
+135	333	0.010666383579	0
+135	333	0.010666383579	0
+135	388	0.013968556413	0
+135	388	0.013968556413	0
+135	429	0.014406556413	0
+135	429	0.014406556413	0
+135	478	0.019708480583	0
+135	478	0.019708480583	0
+135	540	0.020146480583	0
+135	540	0.020146480583	0
+136	0	0	0
+136	0	0	0
+136	25	0.001427672267	0
+136	25	0.001427672267	0
+136	72	0.001865672267	0
+136	72	0.001865672267	0
+136	103	0.005641780414	0
+136	103	0.005641780414	0
+136	148	0.006079780414	0
+136	148	0.006079780414	0
+136	181	0.009699993369	0
+136	181	0.009699993369	0
+136	232	0.010137993369	0
+136	232	0.010137993369	0
+136	308	0.01022862261	0
+136	308	0.01022862261	0
+136	367	0.01066662261	0
+136	367	0.01066662261	0
+136	396	0.013968705721	0
+136	396	0.013968705721	0
+136	451	0.014406705721	0
+136	451	0.014406705721	0
+136	488	0.019708620608	0
+136	488	0.019708620608	0
+136	568	0.020146620608	0
+136	568	0.020146620608	0
+137	0	0	0
+137	0	0	0
+137	25	0.001427672267	0
+137	25	0.001427672267	0
+137	72	0.001865672267	0
+137	72	0.001865672267	0
+137	103	0.005641780414	0
+137	103	0.005641780414	0
+137	148	0.006079780414	0
+137	148	0.006079780414	0
+137	181	0.009699993369	0
+137	181	0.009699993369	0
+137	232	0.010137993369	0
+137	232	0.010137993369	0
+137	308	0.01022862261	0
+137	308	0.01022862261	0
+137	367	0.01066662261	0
+137	367	0.01066662261	0
+137	396	0.013968705721	0
+137	396	0.013968705721	0
+137	451	0.014406705721	0
+137	451	0.014406705721	0
+137	488	0.019708620608	0
+137	488	0.019708620608	0
+137	568	0.020146620608	0
+137	568	0.020146620608	0
+138	0	0	0
+138	0	0	0
+138	25	0.001427672267	0
+138	25	0.001427672267	0
+138	72	0.001865672267	0
+138	72	0.001865672267	0
+138	103	0.005641780414	0
+138	103	0.005641780414	0
+138	148	0.006079780414	0
+138	148	0.006079780414	0
+138	181	0.009699993369	0
+138	181	0.009699993369	0
+138	232	0.010137993369	0
+138	232	0.010137993369	0
+138	308	0.01022862261	0
+138	308	0.01022862261	0
+138	367	0.01066662261	0
+138	367	0.01066662261	0
+138	396	0.013968705721	0
+138	396	0.013968705721	0
+138	451	0.014406705721	0
+138	451	0.014406705721	0
+138	488	0.019708620608	0
+138	488	0.019708620608	0
+138	568	0.020146620608	0
+138	568	0.020146620608	0
+139	0	0	0
+139	0	0	0
+139	25	0.001427672267	0
+139	25	0.001427672267	0
+139	72	0.001865672267	0
+139	72	0.001865672267	0
+139	103	0.005641780414	0
+139	103	0.005641780414	0
+139	148	0.006079780414	0
+139	148	0.006079780414	0
+139	181	0.009699993369	0
+139	181	0.009699993369	0
+139	232	0.010137993369	0
+139	232	0.010137993369	0
+139	308	0.01022862261	0
+139	308	0.01022862261	0
+139	367	0.01066662261	0
+139	367	0.01066662261	0
+139	396	0.013968705721	0
+139	396	0.013968705721	0
+139	451	0.014406705721	0
+139	451	0.014406705721	0
+139	488	0.019708620608	0
+139	488	0.019708620608	0
+139	568	0.020146620608	0
+139	568	0.020146620608	0
+140	0	0	0
+140	0	0	0
+140	25	0.001427672267	0
+140	25	0.001427672267	0
+140	72	0.001865672267	0
+140	72	0.001865672267	0
+140	103	0.005641780414	0
+140	103	0.005641780414	0
+140	148	0.006079780414	0
+140	148	0.006079780414	0
+140	181	0.009699993369	0
+140	181	0.009699993369	0
+140	232	0.010137993369	0
+140	232	0.010137993369	0
+140	308	0.01022862261	0
+140	308	0.01022862261	0
+140	367	0.01066662261	0
+140	367	0.01066662261	0
+140	396	0.013968705721	0
+140	396	0.013968705721	0
+140	451	0.014406705721	0
+140	451	0.014406705721	0
+140	488	0.019708620608	0
+140	488	0.019708620608	0
+140	568	0.020146620608	0
+140	568	0.020146620608	0
+141	0	0	0
+141	0	0	0
+141	8	0.00142718348	0
+141	8	0.00142718348	0
+141	31	0.00186518348	0
+141	31	0.00186518348	0
+141	95	0.005641683149	0
+141	95	0.005641683149	0
+141	126	0.006079683149	0
+141	126	0.006079683149	0
+141	196	0.009700211713	0
+141	196	0.009700211713	0
+141	275	0.010138211713	0
+141	275	0.010138211713	0
+141	307	0.010228573636	0
+141	307	0.010228573636	0
+141	364	0.010666573636	0
+141	364	0.010666573636	0
+141	398	0.013968742685	0
+141	398	0.013968742685	0
+141	457	0.014406742685	0
+141	457	0.014406742685	0
+141	487	0.01970862031	0
+141	487	0.01970862031	0
+141	565	0.02014662031	0
+141	565	0.02014662031	0
+142	0	0	0
+142	0	0	0
+142	8	0.00142718348	0
+142	8	0.00142718348	0
+142	31	0.00186518348	0
+142	31	0.00186518348	0
+142	95	0.005641683149	0
+142	95	0.005641683149	0
+142	126	0.006079683149	0
+142	126	0.006079683149	0
+142	196	0.009700211713	0
+142	196	0.009700211713	0
+142	275	0.010138211713	0
+142	275	0.010138211713	0
+142	307	0.010228573636	0
+142	307	0.010228573636	0
+142	364	0.010666573636	0
+142	364	0.010666573636	0
+142	398	0.013968742685	0
+142	398	0.013968742685	0
+142	457	0.014406742685	0
+142	457	0.014406742685	0
+142	487	0.01970862031	0
+142	487	0.01970862031	0
+142	565	0.02014662031	0
+142	565	0.02014662031	0
+143	0	0	0
+143	0	0	0
+143	8	0.00142718348	0
+143	8	0.00142718348	0
+143	31	0.00186518348	0
+143	31	0.00186518348	0
+143	95	0.005641683149	0
+143	95	0.005641683149	0
+143	126	0.006079683149	0
+143	126	0.006079683149	0
+143	196	0.009700211713	0
+143	196	0.009700211713	0
+143	275	0.010138211713	0
+143	275	0.010138211713	0
+143	307	0.010228573636	0
+143	307	0.010228573636	0
+143	364	0.010666573636	0
+143	364	0.010666573636	0
+143	398	0.013968742685	0
+143	398	0.013968742685	0
+143	457	0.014406742685	0
+143	457	0.014406742685	0
+143	487	0.01970862031	0
+143	487	0.01970862031	0
+143	565	0.02014662031	0
+143	565	0.02014662031	0
+144	0	0	0
+144	0	0	0
+144	8	0.00142718348	0
+144	8	0.00142718348	0
+144	31	0.00186518348	0
+144	31	0.00186518348	0
+144	95	0.005641683149	0
+144	95	0.005641683149	0
+144	126	0.006079683149	0
+144	126	0.006079683149	0
+144	196	0.009700211713	0
+144	196	0.009700211713	0
+144	275	0.010138211713	0
+144	275	0.010138211713	0
+144	307	0.010228573636	0
+144	307	0.010228573636	0
+144	364	0.010666573636	0
+144	364	0.010666573636	0
+144	398	0.013968742685	0
+144	398	0.013968742685	0
+144	457	0.014406742685	0
+144	457	0.014406742685	0
+144	487	0.01970862031	0
+144	487	0.01970862031	0
+144	565	0.02014662031	0
+144	565	0.02014662031	0
+145	0	0	0
+145	0	0	0
+145	8	0.00142718348	0
+145	8	0.00142718348	0
+145	31	0.00186518348	0
+145	31	0.00186518348	0
+145	95	0.005641683149	0
+145	95	0.005641683149	0
+145	126	0.006079683149	0
+145	126	0.006079683149	0
+145	196	0.009700211713	0
+145	196	0.009700211713	0
+145	275	0.010138211713	0
+145	275	0.010138211713	0
+145	307	0.010228573636	0
+145	307	0.010228573636	0
+145	364	0.010666573636	0
+145	364	0.010666573636	0
+145	398	0.013968742685	0
+145	398	0.013968742685	0
+145	457	0.014406742685	0
+145	457	0.014406742685	0
+145	487	0.01970862031	0
+145	487	0.01970862031	0
+145	565	0.02014662031	0
+145	565	0.02014662031	0
+146	0	0	0
+146	0	0	0
+146	105	0.005641793501	0
+146	105	0.005641793501	0
+146	152	0.006079793501	0
+146	152	0.006079793501	0
+146	185	0.00970003196	0
+146	185	0.00970003196	0
+146	242	0.01013803196	0
+146	242	0.01013803196	0
+146	389	0.013968575811	0
+146	389	0.013968575811	0
+146	432	0.014406575811	0
+146	432	0.014406575811	0
+146	479	0.019708507169	0
+146	479	0.019708507169	0
+146	543	0.020146507169	0
+146	543	0.020146507169	0
+147	0	0	0
+147	0	0	0
+147	105	0.005641793501	0
+147	105	0.005641793501	0
+147	152	0.006079793501	0
+147	152	0.006079793501	0
+147	185	0.00970003196	0
+147	185	0.00970003196	0
+147	242	0.01013803196	0
+147	242	0.01013803196	0
+147	389	0.013968575811	0
+147	389	0.013968575811	0
+147	432	0.014406575811	0
+147	432	0.014406575811	0
+147	479	0.019708507169	0
+147	479	0.019708507169	0
+147	543	0.020146507169	0
+147	543	0.020146507169	0
+148	0	0	0
+148	0	0	0
+148	105	0.005641793501	0
+148	105	0.005641793501	0
+148	152	0.006079793501	0
+148	152	0.006079793501	0
+148	185	0.00970003196	0
+148	185	0.00970003196	0
+148	242	0.01013803196	0
+148	242	0.01013803196	0
+148	389	0.013968575811	0
+148	389	0.013968575811	0
+148	432	0.014406575811	0
+148	432	0.014406575811	0
+148	479	0.019708507169	0
+148	479	0.019708507169	0
+148	543	0.020146507169	0
+148	543	0.020146507169	0
+149	0	0	0
+149	0	0	0
+149	105	0.005641793501	0
+149	105	0.005641793501	0
+149	152	0.006079793501	0
+149	152	0.006079793501	0
+149	185	0.00970003196	0
+149	185	0.00970003196	0
+149	242	0.01013803196	0
+149	242	0.01013803196	0
+149	389	0.013968575811	0
+149	389	0.013968575811	0
+149	432	0.014406575811	0
+149	432	0.014406575811	0
+149	479	0.019708507169	0
+149	479	0.019708507169	0
+149	543	0.020146507169	0
+149	543	0.020146507169	0
+150	0	0	0
+150	0	0	0
+150	105	0.005641793501	0
+150	105	0.005641793501	0
+150	152	0.006079793501	0
+150	152	0.006079793501	0
+150	185	0.00970003196	0
+150	185	0.00970003196	0
+150	242	0.01013803196	0
+150	242	0.01013803196	0
+150	389	0.013968575811	0
+150	389	0.013968575811	0
+150	432	0.014406575811	0
+150	432	0.014406575811	0
+150	479	0.019708507169	0
+150	479	0.019708507169	0
+150	543	0.020146507169	0
+150	543	0.020146507169	0
+151	0	0	0
+151	0	0	0
+151	20	0.001427598337	0
+151	20	0.001427598337	0
+151	61	0.001865598337	0
+151	61	0.001865598337	0
+151	102	0.005641774781	0
+151	102	0.005641774781	0
+151	145	0.006079774781	0
+151	145	0.006079774781	0
+151	188	0.009700101303	0
+151	188	0.009700101303	0
+151	251	0.010138101303	0
+151	251	0.010138101303	0
+151	292	0.010228325443	0
+151	292	0.010228325443	0
+151	321	0.010666325443	0
+151	321	0.010666325443	0
+151	382	0.013968390964	0
+151	382	0.013968390964	0
+151	411	0.014406390964	0
+151	411	0.014406390964	0
+151	471	0.019708328511	0
+151	471	0.019708328511	0
+151	519	0.020146328511	0
+151	519	0.020146328511	0
+152	0	0	0
+152	0	0	0
+152	20	0.001427598337	0
+152	20	0.001427598337	0
+152	61	0.001865598337	0
+152	61	0.001865598337	0
+152	102	0.005641774781	0
+152	102	0.005641774781	0
+152	145	0.006079774781	0
+152	145	0.006079774781	0
+152	188	0.009700101303	0
+152	188	0.009700101303	0
+152	251	0.010138101303	0
+152	251	0.010138101303	0
+152	292	0.010228325443	0
+152	292	0.010228325443	0
+152	321	0.010666325443	0
+152	321	0.010666325443	0
+152	382	0.013968390964	0
+152	382	0.013968390964	0
+152	411	0.014406390964	0
+152	411	0.014406390964	0
+152	471	0.019708328511	0
+152	471	0.019708328511	0
+152	519	0.020146328511	0
+152	519	0.020146328511	0
+153	0	0	0
+153	0	0	0
+153	20	0.001427598337	0
+153	20	0.001427598337	0
+153	61	0.001865598337	0
+153	61	0.001865598337	0
+153	102	0.005641774781	0
+153	102	0.005641774781	0
+153	145	0.006079774781	0
+153	145	0.006079774781	0
+153	188	0.009700101303	0
+153	188	0.009700101303	0
+153	251	0.010138101303	0
+153	251	0.010138101303	0
+153	292	0.010228325443	0
+153	292	0.010228325443	0
+153	321	0.010666325443	0
+153	321	0.010666325443	0
+153	382	0.013968390964	0
+153	382	0.013968390964	0
+153	411	0.014406390964	0
+153	411	0.014406390964	0
+153	471	0.019708328511	0
+153	471	0.019708328511	0
+153	519	0.020146328511	0
+153	519	0.020146328511	0
+154	0	0	0
+154	0	0	0
+154	20	0.001427598337	0
+154	20	0.001427598337	0
+154	61	0.001865598337	0
+154	61	0.001865598337	0
+154	102	0.005641774781	0
+154	102	0.005641774781	0
+154	145	0.006079774781	0
+154	145	0.006079774781	0
+154	188	0.009700101303	0
+154	188	0.009700101303	0
+154	251	0.010138101303	0
+154	251	0.010138101303	0
+154	292	0.010228325443	0
+154	292	0.010228325443	0
+154	321	0.010666325443	0
+154	321	0.010666325443	0
+154	382	0.013968390964	0
+154	382	0.013968390964	0
+154	411	0.014406390964	0
+154	411	0.014406390964	0
+154	471	0.019708328511	0
+154	471	0.019708328511	0
+154	519	0.020146328511	0
+154	519	0.020146328511	0
+155	0	0	0
+155	0	0	0
+155	20	0.001427598337	0
+155	20	0.001427598337	0
+155	61	0.001865598337	0
+155	61	0.001865598337	0
+155	102	0.005641774781	0
+155	102	0.005641774781	0
+155	145	0.006079774781	0
+155	145	0.006079774781	0
+155	188	0.009700101303	0
+155	188	0.009700101303	0
+155	251	0.010138101303	0
+155	251	0.010138101303	0
+155	292	0.010228325443	0
+155	292	0.010228325443	0
+155	321	0.010666325443	0
+155	321	0.010666325443	0
+155	382	0.013968390964	0
+155	382	0.013968390964	0
+155	411	0.014406390964	0
+155	411	0.014406390964	0
+155	471	0.019708328511	0
+155	471	0.019708328511	0
+155	519	0.020146328511	0
+155	519	0.020146328511	0
+156	0	0	0
+156	0	0	0
+156	28	0.001427747893	0
+156	28	0.001427747893	0
+156	81	0.001865747893	0
+156	81	0.001865747893	0
+156	109	0.00564187364	0
+156	109	0.00564187364	0
+156	164	0.00607987364	0
+156	164	0.00607987364	0
+156	189	0.009700111894	0
+156	189	0.009700111894	0
+156	254	0.010138111894	0
+156	254	0.010138111894	0
+156	303	0.010228544918	0
+156	303	0.010228544918	0
+156	352	0.010666544918	0
+156	352	0.010666544918	0
+156	390	0.013968599782	0
+156	390	0.013968599782	0
+156	435	0.014406599782	0
+156	435	0.014406599782	0
+157	0	0	0
+157	0	0	0
+157	28	0.001427747893	0
+157	28	0.001427747893	0
+157	81	0.001865747893	0
+157	81	0.001865747893	0
+157	109	0.00564187364	0
+157	109	0.00564187364	0
+157	164	0.00607987364	0
+157	164	0.00607987364	0
+157	189	0.009700111894	0
+157	189	0.009700111894	0
+157	254	0.010138111894	0
+157	254	0.010138111894	0
+157	303	0.010228544918	0
+157	303	0.010228544918	0
+157	352	0.010666544918	0
+157	352	0.010666544918	0
+157	390	0.013968599782	0
+157	390	0.013968599782	0
+157	435	0.014406599782	0
+157	435	0.014406599782	0
+158	0	0	0
+158	0	0	0
+158	28	0.001427747893	0
+158	28	0.001427747893	0
+158	81	0.001865747893	0
+158	81	0.001865747893	0
+158	109	0.00564187364	0
+158	109	0.00564187364	0
+158	164	0.00607987364	0
+158	164	0.00607987364	0
+158	189	0.009700111894	0
+158	189	0.009700111894	0
+158	254	0.010138111894	0
+158	254	0.010138111894	0
+158	303	0.010228544918	0
+158	303	0.010228544918	0
+158	352	0.010666544918	0
+158	352	0.010666544918	0
+158	390	0.013968599782	0
+158	390	0.013968599782	0
+158	435	0.014406599782	0
+158	435	0.014406599782	0
+159	0	0	0
+159	0	0	0
+159	28	0.001427747893	0
+159	28	0.001427747893	0
+159	81	0.001865747893	0
+159	81	0.001865747893	0
+159	109	0.00564187364	0
+159	109	0.00564187364	0
+159	164	0.00607987364	0
+159	164	0.00607987364	0
+159	189	0.009700111894	0
+159	189	0.009700111894	0
+159	254	0.010138111894	0
+159	254	0.010138111894	0
+159	303	0.010228544918	0
+159	303	0.010228544918	0
+159	352	0.010666544918	0
+159	352	0.010666544918	0
+159	390	0.013968599782	0
+159	390	0.013968599782	0
+159	435	0.014406599782	0
+159	435	0.014406599782	0
+160	0	0	0
+160	0	0	0
+160	28	0.001427747893	0
+160	28	0.001427747893	0
+160	81	0.001865747893	0
+160	81	0.001865747893	0
+160	109	0.00564187364	0
+160	109	0.00564187364	0
+160	164	0.00607987364	0
+160	164	0.00607987364	0
+160	189	0.009700111894	0
+160	189	0.009700111894	0
+160	254	0.010138111894	0
+160	254	0.010138111894	0
+160	303	0.010228544918	0
+160	303	0.010228544918	0
+160	352	0.010666544918	0
+160	352	0.010666544918	0
+160	390	0.013968599782	0
+160	390	0.013968599782	0
+160	435	0.014406599782	0
+160	435	0.014406599782	0
+161	0	0	0
+161	0	0	0
+161	85	0.005571469292	0
+161	85	0.005571469292	2
+161	86	0.005641469292	2
+161	86	0.005641469292	0
+161	89	0.005641469292	0
+161	89	0.005641469292	0
+161	113	0.006079469292	0
+161	113	0.006079469292	0
+161	182	0.00969999834	0
+161	182	0.00969999834	0
+161	235	0.01013799834	0
+161	235	0.01013799834	0
+161	300	0.010228509677	0
+161	300	0.010228509677	0
+161	343	0.010666509677	0
+161	343	0.010666509677	0
+161	393	0.013968649761	0
+161	393	0.013968649761	0
+161	444	0.014406649761	0
+161	444	0.014406649761	0
+161	480	0.019708528211	0
+161	480	0.019708528211	0
+161	546	0.020146528211	0
+161	546	0.020146528211	0
+162	0	0	0
+162	0	0	0
+162	89	0.005641469292	0
+162	89	0.005641469292	0
+162	113	0.006079469292	0
+162	113	0.006079469292	0
+162	182	0.00969999834	0
+162	182	0.00969999834	0
+162	235	0.01013799834	0
+162	235	0.01013799834	0
+162	300	0.010228509677	0
+162	300	0.010228509677	0
+162	343	0.010666509677	0
+162	343	0.010666509677	0
+162	393	0.013968649761	0
+162	393	0.013968649761	0
+162	444	0.014406649761	0
+162	444	0.014406649761	0
+162	480	0.019708528211	0
+162	480	0.019708528211	0
+162	546	0.020146528211	0
+162	546	0.020146528211	0
+163	0	0	0
+163	0	0	0
+163	89	0.005641469292	0
+163	89	0.005641469292	0
+163	113	0.006079469292	0
+163	113	0.006079469292	0
+163	182	0.00969999834	0
+163	182	0.00969999834	0
+163	235	0.01013799834	0
+163	235	0.01013799834	0
+163	300	0.010228509677	0
+163	300	0.010228509677	0
+163	343	0.010666509677	0
+163	343	0.010666509677	0
+163	393	0.013968649761	0
+163	393	0.013968649761	0
+163	444	0.014406649761	0
+163	444	0.014406649761	0
+163	480	0.019708528211	0
+163	480	0.019708528211	0
+163	546	0.020146528211	0
+163	546	0.020146528211	0
+164	0	0	0
+164	0	0	0
+164	89	0.005641469292	0
+164	89	0.005641469292	0
+164	113	0.006079469292	0
+164	113	0.006079469292	0
+164	182	0.00969999834	0
+164	182	0.00969999834	0
+164	235	0.01013799834	0
+164	235	0.01013799834	0
+164	300	0.010228509677	0
+164	300	0.010228509677	0
+164	343	0.010666509677	0
+164	343	0.010666509677	0
+164	393	0.013968649761	0
+164	393	0.013968649761	0
+164	444	0.014406649761	0
+164	444	0.014406649761	0
+164	480	0.019708528211	0
+164	480	0.019708528211	0
+164	546	0.020146528211	0
+164	546	0.020146528211	0
+165	0	0	0
+165	0	0	0
+165	89	0.005641469292	0
+165	89	0.005641469292	0
+165	113	0.006079469292	0
+165	113	0.006079469292	0
+165	182	0.00969999834	0
+165	182	0.00969999834	0
+165	235	0.01013799834	0
+165	235	0.01013799834	0
+165	300	0.010228509677	0
+165	300	0.010228509677	0
+165	343	0.010666509677	0
+165	343	0.010666509677	0
+165	393	0.013968649761	0
+165	393	0.013968649761	0
+165	444	0.014406649761	0
+165	444	0.014406649761	0
+165	480	0.019708528211	0
+165	480	0.019708528211	0
+165	546	0.020146528211	0
+165	546	0.020146528211	0
+166	0	0	0
+166	0	0	0
+166	26	0.001427683932	0
+166	26	0.001427683932	0
+166	75	0.001865683932	0
+166	75	0.001865683932	0
+166	108	0.005641870199	0
+166	108	0.005641870199	0
+166	161	0.006079870199	0
+166	161	0.006079870199	0
+166	194	0.009700190005	0
+166	194	0.009700190005	0
+166	269	0.010138190005	0
+166	269	0.010138190005	0
+166	293	0.010228355325	0
+166	293	0.010228355325	0
+166	324	0.010666355325	0
+166	324	0.010666355325	0
+166	383	0.013968393025	0
+166	383	0.013968393025	0
+166	414	0.014406393025	0
+166	414	0.014406393025	0
+166	474	0.019708382381	0
+166	474	0.019708382381	0
+166	528	0.020146382381	0
+166	528	0.020146382381	0
+167	0	0	0
+167	0	0	0
+167	26	0.001427683932	0
+167	26	0.001427683932	0
+167	75	0.001865683932	0
+167	75	0.001865683932	0
+167	108	0.005641870199	0
+167	108	0.005641870199	0
+167	161	0.006079870199	0
+167	161	0.006079870199	0
+167	194	0.009700190005	0
+167	194	0.009700190005	0
+167	269	0.010138190005	0
+167	269	0.010138190005	0
+167	293	0.010228355325	0
+167	293	0.010228355325	0
+167	324	0.010666355325	0
+167	324	0.010666355325	0
+167	383	0.013968393025	0
+167	383	0.013968393025	0
+167	414	0.014406393025	0
+167	414	0.014406393025	0
+167	474	0.019708382381	0
+167	474	0.019708382381	0
+167	528	0.020146382381	0
+167	528	0.020146382381	0
+168	0	0	0
+168	0	0	0
+168	26	0.001427683932	0
+168	26	0.001427683932	0
+168	75	0.001865683932	0
+168	75	0.001865683932	0
+168	108	0.005641870199	0
+168	108	0.005641870199	0
+168	161	0.006079870199	0
+168	161	0.006079870199	0
+168	194	0.009700190005	0
+168	194	0.009700190005	0
+168	269	0.010138190005	0
+168	269	0.010138190005	0
+168	293	0.010228355325	0
+168	293	0.010228355325	0
+168	324	0.010666355325	0
+168	324	0.010666355325	0
+168	383	0.013968393025	0
+168	383	0.013968393025	0
+168	414	0.014406393025	0
+168	414	0.014406393025	0
+168	474	0.019708382381	0
+168	474	0.019708382381	0
+168	528	0.020146382381	0
+168	528	0.020146382381	0
+169	0	0	0
+169	0	0	0
+169	26	0.001427683932	0
+169	26	0.001427683932	0
+169	75	0.001865683932	0
+169	75	0.001865683932	0
+169	108	0.005641870199	0
+169	108	0.005641870199	0
+169	161	0.006079870199	0
+169	161	0.006079870199	0
+169	194	0.009700190005	0
+169	194	0.009700190005	0
+169	269	0.010138190005	0
+169	269	0.010138190005	0
+169	293	0.010228355325	0
+169	293	0.010228355325	0
+169	324	0.010666355325	0
+169	324	0.010666355325	0
+169	383	0.013968393025	0
+169	383	0.013968393025	0
+169	414	0.014406393025	0
+169	414	0.014406393025	0
+169	474	0.019708382381	0
+169	474	0.019708382381	0
+169	528	0.020146382381	0
+169	528	0.020146382381	0
+170	0	0	0
+170	0	0	0
+170	26	0.001427683932	0
+170	26	0.001427683932	0
+170	75	0.001865683932	0
+170	75	0.001865683932	0
+170	108	0.005641870199	0
+170	108	0.005641870199	0
+170	161	0.006079870199	0
+170	161	0.006079870199	0
+170	194	0.009700190005	0
+170	194	0.009700190005	0
+170	269	0.010138190005	0
+170	269	0.010138190005	0
+170	293	0.010228355325	0
+170	293	0.010228355325	0
+170	324	0.010666355325	0
+170	324	0.010666355325	0
+170	383	0.013968393025	0
+170	383	0.013968393025	0
+170	414	0.014406393025	0
+170	414	0.014406393025	0
+170	474	0.019708382381	0
+170	474	0.019708382381	0
+170	528	0.020146382381	0
+170	528	0.020146382381	0
+171	0	0	0
+171	0	0	0
+171	16	0.001427578152	0
+171	16	0.001427578152	0
+171	51	0.001865578152	0
+171	51	0.001865578152	0
+171	99	0.005641723014	0
+171	99	0.005641723014	0
+171	138	0.006079723014	0
+171	138	0.006079723014	0
+171	184	0.009700016684	0
+171	184	0.009700016684	0
+171	239	0.010138016684	0
+171	239	0.010138016684	0
+171	298	0.010228397297	0
+171	298	0.010228397297	0
+171	339	0.010666397297	0
+171	339	0.010666397297	0
+171	385	0.013968478985	0
+171	385	0.013968478985	0
+171	420	0.014406478985	0
+171	420	0.014406478985	0
+171	476	0.019708395718	0
+171	476	0.019708395718	0
+171	534	0.020146395718	0
+171	534	0.020146395718	0
+172	0	0	0
+172	0	0	0
+172	16	0.001427578152	0
+172	16	0.001427578152	0
+172	51	0.001865578152	0
+172	51	0.001865578152	0
+172	99	0.005641723014	0
+172	99	0.005641723014	0
+172	138	0.006079723014	0
+172	138	0.006079723014	0
+172	184	0.009700016684	0
+172	184	0.009700016684	0
+172	239	0.010138016684	0
+172	239	0.010138016684	0
+172	298	0.010228397297	0
+172	298	0.010228397297	0
+172	339	0.010666397297	0
+172	339	0.010666397297	0
+172	385	0.013968478985	0
+172	385	0.013968478985	0
+172	420	0.014406478985	0
+172	420	0.014406478985	0
+172	476	0.019708395718	0
+172	476	0.019708395718	0
+172	534	0.020146395718	0
+172	534	0.020146395718	0
+173	0	0	0
+173	0	0	0
+173	16	0.001427578152	0
+173	16	0.001427578152	0
+173	51	0.001865578152	0
+173	51	0.001865578152	0
+173	99	0.005641723014	0
+173	99	0.005641723014	0
+173	138	0.006079723014	0
+173	138	0.006079723014	0
+173	184	0.009700016684	0
+173	184	0.009700016684	0
+173	239	0.010138016684	0
+173	239	0.010138016684	0
+173	298	0.010228397297	0
+173	298	0.010228397297	0
+173	339	0.010666397297	0
+173	339	0.010666397297	0
+173	385	0.013968478985	0
+173	385	0.013968478985	0
+173	420	0.014406478985	0
+173	420	0.014406478985	0
+173	476	0.019708395718	0
+173	476	0.019708395718	0
+173	534	0.020146395718	0
+173	534	0.020146395718	0
+174	0	0	0
+174	0	0	0
+174	16	0.001427578152	0
+174	16	0.001427578152	0
+174	51	0.001865578152	0
+174	51	0.001865578152	0
+174	99	0.005641723014	0
+174	99	0.005641723014	0
+174	138	0.006079723014	0
+174	138	0.006079723014	0
+174	184	0.009700016684	0
+174	184	0.009700016684	0
+174	239	0.010138016684	0
+174	239	0.010138016684	0
+174	298	0.010228397297	0
+174	298	0.010228397297	0
+174	339	0.010666397297	0
+174	339	0.010666397297	0
+174	385	0.013968478985	0
+174	385	0.013968478985	0
+174	420	0.014406478985	0
+174	420	0.014406478985	0
+174	476	0.019708395718	0
+174	476	0.019708395718	0
+174	534	0.020146395718	0
+174	534	0.020146395718	0
+175	0	0	0
+175	0	0	0
+175	16	0.001427578152	0
+175	16	0.001427578152	0
+175	51	0.001865578152	0
+175	51	0.001865578152	0
+175	99	0.005641723014	0
+175	99	0.005641723014	0
+175	138	0.006079723014	0
+175	138	0.006079723014	0
+175	184	0.009700016684	0
+175	184	0.009700016684	0
+175	239	0.010138016684	0
+175	239	0.010138016684	0
+175	298	0.010228397297	0
+175	298	0.010228397297	0
+175	339	0.010666397297	0
+175	339	0.010666397297	0
+175	385	0.013968478985	0
+175	385	0.013968478985	0
+175	420	0.014406478985	0
+175	420	0.014406478985	0
+175	476	0.019708395718	0
+175	476	0.019708395718	0
+175	534	0.020146395718	0
+175	534	0.020146395718	0
+176	2	0.001357164187	304
+177	5	0.001427164187	304
+178	6	0.001427164187	1
+178	7	0.001427164187	2
+178	29	0.001865164187	1
+178	30	0.001865164187	0
+179	32	0.00186518348	304
+179	127	0.006079683149	304
+179	276	0.010138211713	304
+179	365	0.010666573636	304
+179	458	0.014406742685	304
+179	566	0.02014662031	304
+180	32	0.00186518348	304
+180	127	0.006079683149	304
+180	276	0.010138211713	304
+180	365	0.010666573636	304
+180	458	0.014406742685	304
+180	566	0.02014662031	304
+181	36	0.001865404674	304
+181	115	0.006079607054	304
+181	246	0.010138043702	304
+181	331	0.010666372133	304
+181	427	0.014406518128	304
+181	532	0.020146394492	304
+182	36	0.001865404674	304
+182	115	0.006079607054	304
+182	246	0.010138043702	304
+182	331	0.010666372133	304
+182	427	0.014406518128	304
+182	532	0.020146394492	304
+183	39	0.001865447261	304
+183	118	0.00607962127	304
+183	328	0.010666367473	304
+183	424	0.014406498489	304
+183	526	0.020146378911	304
+184	39	0.001865447261	304
+184	118	0.00607962127	304
+184	328	0.010666367473	304
+184	424	0.014406498489	304
+184	526	0.020146378911	304
+185	42	0.001865519233	304
+185	121	0.00607962752	304
+185	347	0.010666531544	304
+185	442	0.014406638967	304
+185	550	0.020146533873	304
+186	42	0.001865519233	304
+186	121	0.00607962752	304
+186	347	0.010666531544	304
+186	442	0.014406638967	304
+186	550	0.020146533873	304
+187	46	0.001865544795	304
+187	258	0.010138138315	304
+187	316	0.010666237806	304
+187	403	0.014406359952	304
+188	46	0.001865544795	304
+188	258	0.010138138315	304
+188	316	0.010666237806	304
+188	403	0.014406359952	304
+189	49	0.001865550533	304
+189	267	0.010138185828	304
+189	406	0.014406367172	304
+189	514	0.020146287648	304
+190	49	0.001865550533	304
+190	267	0.010138185828	304
+190	406	0.014406367172	304
+190	514	0.020146287648	304
+191	52	0.001865578152	304
+191	139	0.006079723014	304
+191	240	0.010138016684	304
+191	340	0.010666397297	304
+191	421	0.014406478985	304
+191	535	0.020146395718	304
+192	52	0.001865578152	304
+192	139	0.006079723014	304
+192	240	0.010138016684	304
+192	340	0.010666397297	304
+192	421	0.014406478985	304
+192	535	0.020146395718	304
+193	56	0.001865594979	304
+193	142	0.006079740859	304
+193	249	0.010138049477	304
+194	56	0.001865594979	304
+194	142	0.006079740859	304
+194	249	0.010138049477	304
+195	59	0.001865596176	304
+195	130	0.006079704615	304
+195	224	0.010137917274	304
+195	359	0.010666562991	304
+195	449	0.014406655697	304
+195	560	0.020146561944	304
+196	59	0.001865596176	304
+196	130	0.006079704615	304
+196	224	0.010137917274	304
+196	359	0.010666562991	304
+196	449	0.014406655697	304
+196	560	0.020146561944	304
+197	62	0.001865598337	304
+197	146	0.006079774781	304
+197	252	0.010138101303	304
+197	322	0.010666325443	304
+197	412	0.014406390964	304
+197	520	0.020146328511	304
+198	62	0.001865598337	304
+198	146	0.006079774781	304
+198	252	0.010138101303	304
+198	322	0.010666325443	304
+198	412	0.014406390964	304
+198	520	0.020146328511	304
+199	65	0.001865599124	304
+199	133	0.006079709562	304
+199	230	0.010137927096	304
+199	350	0.010666538122	304
+199	439	0.014406627475	304
+199	553	0.020146536555	304
+200	65	0.001865599124	304
+200	133	0.006079709562	304
+200	230	0.010137927096	304
+200	350	0.010666538122	304
+200	439	0.014406627475	304
+200	553	0.020146536555	304
+201	68	0.00186560251	304
+201	136	0.006079711181	304
+201	227	0.010137924157	304
+201	356	0.010666561483	304
+201	557	0.020146560191	304
+202	68	0.00186560251	304
+202	136	0.006079711181	304
+202	227	0.010137924157	304
+202	356	0.010666561483	304
+202	557	0.020146560191	304
+203	73	0.001865672267	304
+203	149	0.006079780414	304
+203	233	0.010137993369	304
+203	368	0.01066662261	304
+203	452	0.014406705721	304
+203	569	0.020146620608	304
+204	73	0.001865672267	304
+204	149	0.006079780414	304
+204	233	0.010137993369	304
+204	368	0.01066662261	304
+204	452	0.014406705721	304
+204	569	0.020146620608	304
+205	76	0.001865683932	304
+205	162	0.006079870199	304
+205	270	0.010138190005	304
+205	325	0.010666355325	304
+205	415	0.014406393025	304
+205	529	0.020146382381	304
+206	76	0.001865683932	304
+206	162	0.006079870199	304
+206	270	0.010138190005	304
+206	325	0.010666355325	304
+206	415	0.014406393025	304
+206	529	0.020146382381	304
+207	79	0.001865707557	304
+207	261	0.010138181489	304
+207	337	0.010666396169	304
+207	418	0.014406435299	304
+207	538	0.020146416177	304
+208	79	0.001865707557	304
+208	261	0.010138181489	304
+208	337	0.010666396169	304
+208	418	0.014406435299	304
+208	538	0.020146416177	304
+209	82	0.001865747893	304
+209	165	0.00607987364	304
+209	255	0.010138111894	304
+209	353	0.010666544918	304
+209	436	0.014406599782	304
+210	82	0.001865747893	304
+210	165	0.00607987364	304
+210	255	0.010138111894	304
+210	353	0.010666544918	304
+210	436	0.014406599782	304
+211	85	0.005571469292	304
+212	88	0.005641469292	304
+213	89	0.005641469292	1
+213	90	0.005641469292	2
+213	112	0.006079469292	1
+213	113	0.006079469292	0
+214	124	0.006079666256	304
+214	273	0.010138195158	304
+214	362	0.010666572174	304
+214	455	0.014406739303	304
+214	563	0.020146616278	304
+215	124	0.006079666256	304
+215	273	0.010138195158	304
+215	362	0.010666572174	304
+215	455	0.014406739303	304
+215	563	0.020146616278	304
+216	153	0.006079793501	304
+216	243	0.01013803196	304
+216	433	0.014406575811	304
+216	544	0.020146507169	304
+217	153	0.006079793501	304
+217	243	0.01013803196	304
+217	433	0.014406575811	304
+217	544	0.020146507169	304
+218	156	0.006079824102	304
+218	264	0.010138184128	304
+218	319	0.010666258049	304
+218	517	0.020146300671	304
+219	156	0.006079824102	304
+219	264	0.010138184128	304
+219	319	0.010666258049	304
+219	517	0.020146300671	304
+220	159	0.006079841229	304
+220	279	0.010138236655	304
+220	313	0.010666236894	304
+220	409	0.014406384414	304
+220	523	0.02014633564	304
+221	159	0.006079841229	304
+221	279	0.010138236655	304
+221	313	0.010666236894	304
+221	409	0.014406384414	304
+221	523	0.02014633564	304
+222	169	0.006079884844	304
+222	282	0.010138336677	304
+222	334	0.010666383579	304
+222	430	0.014406556413	304
+222	541	0.020146480583	304
+223	169	0.006079884844	304
+223	282	0.010138336677	304
+223	334	0.010666383579	304
+223	430	0.014406556413	304
+223	541	0.020146480583	304
+224	172	0.009609840112	304
+225	175	0.009699840112	304
+226	176	0.009699840112	1
+226	177	0.009699840112	2
+226	221	0.010137840112	1
+226	222	0.010137840112	0
+227	200	0.009710127115	304
+228	236	0.01013799834	304
+228	344	0.010666509677	304
+228	445	0.014406649761	304
+228	547	0.020146528211	304
+229	236	0.01013799834	304
+229	344	0.010666509677	304
+229	445	0.014406649761	304
+229	547	0.020146528211	304
+230	286	0.010228185828	304
+231	287	0.010228185828	1
+231	288	0.010228185828	2
+231	310	0.010666185828	1
+231	311	0.010666185828	0
+232	373	0.013818294951	304
+233	376	0.013968294951	304
+234	377	0.013968294951	1
+234	378	0.013968294951	2
+234	400	0.014406294951	1
+234	401	0.014406294951	0
+235	463	0.01965823567	304
+236	466	0.01970823567	304
+237	467	0.01970823567	1
+237	468	0.01970823567	2
+237	511	0.02014623567	1
+237	512	0.02014623567	0
+vector 238 Beacon.accessPoint[4].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 239 Beacon.accessPoint[4].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 240 Beacon.accessPoint[4].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 241 Beacon.B.wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 242 Beacon.B.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 243 Beacon.B.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 244 Beacon.accessPoint[16].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 245 Beacon.accessPoint[16].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 246 Beacon.accessPoint[16].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 247 Beacon.accessPoint[17].wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 248 Beacon.accessPoint[17].wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 249 Beacon.accessPoint[17].wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+vector 250 Beacon.A.wlan[0].mac rcvdPkFromHL:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetReceivedFromUpper
+attr title "packets received from higher layer, vector(packetBytes)"
+vector 251 Beacon.A.wlan[0].mac sentDownPk:vector(packetBytes) ETV
+attr interpolationmode none
+attr source packetSentToLower
+attr title "packets sent to lower layer, vector(packetBytes)"
+vector 252 Beacon.A.wlan[0].radio transmissionState:vector ETV
+attr interpolationmode sample-hold
+attr source transmissionStateChanged
+attr title "Radio transmission state, vector"
+8	600	0.037062516572	3
+8	624	0.037500516572	2
+32	800	0.046955119832	3
+32	824	0.047393119832	2
+34	904	0.051092437177	3
+34	928	0.051530437177	2
+40	1013	0.060554551801	3
+42	711	0.04530592139	3
+42	735	0.04573992139	2
+44	609	0.037062739749	3
+44	646	0.037500739749	1
+44	725	0.04530610653	3
+44	772	0.04574010653	1
+44	814	0.046955400692	3
+44	857	0.047393400692	1
+44	908	0.05109253319	3
+44	935	0.05153053319	1
+45	614	0.037062780111	3
+45	661	0.037500780111	1
+45	723	0.045306098654	3
+45	766	0.045740098654	1
+45	920	0.051092705652	3
+45	969	0.051530705652	1
+46	604	0.037062675394	3
+46	631	0.037500675394	1
+46	717	0.045306082788	3
+46	748	0.045740082788	1
+46	813	0.046955391331	3
+46	854	0.047393391331	1
+46	907	0.051092530018	3
+46	932	0.051530530018	1
+47	622	0.037062900421	3
+47	683	0.037500900421	1
+47	730	0.045306304824	3
+47	783	0.045740304824	1
+47	926	0.051092907411	3
+47	983	0.051530907411	1
+48	600	0.037062516572	0
+48	624	0.037500516572	1
+48	724	0.04530610372	3
+48	769	0.04574010372	1
+48	815	0.046955406699	3
+48	860	0.047393406699	1
+48	915	0.051092631837	3
+48	956	0.051530631837	1
+49	602	0.037062563244	3
+49	625	0.037500563244	1
+49	715	0.045306057435	3
+49	742	0.045740057435	1
+49	812	0.046955360322	3
+49	851	0.047393360322	1
+49	912	0.05109259539	3
+49	947	0.05153059539	1
+50	610	0.037062750751	3
+50	649	0.037500750751	1
+50	729	0.04530617986	3
+50	780	0.04574017986	1
+50	818	0.046955483229	3
+50	869	0.047393483229	1
+50	913	0.051092614646	3
+50	950	0.051530614646	1
+51	611	0.037062757059	3
+51	652	0.037500757059	1
+51	732	0.045306337928	3
+51	789	0.045740337928	1
+51	820	0.046955626631	3
+51	873	0.047393626631	1
+51	924	0.051092871327	3
+51	979	0.051530871327	1
+52	606	0.037062702877	3
+52	637	0.037500702877	1
+52	726	0.045306134685	3
+52	775	0.045740134685	1
+52	816	0.046955442166	3
+52	863	0.047393442166	1
+52	911	0.051092576792	3
+52	944	0.051530576792	1
+53	619	0.037062820696	3
+53	676	0.037500820696	1
+53	718	0.045306087504	3
+53	751	0.045740087504	1
+53	810	0.046955322702	3
+53	845	0.047393322702	1
+53	910	0.051092546641	3
+53	941	0.051530546641	1
+53	1015	0.060554594277	3
+54	615	0.03706278273	3
+54	664	0.03750078273	1
+54	719	0.04530609484	3
+54	754	0.04574009484	1
+54	805	0.04695525539	3
+54	834	0.04739325539	1
+54	919	0.051092701876	3
+54	966	0.051530701876	1
+55	613	0.037062767741	3
+55	658	0.037500767741	1
+55	716	0.045306069342	3
+55	745	0.045740069342	1
+55	803	0.046955234282	3
+55	828	0.047393234282	1
+56	608	0.037062720162	3
+56	643	0.037500720162	1
+56	722	0.045306098109	3
+56	763	0.045740098109	1
+56	918	0.051092698368	3
+56	963	0.051530698368	1
+57	618	0.037062813304	3
+57	673	0.037500813304	1
+57	731	0.045306322644	3
+57	786	0.045740322644	1
+57	923	0.05109277391	3
+57	976	0.05153077391	1
+58	620	0.037062855392	3
+58	679	0.037500855392	1
+58	807	0.046955270013	3
+58	838	0.047393270013	1
+59	612	0.03706276578	3
+59	655	0.03750076578	1
+59	733	0.045306348863	3
+59	792	0.045740348863	1
+60	617	0.037062803439	3
+60	670	0.037500803439	1
+60	714	0.04530603678	3
+60	739	0.04574003678	1
+60	800	0.046955119832	0
+60	824	0.047393119832	1
+60	914	0.051092623378	3
+60	953	0.051530623378	1
+61	607	0.037062711232	3
+61	640	0.037500711232	1
+61	713	0.045306012642	3
+61	736	0.045740012642	1
+61	808	0.046955306033	3
+61	841	0.047393306033	1
+61	904	0.051092437177	0
+61	928	0.051530437177	1
+62	721	0.045306097145	3
+62	760	0.045740097145	1
+62	802	0.046955200793	3
+62	825	0.047393200793	1
+62	916	0.051092656866	3
+62	959	0.051530656866	1
+63	603	0.037062654334	3
+63	628	0.037500654334	1
+63	817	0.046955444041	3
+63	866	0.047393444041	1
+63	921	0.051092742666	3
+63	972	0.051530742666	1
+64	616	0.037062802302	3
+64	667	0.037500802302	1
+64	720	0.045306094843	3
+64	757	0.045740094843	1
+64	811	0.046955351445	3
+64	848	0.047393351445	1
+64	909	0.051092534023	3
+64	938	0.051530534023	1
+64	1013	0.060554551801	0
+65	605	0.037062698376	3
+65	634	0.037500698376	1
+65	711	0.04530592139	0
+65	735	0.04573992139	1
+65	804	0.046955235116	3
+65	831	0.047393235116	1
+65	906	0.051092528583	3
+65	929	0.051530528583	1
+66	609	0.037062739749	0
+66	609	0.037062739749	0
+66	646	0.037500739749	0
+66	646	0.037500739749	0
+66	725	0.04530610653	0
+66	725	0.04530610653	0
+66	772	0.04574010653	0
+66	772	0.04574010653	0
+66	814	0.046955400692	0
+66	814	0.046955400692	0
+66	857	0.047393400692	0
+66	857	0.047393400692	0
+66	908	0.05109253319	0
+66	908	0.05109253319	0
+66	935	0.05153053319	0
+66	935	0.05153053319	0
+67	609	0.037062739749	0
+67	609	0.037062739749	0
+67	646	0.037500739749	0
+67	646	0.037500739749	0
+67	725	0.04530610653	0
+67	725	0.04530610653	0
+67	772	0.04574010653	0
+67	772	0.04574010653	0
+67	814	0.046955400692	0
+67	814	0.046955400692	0
+67	857	0.047393400692	0
+67	857	0.047393400692	0
+67	908	0.05109253319	0
+67	908	0.05109253319	0
+67	935	0.05153053319	0
+67	935	0.05153053319	0
+68	609	0.037062739749	0
+68	609	0.037062739749	0
+68	646	0.037500739749	0
+68	646	0.037500739749	0
+68	725	0.04530610653	0
+68	725	0.04530610653	0
+68	772	0.04574010653	0
+68	772	0.04574010653	0
+68	814	0.046955400692	0
+68	814	0.046955400692	0
+68	857	0.047393400692	0
+68	857	0.047393400692	0
+68	908	0.05109253319	0
+68	908	0.05109253319	0
+68	935	0.05153053319	0
+68	935	0.05153053319	0
+69	609	0.037062739749	0
+69	609	0.037062739749	0
+69	646	0.037500739749	0
+69	646	0.037500739749	0
+69	725	0.04530610653	0
+69	725	0.04530610653	0
+69	772	0.04574010653	0
+69	772	0.04574010653	0
+69	814	0.046955400692	0
+69	814	0.046955400692	0
+69	857	0.047393400692	0
+69	857	0.047393400692	0
+69	908	0.05109253319	0
+69	908	0.05109253319	0
+69	935	0.05153053319	0
+69	935	0.05153053319	0
+70	609	0.037062739749	0
+70	609	0.037062739749	0
+70	646	0.037500739749	0
+70	646	0.037500739749	0
+70	725	0.04530610653	0
+70	725	0.04530610653	0
+70	772	0.04574010653	0
+70	772	0.04574010653	0
+70	814	0.046955400692	0
+70	814	0.046955400692	0
+70	857	0.047393400692	0
+70	857	0.047393400692	0
+70	908	0.05109253319	0
+70	908	0.05109253319	0
+70	935	0.05153053319	0
+70	935	0.05153053319	0
+71	614	0.037062780111	0
+71	614	0.037062780111	0
+71	661	0.037500780111	0
+71	661	0.037500780111	0
+71	723	0.045306098654	0
+71	723	0.045306098654	0
+71	766	0.045740098654	0
+71	766	0.045740098654	0
+71	920	0.051092705652	0
+71	920	0.051092705652	0
+71	969	0.051530705652	0
+71	969	0.051530705652	0
+72	614	0.037062780111	0
+72	614	0.037062780111	0
+72	661	0.037500780111	0
+72	661	0.037500780111	0
+72	723	0.045306098654	0
+72	723	0.045306098654	0
+72	766	0.045740098654	0
+72	766	0.045740098654	0
+72	920	0.051092705652	0
+72	920	0.051092705652	0
+72	969	0.051530705652	0
+72	969	0.051530705652	0
+73	614	0.037062780111	0
+73	614	0.037062780111	0
+73	661	0.037500780111	0
+73	661	0.037500780111	0
+73	723	0.045306098654	0
+73	723	0.045306098654	0
+73	766	0.045740098654	0
+73	766	0.045740098654	0
+73	920	0.051092705652	0
+73	920	0.051092705652	0
+73	969	0.051530705652	0
+73	969	0.051530705652	0
+74	614	0.037062780111	0
+74	614	0.037062780111	0
+74	661	0.037500780111	0
+74	661	0.037500780111	0
+74	723	0.045306098654	0
+74	723	0.045306098654	0
+74	766	0.045740098654	0
+74	766	0.045740098654	0
+74	920	0.051092705652	0
+74	920	0.051092705652	0
+74	969	0.051530705652	0
+74	969	0.051530705652	0
+75	614	0.037062780111	0
+75	614	0.037062780111	0
+75	661	0.037500780111	0
+75	661	0.037500780111	0
+75	723	0.045306098654	0
+75	723	0.045306098654	0
+75	766	0.045740098654	0
+75	766	0.045740098654	0
+75	920	0.051092705652	0
+75	920	0.051092705652	0
+75	969	0.051530705652	0
+75	969	0.051530705652	0
+76	604	0.037062675394	0
+76	604	0.037062675394	0
+76	631	0.037500675394	0
+76	631	0.037500675394	0
+76	717	0.045306082788	0
+76	717	0.045306082788	0
+76	748	0.045740082788	0
+76	748	0.045740082788	0
+76	813	0.046955391331	0
+76	813	0.046955391331	0
+76	854	0.047393391331	0
+76	854	0.047393391331	0
+76	907	0.051092530018	0
+76	907	0.051092530018	0
+76	932	0.051530530018	0
+76	932	0.051530530018	0
+77	604	0.037062675394	0
+77	604	0.037062675394	0
+77	631	0.037500675394	0
+77	631	0.037500675394	0
+77	717	0.045306082788	0
+77	717	0.045306082788	0
+77	748	0.045740082788	0
+77	748	0.045740082788	0
+77	813	0.046955391331	0
+77	813	0.046955391331	0
+77	854	0.047393391331	0
+77	854	0.047393391331	0
+77	907	0.051092530018	0
+77	907	0.051092530018	0
+77	932	0.051530530018	0
+77	932	0.051530530018	0
+78	604	0.037062675394	0
+78	604	0.037062675394	0
+78	631	0.037500675394	0
+78	631	0.037500675394	0
+78	717	0.045306082788	0
+78	717	0.045306082788	0
+78	748	0.045740082788	0
+78	748	0.045740082788	0
+78	813	0.046955391331	0
+78	813	0.046955391331	0
+78	854	0.047393391331	0
+78	854	0.047393391331	0
+78	907	0.051092530018	0
+78	907	0.051092530018	0
+78	932	0.051530530018	0
+78	932	0.051530530018	0
+79	604	0.037062675394	0
+79	604	0.037062675394	0
+79	631	0.037500675394	0
+79	631	0.037500675394	0
+79	717	0.045306082788	0
+79	717	0.045306082788	0
+79	748	0.045740082788	0
+79	748	0.045740082788	0
+79	813	0.046955391331	0
+79	813	0.046955391331	0
+79	854	0.047393391331	0
+79	854	0.047393391331	0
+79	907	0.051092530018	0
+79	907	0.051092530018	0
+79	932	0.051530530018	0
+79	932	0.051530530018	0
+80	604	0.037062675394	0
+80	604	0.037062675394	0
+80	631	0.037500675394	0
+80	631	0.037500675394	0
+80	717	0.045306082788	0
+80	717	0.045306082788	0
+80	748	0.045740082788	0
+80	748	0.045740082788	0
+80	813	0.046955391331	0
+80	813	0.046955391331	0
+80	854	0.047393391331	0
+80	854	0.047393391331	0
+80	907	0.051092530018	0
+80	907	0.051092530018	0
+80	932	0.051530530018	0
+80	932	0.051530530018	0
+81	622	0.037062900421	0
+81	622	0.037062900421	0
+81	683	0.037500900421	0
+81	683	0.037500900421	0
+81	730	0.045306304824	0
+81	730	0.045306304824	0
+81	783	0.045740304824	0
+81	783	0.045740304824	0
+81	926	0.051092907411	0
+81	926	0.051092907411	0
+81	983	0.051530907411	0
+81	983	0.051530907411	0
+82	622	0.037062900421	0
+82	622	0.037062900421	0
+82	683	0.037500900421	0
+82	683	0.037500900421	0
+82	730	0.045306304824	0
+82	730	0.045306304824	0
+82	783	0.045740304824	0
+82	783	0.045740304824	0
+82	926	0.051092907411	0
+82	926	0.051092907411	0
+82	983	0.051530907411	0
+82	983	0.051530907411	0
+83	622	0.037062900421	0
+83	622	0.037062900421	0
+83	683	0.037500900421	0
+83	683	0.037500900421	0
+83	730	0.045306304824	0
+83	730	0.045306304824	0
+83	783	0.045740304824	0
+83	783	0.045740304824	0
+83	926	0.051092907411	0
+83	926	0.051092907411	0
+83	983	0.051530907411	0
+83	983	0.051530907411	0
+84	622	0.037062900421	0
+84	622	0.037062900421	0
+84	683	0.037500900421	0
+84	683	0.037500900421	0
+84	730	0.045306304824	0
+84	730	0.045306304824	0
+84	783	0.045740304824	0
+84	783	0.045740304824	0
+84	926	0.051092907411	0
+84	926	0.051092907411	0
+84	983	0.051530907411	0
+84	983	0.051530907411	0
+85	622	0.037062900421	0
+85	622	0.037062900421	0
+85	683	0.037500900421	0
+85	683	0.037500900421	0
+85	730	0.045306304824	0
+85	730	0.045306304824	0
+85	783	0.045740304824	0
+85	783	0.045740304824	0
+85	926	0.051092907411	0
+85	926	0.051092907411	0
+85	983	0.051530907411	0
+85	983	0.051530907411	0
+86	596	0.036872516572	0
+86	596	0.036872516572	2
+86	597	0.037062516572	2
+86	597	0.037062516572	0
+86	600	0.037062516572	0
+86	600	0.037062516572	0
+86	624	0.037500516572	0
+86	624	0.037500516572	0
+86	724	0.04530610372	0
+86	724	0.04530610372	0
+86	769	0.04574010372	0
+86	769	0.04574010372	0
+86	815	0.046955406699	0
+86	815	0.046955406699	0
+86	860	0.047393406699	0
+86	860	0.047393406699	0
+86	915	0.051092631837	0
+86	915	0.051092631837	0
+86	956	0.051530631837	0
+86	956	0.051530631837	0
+87	600	0.037062516572	0
+87	600	0.037062516572	0
+87	624	0.037500516572	0
+87	624	0.037500516572	0
+87	724	0.04530610372	0
+87	724	0.04530610372	0
+87	769	0.04574010372	0
+87	769	0.04574010372	0
+87	815	0.046955406699	0
+87	815	0.046955406699	0
+87	860	0.047393406699	0
+87	860	0.047393406699	0
+87	915	0.051092631837	0
+87	915	0.051092631837	0
+87	956	0.051530631837	0
+87	956	0.051530631837	0
+88	600	0.037062516572	0
+88	600	0.037062516572	0
+88	624	0.037500516572	0
+88	624	0.037500516572	0
+88	724	0.04530610372	0
+88	724	0.04530610372	0
+88	769	0.04574010372	0
+88	769	0.04574010372	0
+88	815	0.046955406699	0
+88	815	0.046955406699	0
+88	860	0.047393406699	0
+88	860	0.047393406699	0
+88	915	0.051092631837	0
+88	915	0.051092631837	0
+88	956	0.051530631837	0
+88	956	0.051530631837	0
+89	600	0.037062516572	0
+89	600	0.037062516572	0
+89	624	0.037500516572	0
+89	624	0.037500516572	0
+89	724	0.04530610372	0
+89	724	0.04530610372	0
+89	769	0.04574010372	0
+89	769	0.04574010372	0
+89	815	0.046955406699	0
+89	815	0.046955406699	0
+89	860	0.047393406699	0
+89	860	0.047393406699	0
+89	915	0.051092631837	0
+89	915	0.051092631837	0
+89	956	0.051530631837	0
+89	956	0.051530631837	0
+90	600	0.037062516572	0
+90	600	0.037062516572	0
+90	624	0.037500516572	0
+90	624	0.037500516572	0
+90	724	0.04530610372	0
+90	724	0.04530610372	0
+90	769	0.04574010372	0
+90	769	0.04574010372	0
+90	815	0.046955406699	0
+90	815	0.046955406699	0
+90	860	0.047393406699	0
+90	860	0.047393406699	0
+90	915	0.051092631837	0
+90	915	0.051092631837	0
+90	956	0.051530631837	0
+90	956	0.051530631837	0
+91	602	0.037062563244	0
+91	602	0.037062563244	0
+91	625	0.037500563244	0
+91	625	0.037500563244	0
+91	715	0.045306057435	0
+91	715	0.045306057435	0
+91	742	0.045740057435	0
+91	742	0.045740057435	0
+91	812	0.046955360322	0
+91	812	0.046955360322	0
+91	851	0.047393360322	0
+91	851	0.047393360322	0
+91	912	0.05109259539	0
+91	912	0.05109259539	0
+91	947	0.05153059539	0
+91	947	0.05153059539	0
+92	602	0.037062563244	0
+92	602	0.037062563244	0
+92	625	0.037500563244	0
+92	625	0.037500563244	0
+92	715	0.045306057435	0
+92	715	0.045306057435	0
+92	742	0.045740057435	0
+92	742	0.045740057435	0
+92	812	0.046955360322	0
+92	812	0.046955360322	0
+92	851	0.047393360322	0
+92	851	0.047393360322	0
+92	912	0.05109259539	0
+92	912	0.05109259539	0
+92	947	0.05153059539	0
+92	947	0.05153059539	0
+93	602	0.037062563244	0
+93	602	0.037062563244	0
+93	625	0.037500563244	0
+93	625	0.037500563244	0
+93	715	0.045306057435	0
+93	715	0.045306057435	0
+93	742	0.045740057435	0
+93	742	0.045740057435	0
+93	812	0.046955360322	0
+93	812	0.046955360322	0
+93	851	0.047393360322	0
+93	851	0.047393360322	0
+93	912	0.05109259539	0
+93	912	0.05109259539	0
+93	947	0.05153059539	0
+93	947	0.05153059539	0
+94	602	0.037062563244	0
+94	602	0.037062563244	0
+94	625	0.037500563244	0
+94	625	0.037500563244	0
+94	715	0.045306057435	0
+94	715	0.045306057435	0
+94	742	0.045740057435	0
+94	742	0.045740057435	0
+94	812	0.046955360322	0
+94	812	0.046955360322	0
+94	851	0.047393360322	0
+94	851	0.047393360322	0
+94	912	0.05109259539	0
+94	912	0.05109259539	0
+94	947	0.05153059539	0
+94	947	0.05153059539	0
+95	602	0.037062563244	0
+95	602	0.037062563244	0
+95	625	0.037500563244	0
+95	625	0.037500563244	0
+95	715	0.045306057435	0
+95	715	0.045306057435	0
+95	742	0.045740057435	0
+95	742	0.045740057435	0
+95	812	0.046955360322	0
+95	812	0.046955360322	0
+95	851	0.047393360322	0
+95	851	0.047393360322	0
+95	912	0.05109259539	0
+95	912	0.05109259539	0
+95	947	0.05153059539	0
+95	947	0.05153059539	0
+96	610	0.037062750751	0
+96	610	0.037062750751	0
+96	649	0.037500750751	0
+96	649	0.037500750751	0
+96	729	0.04530617986	0
+96	729	0.04530617986	0
+96	780	0.04574017986	0
+96	780	0.04574017986	0
+96	818	0.046955483229	0
+96	818	0.046955483229	0
+96	869	0.047393483229	0
+96	869	0.047393483229	0
+96	913	0.051092614646	0
+96	913	0.051092614646	0
+96	950	0.051530614646	0
+96	950	0.051530614646	0
+97	610	0.037062750751	0
+97	610	0.037062750751	0
+97	649	0.037500750751	0
+97	649	0.037500750751	0
+97	729	0.04530617986	0
+97	729	0.04530617986	0
+97	780	0.04574017986	0
+97	780	0.04574017986	0
+97	818	0.046955483229	0
+97	818	0.046955483229	0
+97	869	0.047393483229	0
+97	869	0.047393483229	0
+97	913	0.051092614646	0
+97	913	0.051092614646	0
+97	950	0.051530614646	0
+97	950	0.051530614646	0
+98	610	0.037062750751	0
+98	610	0.037062750751	0
+98	649	0.037500750751	0
+98	649	0.037500750751	0
+98	729	0.04530617986	0
+98	729	0.04530617986	0
+98	780	0.04574017986	0
+98	780	0.04574017986	0
+98	818	0.046955483229	0
+98	818	0.046955483229	0
+98	869	0.047393483229	0
+98	869	0.047393483229	0
+98	913	0.051092614646	0
+98	913	0.051092614646	0
+98	950	0.051530614646	0
+98	950	0.051530614646	0
+99	610	0.037062750751	0
+99	610	0.037062750751	0
+99	649	0.037500750751	0
+99	649	0.037500750751	0
+99	729	0.04530617986	0
+99	729	0.04530617986	0
+99	780	0.04574017986	0
+99	780	0.04574017986	0
+99	818	0.046955483229	0
+99	818	0.046955483229	0
+99	869	0.047393483229	0
+99	869	0.047393483229	0
+99	913	0.051092614646	0
+99	913	0.051092614646	0
+99	950	0.051530614646	0
+99	950	0.051530614646	0
+100	610	0.037062750751	0
+100	610	0.037062750751	0
+100	649	0.037500750751	0
+100	649	0.037500750751	0
+100	729	0.04530617986	0
+100	729	0.04530617986	0
+100	780	0.04574017986	0
+100	780	0.04574017986	0
+100	818	0.046955483229	0
+100	818	0.046955483229	0
+100	869	0.047393483229	0
+100	869	0.047393483229	0
+100	913	0.051092614646	0
+100	913	0.051092614646	0
+100	950	0.051530614646	0
+100	950	0.051530614646	0
+101	611	0.037062757059	0
+101	611	0.037062757059	0
+101	652	0.037500757059	0
+101	652	0.037500757059	0
+101	732	0.045306337928	0
+101	732	0.045306337928	0
+101	789	0.045740337928	0
+101	789	0.045740337928	0
+101	820	0.046955626631	0
+101	820	0.046955626631	0
+101	873	0.047393626631	0
+101	873	0.047393626631	0
+101	924	0.051092871327	0
+101	924	0.051092871327	0
+101	979	0.051530871327	0
+101	979	0.051530871327	0
+102	611	0.037062757059	0
+102	611	0.037062757059	0
+102	652	0.037500757059	0
+102	652	0.037500757059	0
+102	732	0.045306337928	0
+102	732	0.045306337928	0
+102	789	0.045740337928	0
+102	789	0.045740337928	0
+102	820	0.046955626631	0
+102	820	0.046955626631	0
+102	873	0.047393626631	0
+102	873	0.047393626631	0
+102	924	0.051092871327	0
+102	924	0.051092871327	0
+102	979	0.051530871327	0
+102	979	0.051530871327	0
+103	611	0.037062757059	0
+103	611	0.037062757059	0
+103	652	0.037500757059	0
+103	652	0.037500757059	0
+103	732	0.045306337928	0
+103	732	0.045306337928	0
+103	789	0.045740337928	0
+103	789	0.045740337928	0
+103	820	0.046955626631	0
+103	820	0.046955626631	0
+103	873	0.047393626631	0
+103	873	0.047393626631	0
+103	924	0.051092871327	0
+103	924	0.051092871327	0
+103	979	0.051530871327	0
+103	979	0.051530871327	0
+104	611	0.037062757059	0
+104	611	0.037062757059	0
+104	652	0.037500757059	0
+104	652	0.037500757059	0
+104	732	0.045306337928	0
+104	732	0.045306337928	0
+104	789	0.045740337928	0
+104	789	0.045740337928	0
+104	820	0.046955626631	0
+104	820	0.046955626631	0
+104	873	0.047393626631	0
+104	873	0.047393626631	0
+104	924	0.051092871327	0
+104	924	0.051092871327	0
+104	979	0.051530871327	0
+104	979	0.051530871327	0
+105	611	0.037062757059	0
+105	611	0.037062757059	0
+105	652	0.037500757059	0
+105	652	0.037500757059	0
+105	732	0.045306337928	0
+105	732	0.045306337928	0
+105	789	0.045740337928	0
+105	789	0.045740337928	0
+105	820	0.046955626631	0
+105	820	0.046955626631	0
+105	873	0.047393626631	0
+105	873	0.047393626631	0
+105	924	0.051092871327	0
+105	924	0.051092871327	0
+105	979	0.051530871327	0
+105	979	0.051530871327	0
+106	606	0.037062702877	0
+106	606	0.037062702877	0
+106	637	0.037500702877	0
+106	637	0.037500702877	0
+106	726	0.045306134685	0
+106	726	0.045306134685	0
+106	775	0.045740134685	0
+106	775	0.045740134685	0
+106	816	0.046955442166	0
+106	816	0.046955442166	0
+106	863	0.047393442166	0
+106	863	0.047393442166	0
+106	911	0.051092576792	0
+106	911	0.051092576792	0
+106	944	0.051530576792	0
+106	944	0.051530576792	0
+107	606	0.037062702877	0
+107	606	0.037062702877	0
+107	637	0.037500702877	0
+107	637	0.037500702877	0
+107	726	0.045306134685	0
+107	726	0.045306134685	0
+107	775	0.045740134685	0
+107	775	0.045740134685	0
+107	816	0.046955442166	0
+107	816	0.046955442166	0
+107	863	0.047393442166	0
+107	863	0.047393442166	0
+107	911	0.051092576792	0
+107	911	0.051092576792	0
+107	944	0.051530576792	0
+107	944	0.051530576792	0
+108	606	0.037062702877	0
+108	606	0.037062702877	0
+108	637	0.037500702877	0
+108	637	0.037500702877	0
+108	726	0.045306134685	0
+108	726	0.045306134685	0
+108	775	0.045740134685	0
+108	775	0.045740134685	0
+108	816	0.046955442166	0
+108	816	0.046955442166	0
+108	863	0.047393442166	0
+108	863	0.047393442166	0
+108	911	0.051092576792	0
+108	911	0.051092576792	0
+108	944	0.051530576792	0
+108	944	0.051530576792	0
+109	606	0.037062702877	0
+109	606	0.037062702877	0
+109	637	0.037500702877	0
+109	637	0.037500702877	0
+109	726	0.045306134685	0
+109	726	0.045306134685	0
+109	775	0.045740134685	0
+109	775	0.045740134685	0
+109	816	0.046955442166	0
+109	816	0.046955442166	0
+109	863	0.047393442166	0
+109	863	0.047393442166	0
+109	911	0.051092576792	0
+109	911	0.051092576792	0
+109	944	0.051530576792	0
+109	944	0.051530576792	0
+110	606	0.037062702877	0
+110	606	0.037062702877	0
+110	637	0.037500702877	0
+110	637	0.037500702877	0
+110	726	0.045306134685	0
+110	726	0.045306134685	0
+110	775	0.045740134685	0
+110	775	0.045740134685	0
+110	816	0.046955442166	0
+110	816	0.046955442166	0
+110	863	0.047393442166	0
+110	863	0.047393442166	0
+110	911	0.051092576792	0
+110	911	0.051092576792	0
+110	944	0.051530576792	0
+110	944	0.051530576792	0
+111	619	0.037062820696	0
+111	619	0.037062820696	0
+111	676	0.037500820696	0
+111	676	0.037500820696	0
+111	718	0.045306087504	0
+111	718	0.045306087504	0
+111	751	0.045740087504	0
+111	751	0.045740087504	0
+111	810	0.046955322702	0
+111	810	0.046955322702	0
+111	845	0.047393322702	0
+111	845	0.047393322702	0
+111	910	0.051092546641	0
+111	910	0.051092546641	0
+111	941	0.051530546641	0
+111	941	0.051530546641	0
+111	1015	0.060554594277	0
+111	1015	0.060554594277	0
+112	619	0.037062820696	0
+112	619	0.037062820696	0
+112	676	0.037500820696	0
+112	676	0.037500820696	0
+112	718	0.045306087504	0
+112	718	0.045306087504	0
+112	751	0.045740087504	0
+112	751	0.045740087504	0
+112	810	0.046955322702	0
+112	810	0.046955322702	0
+112	845	0.047393322702	0
+112	845	0.047393322702	0
+112	910	0.051092546641	0
+112	910	0.051092546641	0
+112	941	0.051530546641	0
+112	941	0.051530546641	0
+112	1015	0.060554594277	0
+112	1015	0.060554594277	0
+113	619	0.037062820696	0
+113	619	0.037062820696	0
+113	676	0.037500820696	0
+113	676	0.037500820696	0
+113	718	0.045306087504	0
+113	718	0.045306087504	0
+113	751	0.045740087504	0
+113	751	0.045740087504	0
+113	810	0.046955322702	0
+113	810	0.046955322702	0
+113	845	0.047393322702	0
+113	845	0.047393322702	0
+113	910	0.051092546641	0
+113	910	0.051092546641	0
+113	941	0.051530546641	0
+113	941	0.051530546641	0
+113	1015	0.060554594277	0
+113	1015	0.060554594277	0
+114	619	0.037062820696	0
+114	619	0.037062820696	0
+114	676	0.037500820696	0
+114	676	0.037500820696	0
+114	718	0.045306087504	0
+114	718	0.045306087504	0
+114	751	0.045740087504	0
+114	751	0.045740087504	0
+114	810	0.046955322702	0
+114	810	0.046955322702	0
+114	845	0.047393322702	0
+114	845	0.047393322702	0
+114	910	0.051092546641	0
+114	910	0.051092546641	0
+114	941	0.051530546641	0
+114	941	0.051530546641	0
+114	1015	0.060554594277	0
+114	1015	0.060554594277	0
+115	619	0.037062820696	0
+115	619	0.037062820696	0
+115	676	0.037500820696	0
+115	676	0.037500820696	0
+115	718	0.045306087504	0
+115	718	0.045306087504	0
+115	751	0.045740087504	0
+115	751	0.045740087504	0
+115	810	0.046955322702	0
+115	810	0.046955322702	0
+115	845	0.047393322702	0
+115	845	0.047393322702	0
+115	910	0.051092546641	0
+115	910	0.051092546641	0
+115	941	0.051530546641	0
+115	941	0.051530546641	0
+115	1015	0.060554594277	0
+115	1015	0.060554594277	0
+116	615	0.03706278273	0
+116	615	0.03706278273	0
+116	664	0.03750078273	0
+116	664	0.03750078273	0
+116	719	0.04530609484	0
+116	719	0.04530609484	0
+116	754	0.04574009484	0
+116	754	0.04574009484	0
+116	805	0.04695525539	0
+116	805	0.04695525539	0
+116	834	0.04739325539	0
+116	834	0.04739325539	0
+116	919	0.051092701876	0
+116	919	0.051092701876	0
+116	966	0.051530701876	0
+116	966	0.051530701876	0
+117	615	0.03706278273	0
+117	615	0.03706278273	0
+117	664	0.03750078273	0
+117	664	0.03750078273	0
+117	719	0.04530609484	0
+117	719	0.04530609484	0
+117	754	0.04574009484	0
+117	754	0.04574009484	0
+117	805	0.04695525539	0
+117	805	0.04695525539	0
+117	834	0.04739325539	0
+117	834	0.04739325539	0
+117	919	0.051092701876	0
+117	919	0.051092701876	0
+117	966	0.051530701876	0
+117	966	0.051530701876	0
+118	615	0.03706278273	0
+118	615	0.03706278273	0
+118	664	0.03750078273	0
+118	664	0.03750078273	0
+118	719	0.04530609484	0
+118	719	0.04530609484	0
+118	754	0.04574009484	0
+118	754	0.04574009484	0
+118	805	0.04695525539	0
+118	805	0.04695525539	0
+118	834	0.04739325539	0
+118	834	0.04739325539	0
+118	919	0.051092701876	0
+118	919	0.051092701876	0
+118	966	0.051530701876	0
+118	966	0.051530701876	0
+119	615	0.03706278273	0
+119	615	0.03706278273	0
+119	664	0.03750078273	0
+119	664	0.03750078273	0
+119	719	0.04530609484	0
+119	719	0.04530609484	0
+119	754	0.04574009484	0
+119	754	0.04574009484	0
+119	805	0.04695525539	0
+119	805	0.04695525539	0
+119	834	0.04739325539	0
+119	834	0.04739325539	0
+119	919	0.051092701876	0
+119	919	0.051092701876	0
+119	966	0.051530701876	0
+119	966	0.051530701876	0
+120	615	0.03706278273	0
+120	615	0.03706278273	0
+120	664	0.03750078273	0
+120	664	0.03750078273	0
+120	719	0.04530609484	0
+120	719	0.04530609484	0
+120	754	0.04574009484	0
+120	754	0.04574009484	0
+120	805	0.04695525539	0
+120	805	0.04695525539	0
+120	834	0.04739325539	0
+120	834	0.04739325539	0
+120	919	0.051092701876	0
+120	919	0.051092701876	0
+120	966	0.051530701876	0
+120	966	0.051530701876	0
+121	613	0.037062767741	0
+121	613	0.037062767741	0
+121	658	0.037500767741	0
+121	658	0.037500767741	0
+121	716	0.045306069342	0
+121	716	0.045306069342	0
+121	745	0.045740069342	0
+121	745	0.045740069342	0
+121	803	0.046955234282	0
+121	803	0.046955234282	0
+121	828	0.047393234282	0
+121	828	0.047393234282	0
+122	613	0.037062767741	0
+122	613	0.037062767741	0
+122	658	0.037500767741	0
+122	658	0.037500767741	0
+122	716	0.045306069342	0
+122	716	0.045306069342	0
+122	745	0.045740069342	0
+122	745	0.045740069342	0
+122	803	0.046955234282	0
+122	803	0.046955234282	0
+122	828	0.047393234282	0
+122	828	0.047393234282	0
+123	613	0.037062767741	0
+123	613	0.037062767741	0
+123	658	0.037500767741	0
+123	658	0.037500767741	0
+123	716	0.045306069342	0
+123	716	0.045306069342	0
+123	745	0.045740069342	0
+123	745	0.045740069342	0
+123	803	0.046955234282	0
+123	803	0.046955234282	0
+123	828	0.047393234282	0
+123	828	0.047393234282	0
+124	613	0.037062767741	0
+124	613	0.037062767741	0
+124	658	0.037500767741	0
+124	658	0.037500767741	0
+124	716	0.045306069342	0
+124	716	0.045306069342	0
+124	745	0.045740069342	0
+124	745	0.045740069342	0
+124	803	0.046955234282	0
+124	803	0.046955234282	0
+124	828	0.047393234282	0
+124	828	0.047393234282	0
+125	613	0.037062767741	0
+125	613	0.037062767741	0
+125	658	0.037500767741	0
+125	658	0.037500767741	0
+125	716	0.045306069342	0
+125	716	0.045306069342	0
+125	745	0.045740069342	0
+125	745	0.045740069342	0
+125	803	0.046955234282	0
+125	803	0.046955234282	0
+125	828	0.047393234282	0
+125	828	0.047393234282	0
+126	608	0.037062720162	0
+126	608	0.037062720162	0
+126	643	0.037500720162	0
+126	643	0.037500720162	0
+126	722	0.045306098109	0
+126	722	0.045306098109	0
+126	763	0.045740098109	0
+126	763	0.045740098109	0
+126	918	0.051092698368	0
+126	918	0.051092698368	0
+126	963	0.051530698368	0
+126	963	0.051530698368	0
+127	608	0.037062720162	0
+127	608	0.037062720162	0
+127	643	0.037500720162	0
+127	643	0.037500720162	0
+127	722	0.045306098109	0
+127	722	0.045306098109	0
+127	763	0.045740098109	0
+127	763	0.045740098109	0
+127	918	0.051092698368	0
+127	918	0.051092698368	0
+127	963	0.051530698368	0
+127	963	0.051530698368	0
+128	608	0.037062720162	0
+128	608	0.037062720162	0
+128	643	0.037500720162	0
+128	643	0.037500720162	0
+128	722	0.045306098109	0
+128	722	0.045306098109	0
+128	763	0.045740098109	0
+128	763	0.045740098109	0
+128	918	0.051092698368	0
+128	918	0.051092698368	0
+128	963	0.051530698368	0
+128	963	0.051530698368	0
+129	608	0.037062720162	0
+129	608	0.037062720162	0
+129	643	0.037500720162	0
+129	643	0.037500720162	0
+129	722	0.045306098109	0
+129	722	0.045306098109	0
+129	763	0.045740098109	0
+129	763	0.045740098109	0
+129	918	0.051092698368	0
+129	918	0.051092698368	0
+129	963	0.051530698368	0
+129	963	0.051530698368	0
+130	608	0.037062720162	0
+130	608	0.037062720162	0
+130	643	0.037500720162	0
+130	643	0.037500720162	0
+130	722	0.045306098109	0
+130	722	0.045306098109	0
+130	763	0.045740098109	0
+130	763	0.045740098109	0
+130	918	0.051092698368	0
+130	918	0.051092698368	0
+130	963	0.051530698368	0
+130	963	0.051530698368	0
+131	618	0.037062813304	0
+131	618	0.037062813304	0
+131	673	0.037500813304	0
+131	673	0.037500813304	0
+131	731	0.045306322644	0
+131	731	0.045306322644	0
+131	786	0.045740322644	0
+131	786	0.045740322644	0
+131	923	0.05109277391	0
+131	923	0.05109277391	0
+131	976	0.05153077391	0
+131	976	0.05153077391	0
+132	618	0.037062813304	0
+132	618	0.037062813304	0
+132	673	0.037500813304	0
+132	673	0.037500813304	0
+132	731	0.045306322644	0
+132	731	0.045306322644	0
+132	786	0.045740322644	0
+132	786	0.045740322644	0
+132	923	0.05109277391	0
+132	923	0.05109277391	0
+132	976	0.05153077391	0
+132	976	0.05153077391	0
+133	618	0.037062813304	0
+133	618	0.037062813304	0
+133	673	0.037500813304	0
+133	673	0.037500813304	0
+133	731	0.045306322644	0
+133	731	0.045306322644	0
+133	786	0.045740322644	0
+133	786	0.045740322644	0
+133	923	0.05109277391	0
+133	923	0.05109277391	0
+133	976	0.05153077391	0
+133	976	0.05153077391	0
+134	618	0.037062813304	0
+134	618	0.037062813304	0
+134	673	0.037500813304	0
+134	673	0.037500813304	0
+134	731	0.045306322644	0
+134	731	0.045306322644	0
+134	786	0.045740322644	0
+134	786	0.045740322644	0
+134	923	0.05109277391	0
+134	923	0.05109277391	0
+134	976	0.05153077391	0
+134	976	0.05153077391	0
+135	618	0.037062813304	0
+135	618	0.037062813304	0
+135	673	0.037500813304	0
+135	673	0.037500813304	0
+135	731	0.045306322644	0
+135	731	0.045306322644	0
+135	786	0.045740322644	0
+135	786	0.045740322644	0
+135	923	0.05109277391	0
+135	923	0.05109277391	0
+135	976	0.05153077391	0
+135	976	0.05153077391	0
+136	620	0.037062855392	0
+136	620	0.037062855392	0
+136	679	0.037500855392	0
+136	679	0.037500855392	0
+136	807	0.046955270013	0
+136	807	0.046955270013	0
+136	838	0.047393270013	0
+136	838	0.047393270013	0
+137	620	0.037062855392	0
+137	620	0.037062855392	0
+137	679	0.037500855392	0
+137	679	0.037500855392	0
+137	807	0.046955270013	0
+137	807	0.046955270013	0
+137	838	0.047393270013	0
+137	838	0.047393270013	0
+138	620	0.037062855392	0
+138	620	0.037062855392	0
+138	679	0.037500855392	0
+138	679	0.037500855392	0
+138	807	0.046955270013	0
+138	807	0.046955270013	0
+138	838	0.047393270013	0
+138	838	0.047393270013	0
+139	620	0.037062855392	0
+139	620	0.037062855392	0
+139	679	0.037500855392	0
+139	679	0.037500855392	0
+139	807	0.046955270013	0
+139	807	0.046955270013	0
+139	838	0.047393270013	0
+139	838	0.047393270013	0
+140	620	0.037062855392	0
+140	620	0.037062855392	0
+140	679	0.037500855392	0
+140	679	0.037500855392	0
+140	807	0.046955270013	0
+140	807	0.046955270013	0
+140	838	0.047393270013	0
+140	838	0.047393270013	0
+141	612	0.03706276578	0
+141	612	0.03706276578	0
+141	655	0.03750076578	0
+141	655	0.03750076578	0
+141	733	0.045306348863	0
+141	733	0.045306348863	0
+141	792	0.045740348863	0
+141	792	0.045740348863	0
+142	612	0.03706276578	0
+142	612	0.03706276578	0
+142	655	0.03750076578	0
+142	655	0.03750076578	0
+142	733	0.045306348863	0
+142	733	0.045306348863	0
+142	792	0.045740348863	0
+142	792	0.045740348863	0
+143	612	0.03706276578	0
+143	612	0.03706276578	0
+143	655	0.03750076578	0
+143	655	0.03750076578	0
+143	733	0.045306348863	0
+143	733	0.045306348863	0
+143	792	0.045740348863	0
+143	792	0.045740348863	0
+144	612	0.03706276578	0
+144	612	0.03706276578	0
+144	655	0.03750076578	0
+144	655	0.03750076578	0
+144	733	0.045306348863	0
+144	733	0.045306348863	0
+144	792	0.045740348863	0
+144	792	0.045740348863	0
+145	612	0.03706276578	0
+145	612	0.03706276578	0
+145	655	0.03750076578	0
+145	655	0.03750076578	0
+145	733	0.045306348863	0
+145	733	0.045306348863	0
+145	792	0.045740348863	0
+145	792	0.045740348863	0
+146	617	0.037062803439	0
+146	617	0.037062803439	0
+146	670	0.037500803439	0
+146	670	0.037500803439	0
+146	714	0.04530603678	0
+146	714	0.04530603678	0
+146	739	0.04574003678	0
+146	739	0.04574003678	0
+146	796	0.046865119832	0
+146	796	0.046865119832	2
+146	797	0.046955119832	2
+146	797	0.046955119832	0
+146	800	0.046955119832	0
+146	800	0.046955119832	0
+146	824	0.047393119832	0
+146	824	0.047393119832	0
+146	914	0.051092623378	0
+146	914	0.051092623378	0
+146	953	0.051530623378	0
+146	953	0.051530623378	0
+147	617	0.037062803439	0
+147	617	0.037062803439	0
+147	670	0.037500803439	0
+147	670	0.037500803439	0
+147	714	0.04530603678	0
+147	714	0.04530603678	0
+147	739	0.04574003678	0
+147	739	0.04574003678	0
+147	800	0.046955119832	0
+147	800	0.046955119832	0
+147	824	0.047393119832	0
+147	824	0.047393119832	0
+147	914	0.051092623378	0
+147	914	0.051092623378	0
+147	953	0.051530623378	0
+147	953	0.051530623378	0
+148	617	0.037062803439	0
+148	617	0.037062803439	0
+148	670	0.037500803439	0
+148	670	0.037500803439	0
+148	714	0.04530603678	0
+148	714	0.04530603678	0
+148	739	0.04574003678	0
+148	739	0.04574003678	0
+148	800	0.046955119832	0
+148	800	0.046955119832	0
+148	824	0.047393119832	0
+148	824	0.047393119832	0
+148	914	0.051092623378	0
+148	914	0.051092623378	0
+148	953	0.051530623378	0
+148	953	0.051530623378	0
+149	617	0.037062803439	0
+149	617	0.037062803439	0
+149	670	0.037500803439	0
+149	670	0.037500803439	0
+149	714	0.04530603678	0
+149	714	0.04530603678	0
+149	739	0.04574003678	0
+149	739	0.04574003678	0
+149	800	0.046955119832	0
+149	800	0.046955119832	0
+149	824	0.047393119832	0
+149	824	0.047393119832	0
+149	914	0.051092623378	0
+149	914	0.051092623378	0
+149	953	0.051530623378	0
+149	953	0.051530623378	0
+150	617	0.037062803439	0
+150	617	0.037062803439	0
+150	670	0.037500803439	0
+150	670	0.037500803439	0
+150	714	0.04530603678	0
+150	714	0.04530603678	0
+150	739	0.04574003678	0
+150	739	0.04574003678	0
+150	800	0.046955119832	0
+150	800	0.046955119832	0
+150	824	0.047393119832	0
+150	824	0.047393119832	0
+150	914	0.051092623378	0
+150	914	0.051092623378	0
+150	953	0.051530623378	0
+150	953	0.051530623378	0
+151	607	0.037062711232	0
+151	607	0.037062711232	0
+151	640	0.037500711232	0
+151	640	0.037500711232	0
+151	713	0.045306012642	0
+151	713	0.045306012642	0
+151	736	0.045740012642	0
+151	736	0.045740012642	0
+151	808	0.046955306033	0
+151	808	0.046955306033	0
+151	841	0.047393306033	0
+151	841	0.047393306033	0
+151	900	0.050962437177	0
+151	900	0.050962437177	2
+151	901	0.051092437177	2
+151	901	0.051092437177	0
+151	904	0.051092437177	0
+151	904	0.051092437177	0
+151	928	0.051530437177	0
+151	928	0.051530437177	0
+152	607	0.037062711232	0
+152	607	0.037062711232	0
+152	640	0.037500711232	0
+152	640	0.037500711232	0
+152	713	0.045306012642	0
+152	713	0.045306012642	0
+152	736	0.045740012642	0
+152	736	0.045740012642	0
+152	808	0.046955306033	0
+152	808	0.046955306033	0
+152	841	0.047393306033	0
+152	841	0.047393306033	0
+152	904	0.051092437177	0
+152	904	0.051092437177	0
+152	928	0.051530437177	0
+152	928	0.051530437177	0
+153	607	0.037062711232	0
+153	607	0.037062711232	0
+153	640	0.037500711232	0
+153	640	0.037500711232	0
+153	713	0.045306012642	0
+153	713	0.045306012642	0
+153	736	0.045740012642	0
+153	736	0.045740012642	0
+153	808	0.046955306033	0
+153	808	0.046955306033	0
+153	841	0.047393306033	0
+153	841	0.047393306033	0
+153	904	0.051092437177	0
+153	904	0.051092437177	0
+153	928	0.051530437177	0
+153	928	0.051530437177	0
+154	607	0.037062711232	0
+154	607	0.037062711232	0
+154	640	0.037500711232	0
+154	640	0.037500711232	0
+154	713	0.045306012642	0
+154	713	0.045306012642	0
+154	736	0.045740012642	0
+154	736	0.045740012642	0
+154	808	0.046955306033	0
+154	808	0.046955306033	0
+154	841	0.047393306033	0
+154	841	0.047393306033	0
+154	904	0.051092437177	0
+154	904	0.051092437177	0
+154	928	0.051530437177	0
+154	928	0.051530437177	0
+155	607	0.037062711232	0
+155	607	0.037062711232	0
+155	640	0.037500711232	0
+155	640	0.037500711232	0
+155	713	0.045306012642	0
+155	713	0.045306012642	0
+155	736	0.045740012642	0
+155	736	0.045740012642	0
+155	808	0.046955306033	0
+155	808	0.046955306033	0
+155	841	0.047393306033	0
+155	841	0.047393306033	0
+155	904	0.051092437177	0
+155	904	0.051092437177	0
+155	928	0.051530437177	0
+155	928	0.051530437177	0
+156	721	0.045306097145	0
+156	721	0.045306097145	0
+156	760	0.045740097145	0
+156	760	0.045740097145	0
+156	802	0.046955200793	0
+156	802	0.046955200793	0
+156	825	0.047393200793	0
+156	825	0.047393200793	0
+156	916	0.051092656866	0
+156	916	0.051092656866	0
+156	959	0.051530656866	0
+156	959	0.051530656866	0
+157	721	0.045306097145	0
+157	721	0.045306097145	0
+157	760	0.045740097145	0
+157	760	0.045740097145	0
+157	802	0.046955200793	0
+157	802	0.046955200793	0
+157	825	0.047393200793	0
+157	825	0.047393200793	0
+157	916	0.051092656866	0
+157	916	0.051092656866	0
+157	959	0.051530656866	0
+157	959	0.051530656866	0
+158	721	0.045306097145	0
+158	721	0.045306097145	0
+158	760	0.045740097145	0
+158	760	0.045740097145	0
+158	802	0.046955200793	0
+158	802	0.046955200793	0
+158	825	0.047393200793	0
+158	825	0.047393200793	0
+158	916	0.051092656866	0
+158	916	0.051092656866	0
+158	959	0.051530656866	0
+158	959	0.051530656866	0
+159	721	0.045306097145	0
+159	721	0.045306097145	0
+159	760	0.045740097145	0
+159	760	0.045740097145	0
+159	802	0.046955200793	0
+159	802	0.046955200793	0
+159	825	0.047393200793	0
+159	825	0.047393200793	0
+159	916	0.051092656866	0
+159	916	0.051092656866	0
+159	959	0.051530656866	0
+159	959	0.051530656866	0
+160	721	0.045306097145	0
+160	721	0.045306097145	0
+160	760	0.045740097145	0
+160	760	0.045740097145	0
+160	802	0.046955200793	0
+160	802	0.046955200793	0
+160	825	0.047393200793	0
+160	825	0.047393200793	0
+160	916	0.051092656866	0
+160	916	0.051092656866	0
+160	959	0.051530656866	0
+160	959	0.051530656866	0
+161	603	0.037062654334	0
+161	603	0.037062654334	0
+161	628	0.037500654334	0
+161	628	0.037500654334	0
+161	817	0.046955444041	0
+161	817	0.046955444041	0
+161	866	0.047393444041	0
+161	866	0.047393444041	0
+161	921	0.051092742666	0
+161	921	0.051092742666	0
+161	972	0.051530742666	0
+161	972	0.051530742666	0
+162	603	0.037062654334	0
+162	603	0.037062654334	0
+162	628	0.037500654334	0
+162	628	0.037500654334	0
+162	817	0.046955444041	0
+162	817	0.046955444041	0
+162	866	0.047393444041	0
+162	866	0.047393444041	0
+162	921	0.051092742666	0
+162	921	0.051092742666	0
+162	972	0.051530742666	0
+162	972	0.051530742666	0
+163	603	0.037062654334	0
+163	603	0.037062654334	0
+163	628	0.037500654334	0
+163	628	0.037500654334	0
+163	817	0.046955444041	0
+163	817	0.046955444041	0
+163	866	0.047393444041	0
+163	866	0.047393444041	0
+163	921	0.051092742666	0
+163	921	0.051092742666	0
+163	972	0.051530742666	0
+163	972	0.051530742666	0
+164	603	0.037062654334	0
+164	603	0.037062654334	0
+164	628	0.037500654334	0
+164	628	0.037500654334	0
+164	817	0.046955444041	0
+164	817	0.046955444041	0
+164	866	0.047393444041	0
+164	866	0.047393444041	0
+164	921	0.051092742666	0
+164	921	0.051092742666	0
+164	972	0.051530742666	0
+164	972	0.051530742666	0
+165	603	0.037062654334	0
+165	603	0.037062654334	0
+165	628	0.037500654334	0
+165	628	0.037500654334	0
+165	817	0.046955444041	0
+165	817	0.046955444041	0
+165	866	0.047393444041	0
+165	866	0.047393444041	0
+165	921	0.051092742666	0
+165	921	0.051092742666	0
+165	972	0.051530742666	0
+165	972	0.051530742666	0
+166	616	0.037062802302	0
+166	616	0.037062802302	0
+166	667	0.037500802302	0
+166	667	0.037500802302	0
+166	720	0.045306094843	0
+166	720	0.045306094843	0
+166	757	0.045740094843	0
+166	757	0.045740094843	0
+166	811	0.046955351445	0
+166	811	0.046955351445	0
+166	848	0.047393351445	0
+166	848	0.047393351445	0
+166	909	0.051092534023	0
+166	909	0.051092534023	0
+166	938	0.051530534023	0
+166	938	0.051530534023	0
+166	1009	0.060484551801	0
+166	1009	0.060484551801	2
+166	1010	0.060554551801	2
+166	1010	0.060554551801	0
+166	1013	0.060554551801	0
+166	1013	0.060554551801	0
+167	616	0.037062802302	0
+167	616	0.037062802302	0
+167	667	0.037500802302	0
+167	667	0.037500802302	0
+167	720	0.045306094843	0
+167	720	0.045306094843	0
+167	757	0.045740094843	0
+167	757	0.045740094843	0
+167	811	0.046955351445	0
+167	811	0.046955351445	0
+167	848	0.047393351445	0
+167	848	0.047393351445	0
+167	909	0.051092534023	0
+167	909	0.051092534023	0
+167	938	0.051530534023	0
+167	938	0.051530534023	0
+167	1013	0.060554551801	0
+167	1013	0.060554551801	0
+168	616	0.037062802302	0
+168	616	0.037062802302	0
+168	667	0.037500802302	0
+168	667	0.037500802302	0
+168	720	0.045306094843	0
+168	720	0.045306094843	0
+168	757	0.045740094843	0
+168	757	0.045740094843	0
+168	811	0.046955351445	0
+168	811	0.046955351445	0
+168	848	0.047393351445	0
+168	848	0.047393351445	0
+168	909	0.051092534023	0
+168	909	0.051092534023	0
+168	938	0.051530534023	0
+168	938	0.051530534023	0
+168	1013	0.060554551801	0
+168	1013	0.060554551801	0
+169	616	0.037062802302	0
+169	616	0.037062802302	0
+169	667	0.037500802302	0
+169	667	0.037500802302	0
+169	720	0.045306094843	0
+169	720	0.045306094843	0
+169	757	0.045740094843	0
+169	757	0.045740094843	0
+169	811	0.046955351445	0
+169	811	0.046955351445	0
+169	848	0.047393351445	0
+169	848	0.047393351445	0
+169	909	0.051092534023	0
+169	909	0.051092534023	0
+169	938	0.051530534023	0
+169	938	0.051530534023	0
+169	1013	0.060554551801	0
+169	1013	0.060554551801	0
+170	616	0.037062802302	0
+170	616	0.037062802302	0
+170	667	0.037500802302	0
+170	667	0.037500802302	0
+170	720	0.045306094843	0
+170	720	0.045306094843	0
+170	757	0.045740094843	0
+170	757	0.045740094843	0
+170	811	0.046955351445	0
+170	811	0.046955351445	0
+170	848	0.047393351445	0
+170	848	0.047393351445	0
+170	909	0.051092534023	0
+170	909	0.051092534023	0
+170	938	0.051530534023	0
+170	938	0.051530534023	0
+170	1013	0.060554551801	0
+170	1013	0.060554551801	0
+171	605	0.037062698376	0
+171	605	0.037062698376	0
+171	634	0.037500698376	0
+171	634	0.037500698376	0
+171	707	0.04511592139	0
+171	707	0.04511592139	2
+171	708	0.04530592139	2
+171	708	0.04530592139	0
+171	711	0.04530592139	0
+171	711	0.04530592139	0
+171	735	0.04573992139	0
+171	735	0.04573992139	0
+171	804	0.046955235116	0
+171	804	0.046955235116	0
+171	831	0.047393235116	0
+171	831	0.047393235116	0
+171	906	0.051092528583	0
+171	906	0.051092528583	0
+171	929	0.051530528583	0
+171	929	0.051530528583	0
+172	605	0.037062698376	0
+172	605	0.037062698376	0
+172	634	0.037500698376	0
+172	634	0.037500698376	0
+172	711	0.04530592139	0
+172	711	0.04530592139	0
+172	735	0.04573992139	0
+172	735	0.04573992139	0
+172	804	0.046955235116	0
+172	804	0.046955235116	0
+172	831	0.047393235116	0
+172	831	0.047393235116	0
+172	906	0.051092528583	0
+172	906	0.051092528583	0
+172	929	0.051530528583	0
+172	929	0.051530528583	0
+173	605	0.037062698376	0
+173	605	0.037062698376	0
+173	634	0.037500698376	0
+173	634	0.037500698376	0
+173	711	0.04530592139	0
+173	711	0.04530592139	0
+173	735	0.04573992139	0
+173	735	0.04573992139	0
+173	804	0.046955235116	0
+173	804	0.046955235116	0
+173	831	0.047393235116	0
+173	831	0.047393235116	0
+173	906	0.051092528583	0
+173	906	0.051092528583	0
+173	929	0.051530528583	0
+173	929	0.051530528583	0
+174	605	0.037062698376	0
+174	605	0.037062698376	0
+174	634	0.037500698376	0
+174	634	0.037500698376	0
+174	711	0.04530592139	0
+174	711	0.04530592139	0
+174	735	0.04573992139	0
+174	735	0.04573992139	0
+174	804	0.046955235116	0
+174	804	0.046955235116	0
+174	831	0.047393235116	0
+174	831	0.047393235116	0
+174	906	0.051092528583	0
+174	906	0.051092528583	0
+174	929	0.051530528583	0
+174	929	0.051530528583	0
+175	605	0.037062698376	0
+175	605	0.037062698376	0
+175	634	0.037500698376	0
+175	634	0.037500698376	0
+175	711	0.04530592139	0
+175	711	0.04530592139	0
+175	735	0.04573992139	0
+175	735	0.04573992139	0
+175	804	0.046955235116	0
+175	804	0.046955235116	0
+175	831	0.047393235116	0
+175	831	0.047393235116	0
+175	906	0.051092528583	0
+175	906	0.051092528583	0
+175	929	0.051530528583	0
+175	929	0.051530528583	0
+179	656	0.03750076578	304
+179	793	0.045740348863	301
+180	656	0.03750076578	304
+180	793	0.045740348863	301
+181	770	0.04574010372	301
+181	861	0.047393406699	304
+181	957	0.051530631837	304
+182	770	0.04574010372	301
+182	861	0.047393406699	304
+182	957	0.051530631837	304
+183	626	0.037500563244	304
+183	743	0.045740057435	301
+183	852	0.047393360322	304
+183	948	0.05153059539	304
+184	626	0.037500563244	304
+184	743	0.045740057435	301
+184	852	0.047393360322	304
+184	948	0.05153059539	304
+185	644	0.037500720162	304
+185	764	0.045740098109	301
+185	964	0.051530698368	304
+186	644	0.037500720162	304
+186	764	0.045740098109	301
+186	964	0.051530698368	304
+187	632	0.037500675394	304
+187	749	0.045740082788	301
+187	855	0.047393391331	304
+187	933	0.051530530018	304
+188	632	0.037500675394	304
+188	749	0.045740082788	301
+188	855	0.047393391331	304
+188	933	0.051530530018	304
+189	638	0.037500702877	304
+189	776	0.045740134685	301
+189	864	0.047393442166	304
+189	945	0.051530576792	304
+190	638	0.037500702877	304
+190	776	0.045740134685	301
+190	864	0.047393442166	304
+190	945	0.051530576792	304
+191	635	0.037500698376	304
+191	832	0.047393235116	304
+191	930	0.051530528583	304
+192	635	0.037500698376	304
+192	832	0.047393235116	304
+192	930	0.051530528583	304
+193	684	0.037500900421	304
+193	784	0.045740304824	301
+193	984	0.051530907411	304
+194	684	0.037500900421	304
+194	784	0.045740304824	301
+194	984	0.051530907411	304
+195	662	0.037500780111	304
+195	767	0.045740098654	301
+195	970	0.051530705652	304
+196	662	0.037500780111	304
+196	767	0.045740098654	301
+196	970	0.051530705652	304
+197	641	0.037500711232	304
+197	737	0.045740012642	301
+197	842	0.047393306033	304
+198	641	0.037500711232	304
+198	737	0.045740012642	301
+198	842	0.047393306033	304
+199	659	0.037500767741	304
+199	746	0.045740069342	301
+199	829	0.047393234282	304
+200	659	0.037500767741	304
+200	746	0.045740069342	301
+200	829	0.047393234282	304
+201	665	0.03750078273	304
+201	755	0.04574009484	301
+201	835	0.04739325539	304
+201	967	0.051530701876	304
+202	665	0.03750078273	304
+202	755	0.04574009484	301
+202	835	0.04739325539	304
+202	967	0.051530701876	304
+203	680	0.037500855392	304
+203	839	0.047393270013	304
+204	680	0.037500855392	304
+204	839	0.047393270013	304
+205	668	0.037500802302	304
+205	758	0.045740094843	301
+205	849	0.047393351445	304
+205	939	0.051530534023	304
+206	668	0.037500802302	304
+206	758	0.045740094843	301
+206	849	0.047393351445	304
+206	939	0.051530534023	304
+207	677	0.037500820696	304
+207	752	0.045740087504	301
+207	846	0.047393322702	304
+207	942	0.051530546641	304
+208	677	0.037500820696	304
+208	752	0.045740087504	301
+208	846	0.047393322702	304
+208	942	0.051530546641	304
+209	761	0.045740097145	301
+209	826	0.047393200793	304
+209	960	0.051530656866	304
+210	761	0.045740097145	301
+210	826	0.047393200793	304
+210	960	0.051530656866	304
+214	653	0.037500757059	304
+214	790	0.045740337928	301
+214	874	0.047393626631	304
+214	980	0.051530871327	304
+215	653	0.037500757059	304
+215	790	0.045740337928	301
+215	874	0.047393626631	304
+215	980	0.051530871327	304
+216	671	0.037500803439	304
+216	740	0.04574003678	301
+216	954	0.051530623378	304
+217	671	0.037500803439	304
+217	740	0.04574003678	301
+217	954	0.051530623378	304
+218	647	0.037500739749	304
+218	773	0.04574010653	301
+218	858	0.047393400692	304
+218	936	0.05153053319	304
+219	647	0.037500739749	304
+219	773	0.04574010653	301
+219	858	0.047393400692	304
+219	936	0.05153053319	304
+220	650	0.037500750751	304
+220	781	0.04574017986	301
+220	870	0.047393483229	304
+220	951	0.051530614646	304
+221	650	0.037500750751	304
+221	781	0.04574017986	301
+221	870	0.047393483229	304
+221	951	0.051530614646	304
+222	674	0.037500813304	304
+222	787	0.045740322644	301
+222	977	0.05153077391	304
+223	674	0.037500813304	304
+223	787	0.045740322644	301
+223	977	0.05153077391	304
+228	629	0.037500654334	304
+228	867	0.047393444041	304
+228	973	0.051530742666	304
+229	629	0.037500654334	304
+229	867	0.047393444041	304
+229	973	0.051530742666	304
+238	596	0.036872516572	304
+239	599	0.037062516572	304
+240	600	0.037062516572	1
+240	601	0.037062516572	2
+240	623	0.037500516572	1
+240	624	0.037500516572	0
+241	707	0.04511592139	301
+242	710	0.04530592139	301
+243	711	0.04530592139	1
+243	712	0.04530592139	2
+243	734	0.04573992139	1
+243	735	0.04573992139	0
+244	796	0.046865119832	304
+245	799	0.046955119832	304
+246	800	0.046955119832	1
+246	801	0.046955119832	2
+246	823	0.047393119832	1
+246	824	0.047393119832	0
+247	900	0.050962437177	304
+248	903	0.051092437177	304
+249	904	0.051092437177	1
+249	905	0.051092437177	2
+249	927	0.051530437177	1
+249	928	0.051530437177	0
+250	1009	0.060484551801	301
+251	1012	0.060554551801	301
+252	1013	0.060554551801	1
+252	1014	0.060554551801	2
+

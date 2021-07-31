@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;fyp/simulations/verification/results/brief.csv&apos;" deleteContents="false" description="Delete resource &apos;fyp/simulations/verification/results/brief.csv&apos;" element1="/fyp/simulations/verification/results/brief.csv" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1599476871007"/>
+</session>

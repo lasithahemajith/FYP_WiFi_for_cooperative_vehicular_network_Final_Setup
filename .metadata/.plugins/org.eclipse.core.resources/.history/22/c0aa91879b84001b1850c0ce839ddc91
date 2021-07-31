@@ -1,0 +1,212 @@
+[General]
+network = Scenario
+sim-time-limit=539.1s
+
+#output-scalar-file = scalarsSingle.sca
+#output-vector-file = vectorsSingle.vec
+**.*.vector-recording = false
+#**.*.scalar-recording = true
+**.*.vector-recording-intervals = 0..900
+
+Scenario.*.mobilityType = "VeinsInetMobility"
+Scenario.*.mobility.constraintAreaMinX = 0m
+Scenario.*.mobility.constraintAreaMinY = 0m
+Scenario.*.mobility.constraintAreaMinZ = 0m
+Scenario.*.mobility.constraintAreaMaxX = 15000m
+Scenario.*.mobility.constraintAreaMaxY = 15000m
+Scenario.*.mobility.constraintAreaMaxZ = 2m
+
+Scenario.node[*].ac_wlan.interfaces = "wlan0"
+#Scenario.ped[*].ac_wlan.interfaces = "wlan0"
+#Scenario.amb[*].ac_wlan.interfaces = "wlan0"
+
+Scenario.*.wlan[*].mgmtType = "Ieee80211MgmtAP"
+Scenario.*.wlan[*].radioType = "Ieee80211ScalarRadio"
+Scenario.*.wlan[*].opMode = "g(mixed)"
+Scenario.*.wlan[*].bitrate = 6Mbps
+Scenario.*.wlan[*].mac.typename = "CsmaCaMac"
+#Scenario.*.wlan[*].mac.cwMaxData = 1023
+#Scenario.*.wlan[*].mac.cwMinData = 15
+Scenario.*.wlan[*].radio.channelNumber = 2
+Scenario.radioMedium.backgroundNoise.typename = "IsotropicScalarBackgroundNoise" # type
+Scenario.radioMedium.backgroundNoise.power = -110 dBm # isotropic scalar noise power
+
+#Scenario.node[0..4].wlan[*].mgmt.ssid = "SSID"
+
+Scenario.node[0].wlan[*].mgmt.ssid = "node_00"
+Scenario.node[1].wlan[*].mgmt.ssid = "node_01"
+Scenario.node[2].wlan[*].mgmt.ssid = "node_02"
+Scenario.node[3].wlan[*].mgmt.ssid = "node_03"
+Scenario.node[4].wlan[*].mgmt.ssid = "node_04"
+Scenario.node[5].wlan[*].mgmt.ssid = "node_05"
+Scenario.node[6].wlan[*].mgmt.ssid = "node_06"
+Scenario.node[7].wlan[*].mgmt.ssid = "node_07"
+Scenario.node[8].wlan[*].mgmt.ssid = "node_08"
+Scenario.node[9].wlan[*].mgmt.ssid = "node_09"
+Scenario.node[10].wlan[*].mgmt.ssid = "node_10"
+Scenario.node[11].wlan[*].mgmt.ssid = "node_11"
+Scenario.node[12].wlan[*].mgmt.ssid = "node_12"
+Scenario.node[13].wlan[*].mgmt.ssid = "node_13"
+Scenario.node[14].wlan[*].mgmt.ssid = "node_14"
+Scenario.node[15].wlan[*].mgmt.ssid = "node_15"
+Scenario.node[16].wlan[*].mgmt.ssid = "node_16"
+Scenario.node[17].wlan[*].mgmt.ssid = "node_17"
+Scenario.node[18].wlan[*].mgmt.ssid = "node_18"
+Scenario.node[19].wlan[*].mgmt.ssid = "node_19"
+Scenario.node[20].wlan[*].mgmt.ssid = "node_20"
+Scenario.node[21].wlan[*].mgmt.ssid = "node_21"
+Scenario.node[22].wlan[*].mgmt.ssid = "node_22"
+Scenario.node[23].wlan[*].mgmt.ssid = "node_23"
+Scenario.node[24].wlan[*].mgmt.ssid = "node_24"
+Scenario.node[25].wlan[*].mgmt.ssid = "node_25"
+Scenario.node[26].wlan[*].mgmt.ssid = "node_26"
+Scenario.node[27].wlan[*].mgmt.ssid = "node_27"
+Scenario.node[28].wlan[*].mgmt.ssid = "node_28"
+Scenario.node[29].wlan[*].mgmt.ssid = "node_29"
+Scenario.node[30].wlan[*].mgmt.ssid = "node_30"
+Scenario.node[31].wlan[*].mgmt.ssid = "node_31"
+Scenario.node[32].wlan[*].mgmt.ssid = "node_32"
+Scenario.node[33].wlan[*].mgmt.ssid = "node_33"
+Scenario.node[34].wlan[*].mgmt.ssid = "node_34"
+Scenario.node[35].wlan[*].mgmt.ssid = "node_35"
+Scenario.node[36].wlan[*].mgmt.ssid = "node_36"
+Scenario.node[37].wlan[*].mgmt.ssid = "node_37"
+Scenario.node[38].wlan[*].mgmt.ssid = "node_38"
+Scenario.node[39].wlan[*].mgmt.ssid = "node_39"
+Scenario.node[40].wlan[*].mgmt.ssid = "node_40"
+Scenario.node[41].wlan[*].mgmt.ssid = "node_41"
+Scenario.node[42].wlan[*].mgmt.ssid = "node_42"
+Scenario.node[43].wlan[*].mgmt.ssid = "node_43"
+Scenario.node[44].wlan[*].mgmt.ssid = "node_44"
+Scenario.node[45].wlan[*].mgmt.ssid = "node_45"
+Scenario.node[46].wlan[*].mgmt.ssid = "node_46"
+Scenario.node[47].wlan[*].mgmt.ssid = "node_47"
+Scenario.node[48].wlan[*].mgmt.ssid = "node_48"
+Scenario.node[49].wlan[*].mgmt.ssid = "node_49"
+Scenario.node[50].wlan[*].mgmt.ssid = "node_50"
+Scenario.node[51].wlan[*].mgmt.ssid = "node_51"
+Scenario.node[52].wlan[*].mgmt.ssid = "node_52"
+Scenario.node[53].wlan[*].mgmt.ssid = "node_53"
+Scenario.node[54].wlan[*].mgmt.ssid = "node_54"
+Scenario.node[55].wlan[*].mgmt.ssid = "node_55"
+Scenario.node[56].wlan[*].mgmt.ssid = "node_56"
+Scenario.node[57].wlan[*].mgmt.ssid = "node_57"
+Scenario.node[58].wlan[*].mgmt.ssid = "node_58"
+Scenario.node[59].wlan[*].mgmt.ssid = "node_59"
+Scenario.node[60].wlan[*].mgmt.ssid = "node_60"
+Scenario.node[61].wlan[*].mgmt.ssid = "node_61"
+Scenario.node[62].wlan[*].mgmt.ssid = "node_62"
+Scenario.node[63].wlan[*].mgmt.ssid = "node_63"
+Scenario.node[64].wlan[*].mgmt.ssid = "node_64"
+Scenario.node[65].wlan[*].mgmt.ssid = "node_65"
+Scenario.node[66].wlan[*].mgmt.ssid = "node_66"
+Scenario.node[67].wlan[*].mgmt.ssid = "node_67"
+Scenario.node[68].wlan[*].mgmt.ssid = "node_68"
+Scenario.node[69].wlan[*].mgmt.ssid = "node_69"
+Scenario.node[70].wlan[*].mgmt.ssid = "node_70"
+Scenario.node[71].wlan[*].mgmt.ssid = "node_71"
+Scenario.node[72].wlan[*].mgmt.ssid = "node_72"
+Scenario.node[73].wlan[*].mgmt.ssid = "node_73"
+Scenario.node[74].wlan[*].mgmt.ssid = "node_74"
+Scenario.node[75].wlan[*].mgmt.ssid = "node_75"
+Scenario.node[76].wlan[*].mgmt.ssid = "node_76"
+Scenario.node[77].wlan[*].mgmt.ssid = "node_77"
+Scenario.node[78].wlan[*].mgmt.ssid = "node_78"
+Scenario.node[79].wlan[*].mgmt.ssid = "node_79"
+Scenario.node[80].wlan[*].mgmt.ssid = "node_80"
+Scenario.node[81].wlan[*].mgmt.ssid = "node_81"
+Scenario.node[82].wlan[*].mgmt.ssid = "node_82"
+Scenario.node[83].wlan[*].mgmt.ssid = "node_83"
+Scenario.node[84].wlan[*].mgmt.ssid = "node_84"
+Scenario.node[85].wlan[*].mgmt.ssid = "node_85"
+Scenario.node[86].wlan[*].mgmt.ssid = "node_86"
+Scenario.node[87].wlan[*].mgmt.ssid = "node_87"
+Scenario.node[88].wlan[*].mgmt.ssid = "node_88"
+Scenario.node[89].wlan[*].mgmt.ssid = "node_89"
+Scenario.node[90].wlan[*].mgmt.ssid = "node_90"
+Scenario.node[91].wlan[*].mgmt.ssid = "node_91"
+Scenario.node[92].wlan[*].mgmt.ssid = "node_92"
+Scenario.node[93].wlan[*].mgmt.ssid = "node_93"
+Scenario.node[94].wlan[*].mgmt.ssid = "node_94"
+Scenario.node[95].wlan[*].mgmt.ssid = "node_95"
+Scenario.node[96].wlan[*].mgmt.ssid = "node_96"
+Scenario.node[97].wlan[*].mgmt.ssid = "node_97"
+Scenario.node[98].wlan[*].mgmt.ssid = "node_98"
+Scenario.node[99].wlan[*].mgmt.ssid = "node_99"
+Scenario.node[100].wlan[*].mgmt.ssid = "node_100"
+Scenario.node[101].wlan[*].mgmt.ssid = "node_101"
+Scenario.node[102].wlan[*].mgmt.ssid = "node_102"
+Scenario.node[103].wlan[*].mgmt.ssid = "node_103"
+Scenario.node[104].wlan[*].mgmt.ssid = "node_104"
+Scenario.node[105].wlan[*].mgmt.ssid = "node_105"
+Scenario.node[106].wlan[*].mgmt.ssid = "node_106"
+Scenario.node[107].wlan[*].mgmt.ssid = "node_107"
+Scenario.node[108].wlan[*].mgmt.ssid = "node_108"
+Scenario.node[109].wlan[*].mgmt.ssid = "node_109"
+Scenario.node[110].wlan[*].mgmt.ssid = "node_110"
+Scenario.node[111].wlan[*].mgmt.ssid = "node_111"
+Scenario.node[112].wlan[*].mgmt.ssid = "node_112"
+Scenario.node[113].wlan[*].mgmt.ssid = "node_113"
+Scenario.node[114].wlan[*].mgmt.ssid = "node_114"
+Scenario.node[115].wlan[*].mgmt.ssid = "node_115"
+Scenario.node[116].wlan[*].mgmt.ssid = "node_116"
+Scenario.node[117].wlan[*].mgmt.ssid = "node_117"
+Scenario.node[118].wlan[*].mgmt.ssid = "node_118"
+Scenario.node[119].wlan[*].mgmt.ssid = "node_119"
+Scenario.node[120].wlan[*].mgmt.ssid = "node_120"
+Scenario.node[121].wlan[*].mgmt.ssid = "node_121"
+Scenario.node[122].wlan[*].mgmt.ssid = "node_122"
+Scenario.node[123].wlan[*].mgmt.ssid = "node_123"
+Scenario.node[124].wlan[*].mgmt.ssid = "node_124"
+Scenario.node[125].wlan[*].mgmt.ssid = "node_125"
+Scenario.node[126].wlan[*].mgmt.ssid = "node_126"
+Scenario.node[127].wlan[*].mgmt.ssid = "node_127"
+Scenario.node[128].wlan[*].mgmt.ssid = "node_128"
+Scenario.node[129].wlan[*].mgmt.ssid = "node_129"
+Scenario.node[130].wlan[*].mgmt.ssid = "node_130"
+Scenario.node[131].wlan[*].mgmt.ssid = "node_131"
+Scenario.node[132].wlan[*].mgmt.ssid = "node_132"
+Scenario.node[133].wlan[*].mgmt.ssid = "node_133"
+Scenario.node[134].wlan[*].mgmt.ssid = "node_134"
+Scenario.node[135].wlan[*].mgmt.ssid = "node_135"
+Scenario.node[136].wlan[*].mgmt.ssid = "node_136"
+Scenario.node[137].wlan[*].mgmt.ssid = "node_137"
+Scenario.node[138].wlan[*].mgmt.ssid = "node_138"
+Scenario.node[139].wlan[*].mgmt.ssid = "node_139"
+Scenario.node[140].wlan[*].mgmt.ssid = "node_140"
+
+#Scenario.amb[0].wlan[*].mgmt.ssid = "amb_00"
+#Scenario.amb[1].wlan[*].mgmt.ssid = "amb_01"
+
+Scenario.*.wlan[*].mgmt.beaconInterval = 100ms
+Scenario.*.wlan[*].radio.carrierFrequency = 2.412GHz
+Scenario.*.wlan[*].radio.bandwidth = 20MHz
+Scenario.*.wlan[*].radio.transmitter.power = 100mW
+Scenario.*.wlan[*].radio.transmitter.modulation = "BPSK"
+Scenario.*.wlan[*].radio.receiver.modulation = "BPSK"
+Scenario.*.wlan[*].radio.receiver.sensitivity = -72dBm
+Scenario.*.wlan[*].mac.basicBitrate = 6Mbps
+Scenario.radioMedium.physicalEnvironmentModule = "physicalEnvironment"
+Scenario.radioMedium.propagationType = "ConstantSpeedPropagation"
+Scenario.radioMedium.pathLossType = "NakagamiFading"
+Scenario.radioMedium.analogModelType = "ScalarAnalogModel"
+
+#Scenario.ap1.*.radio.displayCommunicationRange = true #####
+
+#Scenario.iPv4NetworkConfigurator.config = xml("<config><interface hosts='**' address='10.x.x.x' netmask='255.x.x.x'/></config>") ######
+
+#**.receiver.snirThreshold = 4dB
+
+# VeinsInetManager
+Scenario.manager.updateInterval = 0.001s
+Scenario.manager.host = "localhost"
+Scenario.manager.port = 9999
+Scenario.manager.autoShutdown = true
+Scenario.manager.launchConfig = xmldoc("singleSide.launchd.xml")
+
+*.manager.moduleType = "vtype0=fyp.simulations.singleSide.Car pedestrian=fyp.simulations.singleSideWithPedestrians.pedestrian ambulance=fyp.simulations.singleSide.ambulance"
+*.manager.moduleName = "vtype0=node pedestrian=ped ambulance=amb"
+*.manager.moduleDisplayString = "vtype0='i=veins/node/car;is=vs' pedestrian='i=veins/node/pedestrian;is=vs' ambulance='i=veins/node/ambulance;is=vs'"
+#*.manager.ambType = "ambulance=fyp.simulations.singleSide.ambulance"
+#*.manager.ambName = "ambulance=amb"
+#*.manager.amgDisplayString = "ambulance='i=veins/node/ambulance;is=vs'"

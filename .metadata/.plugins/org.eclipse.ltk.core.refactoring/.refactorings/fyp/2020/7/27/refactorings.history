@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fyp/simulations/singleSideWithPedestrians/square.launchd.xml&apos; to &apos;straight.launchd.xml&apos;" description="Rename resource &apos;square.launchd.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simulations/singleSideWithPedestrians/square.launchd.xml" name="straight.launchd.xml" stamp="1593840979813" updateReferences="true"/>
+</session>

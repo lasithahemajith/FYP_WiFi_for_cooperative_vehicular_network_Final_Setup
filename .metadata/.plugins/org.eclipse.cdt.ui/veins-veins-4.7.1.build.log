@@ -1,0 +1,8 @@
+00:10:41 **** Incremental Build of configuration gcc-release for project veins-veins-4.7.1 ****
+make MODE=release all 
+make[1]: Entering directory '/c/omnetpp-5.6-src-windows/FYP_1/veins-veins-4.7.1/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/omnetpp-5.6-src-windows/FYP_1/veins-veins-4.7.1/src'
+
+00:10:44 Build Finished. 0 errors, 0 warnings. (took 3s.500ms)
+

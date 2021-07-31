@@ -1,0 +1,9 @@
+00:10:45 **** Incremental Build of configuration release for project fyp ****
+make MODE=release all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/omnetpp-5.6-src-windows/FYP_1/fyp/src'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/c/omnetpp-5.6-src-windows/FYP_1/fyp/src'
+
+00:10:46 Build Finished. 0 errors, 0 warnings. (took 453ms)
+

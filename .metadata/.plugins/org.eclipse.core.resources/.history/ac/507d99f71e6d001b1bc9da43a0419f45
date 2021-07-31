@@ -1,0 +1,23 @@
+<routes>
+
+<vType sigma="0" id="pedestrian" length="0.4" minGap="0" guiShape="pedestrian" width="0.6" maxSpeed="1.5"/>
+<vType carFollowing="IDM" accel="1.00" decel="5.00" timeHeadWay="1.00" id="vtype0" sigma="0"  length="5.0" minGap="1" maxSpeed="27.7778"/>
+
+
+<flow id="flowXtoY_0" type="vtype0" begin="0" period="4" number="35" departPos="0" departSpeed="27.7778" departLane="0" >
+<route edges="a"/>
+</flow>
+
+<flow id="flowXtoY_1" type="vtype0" begin="1" period="4" number="35" departPos="0" departSpeed="27.7778" departLane="1" >
+<route edges="a"/>
+</flow>
+
+<flow id="flowXtoY_2" type="vtype0" begin="2" period="4" number="35" departPos="0" departSpeed="27.7778" departLane="2" >
+<route edges="a"/>
+</flow>
+
+<flow id="flowXtoY_3" type="vtype0" begin="3" period="4" number="35" departPos="0" departSpeed="27.7778" departLane="3" >
+<route edges="a"/>
+</flow>
+
+</routes>

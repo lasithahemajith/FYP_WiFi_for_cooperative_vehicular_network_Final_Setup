@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;fyp/simulations/singleSide/singleSidewithPedestrians.ini&apos; to &apos;singleSide.ini&apos;" description="Rename resource &apos;singleSidewithPedestrians.ini&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="simulations/singleSide/singleSidewithPedestrians.ini" name="singleSide.ini" stamp="1595654664700" updateReferences="true"/>
+</session>

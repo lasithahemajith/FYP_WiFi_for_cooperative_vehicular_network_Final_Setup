@@ -1,0 +1,14 @@
+00:09:58 **** Incremental Build of configuration gcc-release for project inet ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/omnetpp-5.6-src-windows/FYP_1/inet/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-omit-frame-pointer  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/omnetpp-5.6-src-windows/omnetpp-5.6/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -lOpenThreads -losg -losgText -losgDB -losgEarth -losgEarthUtil -Wl,-rpath,C:/omnetpp-5.6-src-windows/omnetpp-5.6/lib -Wl,-rpath,C:/omnetpp-5.6-src-windows/omnetpp-5.6/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/omnetpp-5.6-src-windows/omnetpp-5.6/lib ../out/clang-release/src/typeinfo.def
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/omnetpp-5.6-src-windows/FYP_1/inet/src'
+
+00:10:39 Build Finished. 0 errors, 0 warnings. (took 41s.250ms)
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="TemplateBasedWizard">
+		<item key="project.template" value="bundleentry://365.fwk1829218251/template/emptylargeproject/"/>
+		<item key="nedfile.template" value="bundleentry://379.fwk1829218251/templates/emptynedfile/"/>
+		<item key="inifile.template" value="bundleentry://373.fwk2085229266/templates/inifile/"/>
+	</section>
+	<section name="org.omnetpp.common.eventlog.FilterEventLogDialog">
+		<item key="DIALOG_X_ORIGIN" value="8"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="1366"/>
+		<item key="DIALOG_HEIGHT" value="558"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
